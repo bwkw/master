@@ -1,0 +1,20 @@
+units lj
+atom_style atomic
+boundary p p p
+
+read_data atoms/l1.0-r0.0.atoms
+
+mass 1 1.0
+
+reset_timestep  0
+timestep        0.0001
+
+pair_style lj/cut 3.0
+pair_modify shift yes
+pair_coeff 1 1 1.0 1.0 3.0
+
+fix 1 all nvt temp 1.0 1.0 1.2
+
+dump id all atom 500 dump.melt/l1.0-r0.0.melt
+
+run 20000
