@@ -21,6 +21,6 @@ left_num = 6*6*6*4
 right_num = 0
 left_density = 2.0
 right_density = 0.0
-temperature = 1.2
+temperature = 0.7
 volume = left_num/left_density
 make_file("in.melt/l{}-r{}-T{}.melt".format(left_density, right_density, temperature), left_density, right_density, temperature)

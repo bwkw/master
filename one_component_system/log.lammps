@@ -10,7 +10,7 @@ read_data atoms/l2.0-r0.0.atoms
   864 atoms
   reading velocities ...
   864 velocities
-  read_data CPU = 0.00587106 secs
+  read_data CPU = 0.0058589 secs
 
 mass 1 1.0
 
@@ -21,9 +21,9 @@ pair_style lj/cut 3.0
 pair_modify shift yes
 pair_coeff 1 1 1.0 1.0 3.0
 
-fix 1 all nvt temp 1.2 1.2 0.01
+fix 1 all nvt temp 0.7 0.7 0.01
 
-dump id all atom 5000 dump.melt/l2.0-r0.0-T1.2.melt
+dump id all atom 5000 dump.melt/l2.0-r0.0-T0.7.melt
 
 run 500000
 Neighbor list info ...
@@ -41,31 +41,31 @@ Neighbor list info ...
 Per MPI rank memory allocation (min/avg/max) = 4.315 | 4.315 | 4.315 Mbytes
 Step Temp E_pair E_mol TotEng Press 
        0   0.33875875    38.560078            0    39.067628    259.70313 
-  500000    1.1807412     -5.44734            0   -3.6782781    9.7665961 
-Loop time of 354.856 on 1 procs for 500000 steps with 864 atoms
+  500000   0.71453365   -6.6121244            0   -5.5415644    3.0426357 
+Loop time of 351.561 on 1 procs for 500000 steps with 864 atoms
 
-Performance: 24347.884 tau/day, 1409.021 timesteps/s
+Performance: 24576.114 tau/day, 1422.229 timesteps/s
 99.8% CPU use with 1 MPI tasks x no OpenMP threads
 
 MPI task timing breakdown:
 Section |  min time  |  avg time  |  max time  |%varavg| %total
 ---------------------------------------------------------------
-Pair    | 337.73     | 337.73     | 337.73     |   0.0 | 95.18
-Neigh   | 4.6301     | 4.6301     | 4.6301     |   0.0 |  1.30
-Comm    | 5.4517     | 5.4517     | 5.4517     |   0.0 |  1.54
-Output  | 0.052052   | 0.052052   | 0.052052   |   0.0 |  0.01
-Modify  | 5.1785     | 5.1785     | 5.1785     |   0.0 |  1.46
-Other   |            | 1.809      |            |       |  0.51
+Pair    | 335.67     | 335.67     | 335.67     |   0.0 | 95.48
+Neigh   | 3.4622     | 3.4622     | 3.4622     |   0.0 |  0.98
+Comm    | 5.4555     | 5.4555     | 5.4555     |   0.0 |  1.55
+Output  | 0.05172    | 0.05172    | 0.05172    |   0.0 |  0.01
+Modify  | 5.101      | 5.101      | 5.101      |   0.0 |  1.45
+Other   |            | 1.821      |            |       |  0.52
 
 Nlocal:    864 ave 864 max 864 min
 Histogram: 1 0 0 0 0 0 0 0 0 0
-Nghost:    3470 ave 3470 max 3470 min
+Nghost:    3450 ave 3450 max 3450 min
 Histogram: 1 0 0 0 0 0 0 0 0 0
-Neighs:    64633 ave 64633 max 64633 min
+Neighs:    64965 ave 64965 max 64965 min
 Histogram: 1 0 0 0 0 0 0 0 0 0
 
-Total # of neighbors = 64633
-Ave neighs/atom = 74.8067
-Neighbor list builds = 2937
+Total # of neighbors = 64965
+Ave neighs/atom = 75.191
+Neighbor list builds = 2220
 Dangerous builds = 0
-Total wall time: 0:05:54
+Total wall time: 0:05:51
