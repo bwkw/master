@@ -13,7 +13,7 @@ def make_file(filename, left_density, right_density, temperature):
         f.write("pair_modify shift yes\n")
         f.write("pair_coeff 1 1 1.0 1.0 3.5\n\n")
         f.write("fix 1 all nvt temp {} {} 0.01\n\n".format(temperature,temperature))
-        f.write("dump id all atom 10000 dump.melt/l{}-r{}-T{}.melt\n\n".format(left_density, right_density, temperature))
+        f.write("dump id all atom 10000 dump.melt/l{}-r{}-T{}.dump\n\n".format(left_density, right_density, temperature))
         f.write("run 1000000")
 
 
@@ -23,4 +23,4 @@ left_density = 2.0
 right_density = 0.0
 temperature = 1.0
 volume = (left_num/left_density)*2
-make_file("in.melt/l{}-r{}-T{}.melt".format(left_density, right_density, temperature), left_density, right_density, temperature)
+make_file("in.melt/l{}-r{}-T{}.in".format(left_density, right_density, temperature), left_density, right_density, temperature)
