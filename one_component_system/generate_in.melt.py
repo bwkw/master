@@ -11,7 +11,7 @@ def make_file(filename, left_density, right_density, temperature):
         f.write("timestep        0.01\n\n")
         f.write("pair_style lj/cut 4.0\n")
         f.write("pair_modify shift yes\n")
-        f.write("pair_coeff 1 1 1.0 1.0 3.5\n\n")
+        f.write("pair_coeff 1 1 1.0 1.0 4.0\n\n")
         f.write("fix 1 all nvt temp {} {} 0.01\n\n".format(temperature,temperature))
         f.write("dump id all atom 50000 dump.melt/l{}-r{}-T{}.dump\n\n".format(left_density, right_density, temperature))
         f.write("run 5000000")
