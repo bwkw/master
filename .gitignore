@@ -3,3 +3,4 @@ find . -size +100M | sed -e 's/^\.\///'
 task.sh.*
 log.lammps
 lmp_serial
+dump.sh.*
