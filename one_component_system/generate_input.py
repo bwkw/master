@@ -12,9 +12,9 @@ def make_file(filename, left_density, right_density, temperature):
         f.write("pair_style lj/cut 3.0\n")
         f.write("pair_coeff 1 1 1.0 1.0 3.0\n\n")
         f.write("fix 1 all nvt temp {} {} 0.01\n\n".format(temperature,temperature))
-        f.write("thermo 1000\n")
+        f.write("thermo 10\n")
         f.write("thermo_style custom time temp press\n\n")
-        f.write("run 2000000")
+        f.write("run 20000")
 
 
 left_num = 6*6*6*4
