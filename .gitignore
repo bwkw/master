@@ -4,3 +4,4 @@ task.sh.*
 log.lammps
 lmp_serial
 dump.sh.*
+temp.sh.*
