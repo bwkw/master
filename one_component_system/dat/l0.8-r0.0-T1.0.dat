@@ -35,11 +35,7 @@ Setting up Verlet run ...
   Time step     : 0.001
 Per MPI rank memory allocation (min/avg/max) = 2.8 | 2.8 | 2.8 Mbytes
 Time Temp Press 
-           0    0.3379911    -2.869697 
-LAMMPS (18 Jun 2019)
-LAMMPS (18 Jun 2019)
-Total wall time: 0:00:00
-Total wall time: 0:00:00
+           0    0.3379911    -2.869697
            1   0.94652846   0.60762528 
            2    1.0300268  0.033032862 
            3    1.0106033 -0.069567418 
