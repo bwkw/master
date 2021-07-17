@@ -21,6 +21,6 @@ left_num = 6*6*6*4
 right_num = 0
 left_density = 0.8
 right_density = 0.0
-temperature = 1.0
+temperature = 0.9
 volume = (left_num/left_density)*2
 make_file("input/l{}-r{}-T{}.input".format(left_density, right_density, temperature), left_density, right_density, temperature)

@@ -14,7 +14,7 @@ pair_coeff 1 1 1.0 1.0 3.0
 
 fix 1 all nvt temp 0.9 0.9 0.01
 
-thermo 1000
+thermo 10
 thermo_style custom time temp press
 
-run 2000000
+run 20000
