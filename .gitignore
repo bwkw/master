@@ -1,7 +1,7 @@
 find . -size +100M | sed -e 's/^\.\///'
 *.dump
-task.sh.*
-log.lammps
+dump/*
+dat/*
 lmp_serial
 dump.sh.*
 temp.sh.*
