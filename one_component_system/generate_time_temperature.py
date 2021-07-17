@@ -18,17 +18,22 @@ def loadfile(filename):
         for i in range(len(tt_list)):
             a = tt_list[i][0]
             b = tt_list[i][1]
-            time.append(a)
-            temperature.append(b)
+            time_list.append(a)
+            temperature_list.append(b)
 
 def makefile(filename):
     with open(filename, "w") as f:
         for i in range(len(tt_list)):
-            f.write("{} {}\n".format(time[i], temperature[i]))
+            f.write("{} {}\n".format(time_list[i], temperature_list[i]))
 
 density = 2.0
 tt_list = []
-time = []
-temperature = []
-loadfile("dat/d{}.dat".format(density))
-makefile("time-temperature/d{}-tt.dat".format(density))
+time_list = []
+temperature_list = []
+left_num = 6*6*6*4
+right_num = 0
+left_density = 0.8
+right_density = 0.0
+temperature = 1.0
+loadfile("dat/l{}-r{}-T{}.dat".format(left_density, right_density, temperature))
+makefile("time-temperature/l{}-r{}-T{}_tt.dat".format(left_density, right_density, temperature))
