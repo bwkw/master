@@ -16,10 +16,10 @@ def make_file(filename, left_density, right_density, temperature):
         f.write("run 200000")
 
 
-left_num = 6*6*6*4
+left_num = 12*12*12*4
 right_num = 0
 left_density = 0.8
 right_density = 0.0
-temperature = 1.0
+temperature = 1.2
 volume = (left_num/left_density)*2
 make_file("in.melt/l{}-r{}-T{}.in".format(left_density, right_density, temperature), left_density, right_density, temperature)
