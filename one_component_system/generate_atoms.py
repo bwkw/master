@@ -31,15 +31,16 @@ def add_ball(atoms, left_num, right_num, length):
     xvel_list = [0] * (4*(left_n**3+right_n**3))
     yvel_list = [0] * (4*(left_n**3+right_n**3))
     zvel_list = [0] * (4*(left_n**3+right_n**3))
+    print(len(xvel_list))
     for i in range(len(xvel_list)):
-        random_n = (1-(-1)) * random.random()-1 
-        xvel_list[i] = random_n
+        random_x = random.uniform(-1, 1)
+        xvel_list[i] = random_x
     for i in range(len(yvel_list)):
-        random_n = (1-(-1)) * random.random()-1 
-        yvel_list[i] = random_n
+        random_y = random.uniform(-1, 1) 
+        yvel_list[i] = random_y
     for i in range(len(zvel_list)):
-        random_n = (1-(-1)) * random.random()-1 
-        zvel_list[i] = random_n
+        random_z = random.uniform(-1, 1)
+        zvel_list[i] = random_z
     xvel_list_av = sum(xvel_list)/len(xvel_list)
     yvel_list_av = sum(yvel_list)/len(yvel_list)
     zvel_list_av = sum(zvel_list)/len(zvel_list)  
@@ -89,14 +90,14 @@ def make_file(filename, atoms, length):
 
 
 atoms = []
-left_num = 12*12*12*4
+left_num = 15*15*15*4
 right_num = 0
 left_density = 0.8
 right_density = 0.0
 volume = left_num/left_density
 length = math.pow(volume, 1/3)
 add_ball(atoms, left_num, right_num, length)
-make_file("atoms/l{}-r{}.atoms".format(left_density, right_density), atoms, length)
+make_file("atoms/ln{}-rn{}-ld{}-rd{}.atoms".format(left_num,right_num, left_density, right_density), atoms, length)
 
 #速度平均が≒0になっていることの確認
 sum_a_vx = 0
