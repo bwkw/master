@@ -6,7 +6,8 @@ def make_file(filename, left_num, right_num, left_density, right_density, temper
         f.write("atom_style atomic\n")
         f.write("boundary p p p\n\n")
         f.write("read_data atoms/ln{}-rn{}-ld{}-rd{}.atoms\n\n".format(left_num, right_num, left_density, right_density))
-        f.write("mass 1 1.0\n\n")
+        f.write("mass 1 1.0\n")
+        f.write("mass 2 1.0\n\n")
         f.write("reset_timestep  0\n")
         f.write("timestep        0.001\n\n")
         f.write("pair_style lj/cut 3.0\n")
@@ -19,9 +20,9 @@ def make_file(filename, left_num, right_num, left_density, right_density, temper
 
 half_volume = 20*20*20
 left_num = 10*10*10*4
-right_num = 5*5*5*4
+right_num = 10*10*10*4
 left_density = left_num/half_volume
 right_density = right_num/half_volume
-temperature = 1.1
+temperature = 1.0
 volume = (left_num/left_density)*2
 make_file("in.melt/ln{}-rn{}-ld{}-rd{}-T{}.in".format(left_num, right_num, left_density, right_density, temperature), left_num, right_num, left_density, right_density, temperature)

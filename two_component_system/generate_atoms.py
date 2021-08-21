@@ -90,7 +90,7 @@ def make_file(filename, atoms, length):
 atoms = []
 half_volume = 20*20*20
 left_num = 10*10*10*4
-right_num = 5*5*5*4
+right_num = 10*10*10*4
 left_density = left_num/half_volume
 right_density = right_num/half_volume
 volume = half_volume*2
