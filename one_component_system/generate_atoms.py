@@ -18,6 +18,7 @@ def add_ball(atoms, left_num, right_num, length):
     r = length
     volume = r**3
     left_n = round((left_num/4)**(1/3))
+    print(left_n)
     right_n = round((right_num/4)**(1/3))
     left_density = left_num/volume
     right_density = right_num/volume
