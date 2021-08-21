@@ -4,27 +4,24 @@ import math
 import random
 
 class Atom:
-    def __init__(self, x, y, z, xvel, yvel, zvel):
+    def __init__(self, x, y, z, xvel, yvel, zvel, type):
         self.x = x
         self.y = y
         self.z = z
-        self.type = 1
         self.vx = xvel
         self.vy = yvel
         self.vz = zvel
+        self.type = type
 
 
-def add_ball(atoms, left_num, right_num, length):
-    r = length
-    volume = r**3
+def add_ball(atoms, left_num, right_num, length, volume):
     left_n = round((left_num/4)**(1/3))
-    print(left_n)
     right_n = round((right_num/4)**(1/3))
     left_density = left_num/volume
     right_density = right_num/volume
-    left_s = r/left_n
+    left_s = length/left_n
     if right_n != 0:
-        right_s = r/right_n
+        right_s = length/right_n
     else:
         right_s = 0
     left_h = left_s/2
@@ -55,21 +52,21 @@ def add_ball(atoms, left_num, right_num, length):
                 x = ix*left_s
                 y = iy*left_s
                 z = iz*left_s
-                atoms.append(Atom(x, y, z, xvel_list[num], yvel_list[num], zvel_list[num]))
-                atoms.append(Atom(x+left_h, y+left_h, z, xvel_list[num+1], yvel_list[num+1], zvel_list[num+1]))
-                atoms.append(Atom(x+left_h, y, z+left_h, xvel_list[num+2], yvel_list[num+2], zvel_list[num+2]))
-                atoms.append(Atom(x, y+left_h, z+left_h, xvel_list[num+3], yvel_list[num+3], zvel_list[num+3]))
+                atoms.append(Atom(x, y, z, xvel_list[num], yvel_list[num], zvel_list[num], 1))
+                atoms.append(Atom(x+left_h, y+left_h, z, xvel_list[num+1], yvel_list[num+1], zvel_list[num+1], 1))
+                atoms.append(Atom(x+left_h, y, z+left_h, xvel_list[num+2], yvel_list[num+2], zvel_list[num+2], 1))
+                atoms.append(Atom(x, y+left_h, z+left_h, xvel_list[num+3], yvel_list[num+3], zvel_list[num+3], 1))
                 num+=4
     for ix in range(0,right_n):
         for iy in range(0,right_n):
             for iz in range(0,right_n):
-                x = r + ix*right_s
+                x = length + ix*right_s
                 y = iy*right_s
                 z = iz*right_s
-                atoms.append(Atom(x, y, z, xvel_list[num], yvel_list[num], zvel_list[num]))
-                atoms.append(Atom(x+right_h, y+right_h, z, xvel_list[num+1], yvel_list[num+1], zvel_list[num+1]))
-                atoms.append(Atom(x+right_h, y, z+right_h, xvel_list[num+2], yvel_list[num+2], zvel_list[num+2]))
-                atoms.append(Atom(x, y+right_h, z+right_h, xvel_list[num+3], yvel_list[num+3], zvel_list[num+3]))
+                atoms.append(Atom(x, y, z, xvel_list[num], yvel_list[num], zvel_list[num], 2))
+                atoms.append(Atom(x+right_h, y+right_h, z, xvel_list[num+1], yvel_list[num+1], zvel_list[num+1], 2))
+                atoms.append(Atom(x+right_h, y, z+right_h, xvel_list[num+2], yvel_list[num+2], zvel_list[num+2], 2))
+                atoms.append(Atom(x, y+right_h, z+right_h, xvel_list[num+3], yvel_list[num+3], zvel_list[num+3], 2))
                 num+=4
                 
 def make_file(filename, atoms, length):
@@ -91,13 +88,14 @@ def make_file(filename, atoms, length):
 
 
 atoms = []
-left_num = 30*30*30*4
-right_num = 0
-left_density = 0.8
-right_density = 0.0
-volume = left_num/left_density
+half_volume = 20*20*20
+left_num = 10*10*10*4
+right_num = 5*5*5*4
+left_density = left_num/half_volume
+right_density = right_num/half_volume
+volume = half_volume*2
 length = math.pow(volume, 1/3)
-add_ball(atoms, left_num, right_num, length)
+add_ball(atoms, left_num, right_num, length, volume)
 make_file("atoms/ln{}-rn{}-ld{}-rd{}.atoms".format(left_num,right_num, left_density, right_density), atoms, length)
 
 #速度平均が≒0になっていることの確認
