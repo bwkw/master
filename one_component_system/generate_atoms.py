@@ -91,7 +91,7 @@ def make_file(filename, atoms, length):
 
 
 atoms = []
-left_num = 15*15*15*4
+left_num = 30*30*30*4
 right_num = 0
 left_density = 0.8
 right_density = 0.0
