@@ -73,7 +73,7 @@ def make_file(filename, atoms, length):
     with open(filename, "w") as f:
         f.write("Position Data\n\n")
         f.write("{} atoms\n".format(len(atoms)))
-        f.write("1 atom types\n\n")
+        f.write("2 atom types\n\n")
         f.write("0.0 {} xlo xhi\n".format(length*2))
         f.write("0.0 {} ylo yhi\n".format(length))
         f.write("0.0 {} zlo zhi\n".format(length))
