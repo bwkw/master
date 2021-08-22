@@ -25,10 +25,10 @@ def loadfile(filename):
                 else:
                     type2_x_list.append(x)
         
-def makefile(filename, length, density_list):
+def makefile(filename, length, density_list1, density_list2):
     with open(filename, "w") as f:
-        for i in range(len(density_list)):
-            f.write("{} {}\n".format(round(float(0.001)*i, 3), density_list[i]))
+        for i in range(len(density_list1)):
+            f.write("{} {} {}\n".format(round(float(0.001)*i, 3), density_list1[i], density_list2[i]))
 
 half_volume = 20*20*20
 left_num = 10*10*10*4
@@ -66,8 +66,8 @@ for i in range(len(type2_x_list)):
 type1_density_list = list(map(lambda x: x/(0.001*length**3*2*5), type1_density_list))
 type2_density_list = list(map(lambda x: x/(0.001*length**3*2*5), type2_density_list))
 
-makefile("density/ty1-ln{}-rn{}-ld{}-rd{}-T{}.density".format(left_num, right_num, left_density, right_density, temperature), length, type1_density_list)
-makefile("density/ty2-ln{}-rn{}-ld{}-rd{}-T{}.density".format(left_num, right_num, left_density, right_density, temperature), length, type2_density_list)
+makefile("density/ln{}-rn{}-ld{}-rd{}-T{}.density".format(left_num, right_num, left_density, right_density, temperature), length, type1_density_list, type2_density_list)
+
 
 # liquid_density = 0
 # gas_density = 0
