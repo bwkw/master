@@ -23,6 +23,6 @@ left_num = 10*10*10*4
 right_num = 10*10*10*4
 left_density = left_num/half_volume
 right_density = right_num/half_volume
-temperature = 1.0
+temperature = 0.95
 volume = (left_num/left_density)*2
 make_file("in.melt/ln{}-rn{}-ld{}-rd{}-T{}.in".format(left_num, right_num, left_density, right_density, temperature), left_num, right_num, left_density, right_density, temperature)
