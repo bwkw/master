@@ -37,7 +37,7 @@ left_density = left_num/half_volume
 right_density = right_num/half_volume
 volume = half_volume*2
 length = math.pow(volume, 1/3)
-temperature = 0.9
+temperature = 1.1
 type1_x_list = []
 type2_x_list = []
 loadfile("dump.melt/ln{}-rn{}-ld{}-rd{}-T{}.dump".format(left_num, right_num, left_density, right_density, temperature))
