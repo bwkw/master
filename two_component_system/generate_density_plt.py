@@ -11,8 +11,8 @@ def make_file(filename, left_num, right_num, left_density, right_density, temper
         f.write("plot 'density/ln{0}-rn{1}-ld{2}-rd{3}-T{4}.density' u 1:2 title '粒子A', 'density/ln{0}-rn{1}-ld{2}-rd{3}-T{4}.density' u 1:3 title '粒子B',\n".format(left_num, right_num, left_density, right_density, temperature))
         
 half_volume = 20*20*20
-left_num = 10*10*10*4
-right_num = 10*10*10*4
+left_num = 11*11*11*4
+right_num = 11*11*11*4
 left_density = left_num/half_volume
 right_density = right_num/half_volume
 temperature = 1.1

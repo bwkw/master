@@ -16,7 +16,7 @@ def loadfile(filename):
                 continue
             elif re.match("ITEM: TIMESTEP", line):
                 a = 0
-            if ((a == 1) and ((b >= 197) and (b <= 201))):
+            if ((a == 1) and ((b >= 997) and (b <= 1001))):
                 line = line.split()
                 type = line[1]
                 x = line[2]
@@ -31,8 +31,8 @@ def makefile(filename, length, density_list1, density_list2):
             f.write("{} {} {}\n".format(round(float(0.001)*i, 3), density_list1[i], density_list2[i]))
 
 half_volume = 20*20*20
-left_num = 10*10*10*4
-right_num = 10*10*10*4
+left_num = 11*11*11*4
+right_num = 11*11*11*4
 left_density = left_num/half_volume
 right_density = right_num/half_volume
 volume = half_volume*2
