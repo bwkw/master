@@ -16,7 +16,7 @@ def loadfile(filename):
                 continue
             elif re.match("ITEM: TIMESTEP", line):
                 a = 0
-            if ((a == 1) and ((b >= 997) and (b <= 1001))):
+            if ((a == 1) and ((b >= 330) and (b <= 334))):
                 line = line.split()
                 type = line[1]
                 x = line[2]
@@ -37,7 +37,7 @@ left_density = left_num/half_volume
 right_density = right_num/half_volume
 volume = half_volume*2
 length = math.pow(volume, 1/3)
-temperature = 1.1
+temperature = 1.05
 type1_x_list = []
 type2_x_list = []
 loadfile("dump.melt/ln{}-rn{}-ld{}-rd{}-T{}.dump".format(left_num, right_num, left_density, right_density, temperature))
