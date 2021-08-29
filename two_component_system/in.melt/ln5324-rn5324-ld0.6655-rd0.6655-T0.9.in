@@ -12,11 +12,11 @@ timestep        0.001
 
 pair_style lj/cut 3.0
 pair_coeff 1 1 1.0 1.0 3.0
-pair_coeff 1 2 1.05 0.9 3.0
+pair_coeff 1 2 1.0 0.5 1.12246
 pair_coeff 2 2 1.0 1.0 3.0
 
 fix 1 all nvt temp 0.9 0.9 0.01
 
 dump id all atom 1000 dump.melt/ln5324-rn5324-ld0.6655-rd0.6655-T0.9.dump
 
-run 1000000
+run 500000
