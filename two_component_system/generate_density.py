@@ -36,11 +36,14 @@ right_num = 11*11*11*4
 left_density = left_num/half_volume
 right_density = right_num/half_volume
 volume = half_volume*2
-length = math.pow(volume, 1/3)
-temperature = 1.5
+length = math.pow(half_volume, 1/3)
+temperature = 0.9
 type1_x_list = []
 type2_x_list = []
 loadfile("dump.melt/ln{}-rn{}-ld{}-rd{}-T{}.dump".format(left_num, right_num, left_density, right_density, temperature))
+
+print(len(type1_x_list)) #26620
+print(len(type2_x_list)) #26620
 
 x_interval = 0.001
 x_interval_num = int(1/float(x_interval))
