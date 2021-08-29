@@ -93,7 +93,7 @@ left_density = left_num/half_volume
 right_density = right_num/half_volume
 volume = half_volume*2
 length = round(math.pow(half_volume, 1/3))
-add_ball(atoms, left_num, right_num, length, volume)
+add_ball(atoms, left_num, right_num, length)
 make_file("atoms/ln{}-rn{}-ld{}-rd{}.atoms".format(left_num, right_num, left_density, right_density), atoms, length)
 
 #速度平均が≒0になっていることの確認
