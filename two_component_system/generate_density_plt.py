@@ -15,6 +15,6 @@ left_num = 11*11*11*4
 right_num = 11*11*11*4
 left_density = left_num/half_volume
 right_density = right_num/half_volume
-temperature = 1.5
+temperature = 0.9
 
 make_file("make_plt/ln{}-rn{}-ld{}-rd{}-T{}.plt".format(left_num, right_num, left_density, right_density, temperature), left_num, right_num, left_density, right_density, temperature)
