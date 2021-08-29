@@ -14,11 +14,9 @@ class Atom:
         self.type = type
 
 
-def add_ball(atoms, left_num, right_num, length, volume):
+def add_ball(atoms, left_num, right_num, length):
     left_n = round((left_num/4)**(1/3))
     right_n = round((right_num/4)**(1/3))
-    left_density = left_num/volume
-    right_density = right_num/volume
     left_s = length/left_n
     if right_n != 0:
         right_s = length/right_n
@@ -94,9 +92,9 @@ right_num = 11*11*11*4
 left_density = left_num/half_volume
 right_density = right_num/half_volume
 volume = half_volume*2
-length = math.pow(volume, 1/3)
+length = round(math.pow(half_volume, 1/3))
 add_ball(atoms, left_num, right_num, length, volume)
-make_file("atoms/ln{}-rn{}-ld{}-rd{}.atoms".format(left_num,right_num, left_density, right_density), atoms, length)
+make_file("atoms/ln{}-rn{}-ld{}-rd{}.atoms".format(left_num, right_num, left_density, right_density), atoms, length)
 
 #速度平均が≒0になっていることの確認
 sum_a_vx = 0
