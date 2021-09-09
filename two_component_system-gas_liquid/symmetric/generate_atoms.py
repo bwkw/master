@@ -92,7 +92,7 @@ left_density_a = left_num_a/half_volume
 left_density_b = left_num_b/half_volume
 length = round(math.pow(half_volume, 1/3))
 add_ball(atoms, left_num_a, left_num_b, length)
-make_file("atoms/ln{}-rn{}-ld{}-rd{}.atoms".format(left_num_a, left_num_b, left_density_a, left_density_b), atoms, length)
+make_file("atoms/lna{}-lnb{}-lda{}-ldb{}.atoms".format(left_num_a, left_num_b, left_density_a, left_density_b), atoms, length)
 
 #速度平均が≒0になっていることの確認
 sum_a_vx = 0
