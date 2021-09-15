@@ -82,9 +82,9 @@ def add_ball(atoms, left_num_a, left_num_b, length):
                 y = 0.5+iy*left_s_b
                 z = 0.5+iz*left_s_b
                 atoms.append(Atom(x, y, z, b_xvel_list[num], yvel_list[num], zvel_list[num], 2))
-                atoms.append(Atom(x+left_h_b, y+left_h_b, z, b_xvel_list[num+1], yvel_list[num+1], zvel_list[num+1], 2))
-                atoms.append(Atom(x+left_h_b, y, z+left_h_b, b_xvel_list[num+2], yvel_list[num+2], zvel_list[num+2], 2))
-                atoms.append(Atom(x, y+left_h_b, z+left_h_b, b_xvel_list[num+3], yvel_list[num+3], zvel_list[num+3], 2))
+                atoms.append(Atom(x+left_h_b, y+left_h_b, z, b_xvel_list[num+1], b_yvel_list[num+1], b_zvel_list[num+1], 2))
+                atoms.append(Atom(x+left_h_b, y, z+left_h_b, b_xvel_list[num+2], b_yvel_list[num+2], b_zvel_list[num+2], 2))
+                atoms.append(Atom(x, y+left_h_b, z+left_h_b, b_xvel_list[num+3], b_yvel_list[num+3], b_zvel_list[num+3], 2))
                 num+=4
                 
 def make_file(filename, atoms, length):
