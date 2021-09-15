@@ -21,25 +21,47 @@ def add_ball(atoms, left_num_a, left_num_b, length):
     left_s_b = (length-1)/left_n_b
     left_h_a = left_s_a/2
     left_h_b = left_s_b/2
-    xvel_list = [0] * (4*(left_n_a**3+left_n_b**3))
-    yvel_list = [0] * (4*(left_n_a**3+left_n_b**3))
-    zvel_list = [0] * (4*(left_n_a**3+left_n_b**3))
-    print(len(xvel_list))
-    for i in range(len(xvel_list)):
+
+    # 粒子Aの速度平均を0にする
+    a_xvel_list = [0] * (4*(left_n_a**3))
+    a_yvel_list = [0] * (4*(left_n_a**3))
+    a_zvel_list = [0] * (4*(left_n_a**3))
+    for i in range(len(a_xvel_list)):
         random_x = random.uniform(-1, 1)
-        xvel_list[i] = random_x
-    for i in range(len(yvel_list)):
+        a_xvel_list[i] = random_x
+    for i in range(len(a_yvel_list)):
         random_y = random.uniform(-1, 1) 
-        yvel_list[i] = random_y
-    for i in range(len(zvel_list)):
+        a_yvel_list[i] = random_y
+    for i in range(len(a_zvel_list)):
         random_z = random.uniform(-1, 1)
-        zvel_list[i] = random_z
-    xvel_list_av = sum(xvel_list)/len(xvel_list)
-    yvel_list_av = sum(yvel_list)/len(yvel_list)
-    zvel_list_av = sum(zvel_list)/len(zvel_list)  
-    xvel_list = list(map(lambda x: x - xvel_list_av, xvel_list))
-    yvel_list = list(map(lambda y: y - yvel_list_av, yvel_list))
-    zvel_list = list(map(lambda z: z - zvel_list_av, zvel_list))
+        a_zvel_list[i] = random_z
+    a_xvel_list_av = sum(a_xvel_list)/len(a_xvel_list)
+    a_yvel_list_av = sum(a_yvel_list)/len(a_yvel_list)
+    a_zvel_list_av = sum(a_zvel_list)/len(a_zvel_list)  
+    a_xvel_list = list(map(lambda x: x - a_xvel_list_av, a_xvel_list))
+    a_yvel_list = list(map(lambda y: y - a_yvel_list_av, a_yvel_list))
+    a_zvel_list = list(map(lambda z: z - a_zvel_list_av, a_zvel_list))
+
+    # 粒子Bの速度平均を0にする
+    b_xvel_list = [0] * (4*(left_n_b**3))
+    b_yvel_list = [0] * (4*(left_n_b**3))
+    b_zvel_list = [0] * (4*(left_n_b**3))
+    for i in range(len(b_xvel_list)):
+        random_x = random.uniform(-1, 1)
+        b_xvel_list[i] = random_x
+    for i in range(len(b_yvel_list)):
+        random_y = random.uniform(-1, 1) 
+        b_yvel_list[i] = random_y
+    for i in range(len(b_zvel_list)):
+        random_z = random.uniform(-1, 1)
+        b_zvel_list[i] = random_z
+    b_xvel_list_av = sum(b_xvel_list)/len(b_xvel_list)
+    b_yvel_list_av = sum(b_yvel_list)/len(b_yvel_list)
+    b_zvel_list_av = sum(b_zvel_list)/len(b_zvel_list)  
+    b_xvel_list = list(map(lambda x: x - b_xvel_list_av, b_xvel_list))
+    b_yvel_list = list(map(lambda y: y - b_yvel_list_av, b_yvel_list))
+    b_zvel_list = list(map(lambda z: z - b_zvel_list_av, b_zvel_list))
+
     num=0
     for ix in range(0, left_n_a):
         for iy in range(0, left_n_a):
@@ -47,22 +69,22 @@ def add_ball(atoms, left_num_a, left_num_b, length):
                 x = 1+ix*left_s_a
                 y = 1+iy*left_s_a
                 z = 1+iz*left_s_a
-                atoms.append(Atom(x, y, z, xvel_list[num], yvel_list[num], zvel_list[num], 1))
-                atoms.append(Atom(x+left_h_a, y+left_h_a, z, xvel_list[num+1], yvel_list[num+1], zvel_list[num+1], 1))
-                atoms.append(Atom(x+left_h_a, y, z+left_h_a, xvel_list[num+2], yvel_list[num+2], zvel_list[num+2], 1))
-                atoms.append(Atom(x, y+left_h_a, z+left_h_a, xvel_list[num+3], yvel_list[num+3], zvel_list[num+3], 1))
+                atoms.append(Atom(x, y, z, a_xvel_list[num], a_yvel_list[num], a_zvel_list[num], 1))
+                atoms.append(Atom(x+left_h_a, y+left_h_a, z, a_xvel_list[num+1], a_yvel_list[num+1], a_zvel_list[num+1], 1))
+                atoms.append(Atom(x+left_h_a, y, z+left_h_a, a_xvel_list[num+2], a_yvel_list[num+2], a_zvel_list[num+2], 1))
+                atoms.append(Atom(x, y+left_h_a, z+left_h_a, a_xvel_list[num+3], a_yvel_list[num+3], a_zvel_list[num+3], 1))
                 num+=4
-    print(num)
+    num=0
     for ix in range(0, left_n_b):
         for iy in range(0, left_n_b):
             for iz in range(0, left_n_b):
                 x = 0.5+ix*left_s_b
                 y = 0.5+iy*left_s_b
                 z = 0.5+iz*left_s_b
-                atoms.append(Atom(x, y, z, xvel_list[num], yvel_list[num], zvel_list[num], 2))
-                atoms.append(Atom(x+left_h_b, y+left_h_b, z, xvel_list[num+1], yvel_list[num+1], zvel_list[num+1], 2))
-                atoms.append(Atom(x+left_h_b, y, z+left_h_b, xvel_list[num+2], yvel_list[num+2], zvel_list[num+2], 2))
-                atoms.append(Atom(x, y+left_h_b, z+left_h_b, xvel_list[num+3], yvel_list[num+3], zvel_list[num+3], 2))
+                atoms.append(Atom(x, y, z, b_xvel_list[num], b_yvel_list[num], b_zvel_list[num], 2))
+                atoms.append(Atom(x+left_h_b, y+left_h_b, z, b_xvel_list[num+1], b_yvel_list[num+1], b_zvel_list[num+1], 2))
+                atoms.append(Atom(x+left_h_b, y, z+left_h_b, b_xvel_list[num+2], b_yvel_list[num+2], b_zvel_list[num+2], 2))
+                atoms.append(Atom(x, y+left_h_b, z+left_h_b, b_xvel_list[num+3], b_yvel_list[num+3], b_zvel_list[num+3], 2))
                 num+=4
                 
 def make_file(filename, atoms, length):
@@ -94,7 +116,7 @@ length = round(math.pow(half_volume, 1/3))
 add_ball(atoms, left_num_a, left_num_b, length)
 make_file("atoms/lna{}-lnb{}-lda{}-ldb{}.atoms".format(left_num_a, left_num_b, left_density_a, left_density_b), atoms, length)
 
-#速度平均が≒0になっていることの確認
+# 分子の速度平均が≒0になっていることの確認
 sum_a_vx = 0
 sum_a_vy = 0
 sum_a_vz = 0
@@ -108,7 +130,3 @@ for i, a in enumerate(atoms):
 av_sum_a_vx = sum_a_vx/num_a
 av_sum_a_vy = sum_a_vy/num_a
 av_sum_a_vz = sum_a_vz/num_a
-
-print(av_sum_a_vx)
-print(av_sum_a_vy)
-print(av_sum_a_vz)
