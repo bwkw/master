@@ -39,7 +39,7 @@ left_density_b = left_num_b/half_volume
 volume = half_volume*2
 length = round(math.pow(half_volume, 1/3))
 
-temperature = 0.9
+temperature = 0.8
 type1_x_list = []
 type2_x_list = []
 loadfile("dump.melt/lna{}-lnb{}-lda{}-ldb{}-T{}.dump".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature))
