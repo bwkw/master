@@ -23,5 +23,5 @@ left_num_a = 22*22*22*4
 left_num_b = 22*22*22*4
 left_density_a = left_num_a/half_volume
 left_density_b = left_num_b/half_volume
-temperature = 0.9
+temperature = 0.8
 make_file("in.melt/lna{}-lnb{}-lda{}-ldb{}-T{}.in".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature), left_num_a, left_num_b, left_density_a, left_density_b, temperature)
