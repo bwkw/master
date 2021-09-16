@@ -106,9 +106,9 @@ def make_file(filename, atoms, length):
 
 
 atoms = []
-half_volume = 20*20*20
-left_num_a = 11*11*11*4
-left_num_b = 11*11*11*4
+half_volume = 40*40*40
+left_num_a = 22*22*22*4
+left_num_b = 22*22*22*4
 right_num = 0
 left_density_a = left_num_a/half_volume
 left_density_b = left_num_b/half_volume
@@ -130,3 +130,7 @@ for i, a in enumerate(atoms):
 av_sum_a_vx = sum_a_vx/num_a
 av_sum_a_vy = sum_a_vy/num_a
 av_sum_a_vz = sum_a_vz/num_a
+
+print(av_sum_a_vx)
+print(av_sum_a_vy)
+print(av_sum_a_vz)
