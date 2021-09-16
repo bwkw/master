@@ -16,12 +16,12 @@ def make_file(filename, left_num_a, left_num_b, left_density_a, left_density_b, 
         f.write("pair_coeff 2 2 1.0 1.0 3.0\n\n")
         f.write("fix 1 all nvt temp {} {} 0.01\n\n".format(temperature, temperature))
         f.write("dump id all atom 1000 dump.melt/lna{}-lnb{}-lda{}-ldb{}-T{}.dump\n\n".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature))
-        f.write("run 500000")
+        f.write("run 1000000")
 
-half_volume = 20*20*20
-left_num_a = 11*11*11*4
-left_num_b = 11*11*11*4
+half_volume = 40*40*40
+left_num_a = 22*22*22*4
+left_num_b = 22*22*22*4
 left_density_a = left_num_a/half_volume
 left_density_b = left_num_b/half_volume
-temperature = 1.0
+temperature = 0.9
 make_file("in.melt/lna{}-lnb{}-lda{}-ldb{}-T{}.in".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature), left_num_a, left_num_b, left_density_a, left_density_b, temperature)
