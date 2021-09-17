@@ -10,13 +10,13 @@ def make_file(filename, left_num_a, left_num_b, left_density_a, left_density_b, 
         f.write("set key font 'Arial,16'\n")
         f.write("plot 'density/lna{0}-lnb{1}-lda{2}-ldb{3}-T{4}.density' u 1:2 title '粒子A', 'density/lna{0}-lnb{1}-lda{2}-ldb{3}-T{4}.density' u 1:3 title '粒子B',\n".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature))
         
-half_volume = 20*20*20
-left_num_a = 11*11*11*4
-left_num_b = 11*11*11*4
+half_volume = 40*40*40
+left_num_a = 22*22*22*4
+left_num_b = 22*22*22*4
 right_num = 0
 left_density_a = left_num_a/half_volume
 left_density_b = left_num_b/half_volume
 volume = half_volume*2
-temperature = 1.3
+temperature = 0.8
 
 make_file("make_plt/lna{}-lnb{}-lda{}-ldb{}-T{}.plt".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature), left_num_a, left_num_b, left_density_a, left_density_b, temperature)

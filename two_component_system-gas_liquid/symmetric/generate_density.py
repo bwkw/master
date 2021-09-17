@@ -16,7 +16,7 @@ def loadfile(filename):
                 continue
             elif re.match("ITEM: TIMESTEP", line):
                 a = 0
-            if ((a == 1) and ((b >= 497) and (b <= 501))):
+            if ((a == 1) and ((b >= 997) and (b <= 1001))):
                 line = line.split()
                 type = line[1]
                 x = line[2]
@@ -30,16 +30,16 @@ def makefile(filename, density_list1, density_list2):
         for i in range(len(density_list1)):
             f.write("{} {} {}\n".format(round(float(0.001)*i, 3), density_list1[i], density_list2[i]))
 
-half_volume = 20*20*20
-left_num_a = 11*11*11*4
-left_num_b = 11*11*11*4
+half_volume = 40*40*40
+left_num_a = 22*22*22*4
+left_num_b = 22*22*22*4
 right_num = 0
 left_density_a = left_num_a/half_volume
 left_density_b = left_num_b/half_volume
 volume = half_volume*2
 length = round(math.pow(half_volume, 1/3))
 
-temperature = 1.3
+temperature = 0.8
 type1_x_list = []
 type2_x_list = []
 loadfile("dump.melt/lna{}-lnb{}-lda{}-ldb{}-T{}.dump".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature))
