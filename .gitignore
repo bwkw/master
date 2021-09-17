@@ -8,3 +8,4 @@ temp.sh.*
 *.sh.*
 *.dat
 log.lammps
+dump.melt/*
