@@ -16,7 +16,7 @@ def loadfile(filename):
                 continue
             elif re.match("ITEM: TIMESTEP", line):
                 a = 0
-            if ((a == 1) and ((b >= 997) and (b <= 1001))):
+            if ((a == 1) and ((b >= 97) and (b <= 101))):
                 line = line.split()
                 type = line[1]
                 x = line[2]
@@ -39,7 +39,7 @@ left_density_b = left_num_b/half_volume
 volume = half_volume*2
 length = round(math.pow(half_volume, 1/3))
 
-temperature = 0.8
+temperature = 1.1
 type1_x_list = []
 type2_x_list = []
 loadfile("dump.melt/lna{}-lnb{}-lda{}-ldb{}-T{}.dump".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature))
