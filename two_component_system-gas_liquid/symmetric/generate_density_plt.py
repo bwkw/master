@@ -17,6 +17,6 @@ right_num = 0
 left_density_a = left_num_a/half_volume
 left_density_b = left_num_b/half_volume
 volume = half_volume*2
-temperature = 0.9
+temperature = 1.2
 
 make_file("make_plt/lna{}-lnb{}-lda{}-ldb{}-T{}.plt".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature), left_num_a, left_num_b, left_density_a, left_density_b, temperature)
