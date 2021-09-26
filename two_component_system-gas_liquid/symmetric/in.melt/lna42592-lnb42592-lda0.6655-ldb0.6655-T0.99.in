@@ -15,10 +15,10 @@ pair_coeff 1 1 1.0 1.0 3.0
 pair_coeff 1 2 1.05 0.9 3.0
 pair_coeff 2 2 1.0 1.0 3.0
 
-fix 1 all nvt temp 1.2 1.2 0.01
+fix 1 all nvt temp 0.99 0.99 0.01
 
 run 1000000
 
-dump id all atom 1000 dump.melt/lna42592-lnb42592-lda0.6655-ldb0.6655-T1.2.dump
+dump id all atom 1000 dump.melt/lna42592-lnb42592-lda0.6655-ldb0.6655-T0.99.dump
 
 run 5000
