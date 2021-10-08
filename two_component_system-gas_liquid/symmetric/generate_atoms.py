@@ -63,24 +63,24 @@ def add_ball(atoms, left_num_a, left_num_b, length):
     b_zvel_list = list(map(lambda z: z - b_zvel_list_av, b_zvel_list))
 
     num=0
-    for ix in range(1, left_n_a+1):
-        for iy in range(1, left_n_a+1):
-            for iz in range(1, left_n_a+1):
-                x = ix*left_s_a
-                y = iy*left_s_a
-                z = iz*left_s_a
+    for ix in range(0, left_n_a):
+        for iy in range(0, left_n_a):
+            for iz in range(0, left_n_a):
+                x = 0.5+ix*left_s_a
+                y = 0.5+iy*left_s_a
+                z = 0.5+iz*left_s_a
                 atoms.append(Atom(x, y, z, a_xvel_list[num], a_yvel_list[num], a_zvel_list[num], 1))
                 atoms.append(Atom(x+left_h_a, y+left_h_a, z, a_xvel_list[num+1], a_yvel_list[num+1], a_zvel_list[num+1], 1))
                 atoms.append(Atom(x+left_h_a, y, z+left_h_a, a_xvel_list[num+2], a_yvel_list[num+2], a_zvel_list[num+2], 1))
                 atoms.append(Atom(x, y+left_h_a, z+left_h_a, a_xvel_list[num+3], a_yvel_list[num+3], a_zvel_list[num+3], 1))
                 num+=4
     num=0
-    for ix in range(1, left_n_b+1):
-        for iy in range(1, left_n_b+1):
-            for iz in range(1, left_n_b+1):
-                x = ix*left_s_b
-                y = iy*left_s_b
-                z = iz*left_s_b
+    for ix in range(0, left_n_b):
+        for iy in range(0, left_n_b):
+            for iz in range(0, left_n_b):
+                x = 1.0+ix*left_s_b
+                y = 1.0+iy*left_s_b
+                z = 1.0+iz*left_s_b
                 atoms.append(Atom(x, y, z, b_xvel_list[num], b_yvel_list[num], b_zvel_list[num], 2))
                 atoms.append(Atom(x+left_h_b, y+left_h_b, z, b_xvel_list[num+1], b_yvel_list[num+1], b_zvel_list[num+1], 2))
                 atoms.append(Atom(x+left_h_b, y, z+left_h_b, b_xvel_list[num+2], b_yvel_list[num+2], b_zvel_list[num+2], 2))
