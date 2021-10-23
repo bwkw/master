@@ -31,15 +31,16 @@ def makefile(filename, density_list1, density_list2):
             f.write("{} {} {}\n".format(round(float(0.001)*i, 3), density_list1[i], density_list2[i]))
 
 half_volume = 40*40*40
-left_num_a = 22*22*22*4
-left_num_b = 22*22*22*4
+left_num = 22*22*22*4
+left_num_a_ratio = 0.9
+left_num_a = round(left_num * left_num_a_ratio)
+left_num_b = left_num - left_num_a
 right_num = 0
 left_density_a = left_num_a/half_volume
 left_density_b = left_num_b/half_volume
-volume = half_volume*2
+temperature = 0.9
 length = round(math.pow(half_volume, 1/3))
 
-temperature = 1.2
 type1_x_list = []
 type2_x_list = []
 loadfile("dump.melt/lna{}-lnb{}-lda{}-ldb{}-T{}.dump".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature))

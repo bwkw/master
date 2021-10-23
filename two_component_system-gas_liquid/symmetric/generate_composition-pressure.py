@@ -2,32 +2,47 @@
 
 import os
 import re
+import sys
+import generate_density
 
-def loadfile(filename, a_gas_density_list, a_liquid_density_list, b_gas_density_list, b_liquid_density_list):
+sys.path.append("/Users/naitoshota/Documents/search/master/two_component_system-gas_liquid/symmetric/")
+a_density_list = generate_density.type1_density_list
+b_density_list = generate_density.type2_density_list
+
+def create_density_1000(filename, a_density_list_1000, b_density_list_1000):
     with open(filename) as f:
-            for line in f:
-                line = line.split(' ')
-                line[2] = line[2].replace('\n', '')
-                if ((float(line[0])>=0.2) and (float(line[0])<=0.3)):
-                    a_gas_density_list.append(float(line[1]))
-                    b_gas_density_list.append(float(line[2]))
-                if ((float(line[0])>=0.5) and (float(line[0])<=0.9)):
-                    a_liquid_density_list.append(float(line[1]))
-                    b_liquid_density_list.append(float(line[2]))
+        for line in f:
+            line = line.split(' ')
+            line[2] = line[2].replace('\n', '')
+            a_density_list_1000.append(float(line[1]))
+            b_density_list_1000.append(float(line[2]))
+
+def create_density_10(a_density_list_10, b_density_list_10, a_density_list_1000, b_density_list_1000):
+    for i in range(10):
+        first = 100*i
+        last = 100*(i+1)
+        a_ave_density = sum(a_density_list_1000[first:last])/len(a_density_list_1000[first:last])
+        b_ave_density = sum(b_density_list_1000[first:last])/len(b_density_list_1000[first:last])
+        a_density_list_10.append(a_ave_density)
+        b_density_list_10.append(b_ave_density)
+
+def makefile(filename, a_composition_ratio, a_gas_density, b_gas_density):
+    with open(filename, "a") as f:
+        f.write("{} {} {}\n".format(a_composition_ratio, a_gas_density, b_gas_density))
 
 
-# aを22*22*22*4で固定して、bの組成割合を変えていく感じかな
-files = os.listdir("density/")
+files = os.listdir("density_azeotrope_curve/")
 
 for filename in files:
+    a_density_list_1000 = []
+    b_density_list_1000 = []
+    create_density_1000("density_azeotrope_curve/"+filename, a_density_list_1000, b_density_list_1000)
+    a_density_list_10 = []
+    b_density_list_10 = []
+    create_density_10(a_density_list_10, b_density_list_10, a_density_list_1000, b_density_list_1000)
+    a_gas_density = min(a_density_list_10)
+    b_gas_density = min(b_density_list_10)
     result = re.findall(r"\d+", filename)
     a_composition_ratio = (int(result[0]))/(int(result[0])+int(result[1]))
-    a_gas_density_list = []
-    a_liquid_density_list = []
-    b_gas_density_list = []
-    b_liquid_density_list = []
-    loadfile("density/"+filename, a_gas_density_list, a_liquid_density_list, b_gas_density_list, b_liquid_density_list)
-    a_gas_density = sum(a_gas_density_list)/len(a_gas_density_list)
-    b_gas_density = sum(b_gas_density_list)/len(b_gas_density_list)
-    print(filename)
-    print(a_gas_density)
+    makefile("density_azeotrope_curve.dat", a_composition_ratio, a_gas_density, b_gas_density)
+    
