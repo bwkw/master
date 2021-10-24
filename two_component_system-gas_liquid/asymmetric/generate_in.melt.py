@@ -21,7 +21,7 @@ def make_file(filename, left_num_a, left_num_b, left_density_a, left_density_b, 
 
 half_volume = 40*40*40
 left_num = 22*22*22*4
-left_num_a_ratio = 0.4
+left_num_a_ratio = 0.9
 left_num_a = round(left_num * left_num_a_ratio)
 left_num_b = left_num - left_num_a
 right_num = 0
