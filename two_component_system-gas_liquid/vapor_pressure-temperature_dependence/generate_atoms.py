@@ -2,6 +2,7 @@
 
 import math
 import random
+import sys
 
 class Atom:
     def __init__(self, x, y, z, xvel, yvel, zvel, type):
@@ -77,7 +78,7 @@ def make_file(filename, atoms, length):
 atoms = []
 half_volume = 40*40*40
 left_num = 22*22*22*4
-left_num_a_ratio = 0.1
+left_num_a_ratio = sys.argv[1]
 left_num_a = round(left_num * left_num_a_ratio)
 left_num_b = left_num - left_num_a
 right_num = 0
