@@ -4,7 +4,7 @@ import sys
 
 def make_file(filename, left_num_a, left_num_b, left_density_a, left_density_b, temperature):
     with open(filename, "a") as f:      
-        f.write("/home/apps/lammps/lmp_serial < in.melt/T{}/lna{}-lnb{}-lda{}-ldb{}\n".format(temperature, left_num_a, left_num_b, left_density_a, left_density_b))
+        f.write("/home/apps/lammps/lmp_serial < in.melt/T{}/lna{}-lnb{}-lda{}-ldb{}.in\n".format(temperature, left_num_a, left_num_b, left_density_a, left_density_b))
 
 temperature = float(sys.argv[1])
 for i in range(1,20):
