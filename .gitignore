@@ -10,3 +10,4 @@ temp.sh.*
 log.lammps
 dump.melt/*
 log.md
+cps/*
