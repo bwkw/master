@@ -1,0 +1,24 @@
+units lj
+atom_style atomic
+boundary p p p
+
+read_data atoms/lna38333-lnb4259-lda0.598953125-ldb0.066546875.atoms
+
+mass 1 1.0
+mass 2 1.0
+
+reset_timestep  0
+timestep        0.001
+
+pair_style lj/cut 3.0
+pair_coeff 1 1 1.0 1.0 3.0
+pair_coeff 1 2 1.05 0.9 3.0
+pair_coeff 2 2 1.15 1.0 3.0
+
+fix 1 all nvt temp 0.8 0.8 0.01
+
+run 200000
+
+dump id all atom 1000 dump.melt/T0.8/lna38333-lnb4259-lda0.598953125-ldb0.066546875.dump
+
+run 5000
