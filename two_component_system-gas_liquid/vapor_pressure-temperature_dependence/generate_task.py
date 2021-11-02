@@ -1,3 +1,5 @@
+# コマンドライン引数二つ目で温度を指定
+
 import sys
 
 def make_file(filename, temperature):
