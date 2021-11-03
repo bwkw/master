@@ -3,6 +3,7 @@
 # コマンドライン引数二つ目で温度を指定
 
 import math
+import os
 import sys
 
 def make_file(filename, left_num_a, left_num_b, left_density_a, left_density_b, temperature):
@@ -34,4 +35,8 @@ for i in range(1, int(sys.argv[1])):
     left_density_a = left_num_a/half_volume
     left_density_b = left_num_b/half_volume
     temperature = float(sys.argv[2])
+
+    if not os.path.exists('in.melt/T{}'.format(temperature)):
+        os.mkdir(('in.melt/T{}'.format(temperature)))
+
     make_file("in.melt/T{}/lna{}-lnb{}-lda{}-ldb{}.in".format(temperature, left_num_a, left_num_b, left_density_a, left_density_b), left_num_a, left_num_b, left_density_a, left_density_b, temperature)
