@@ -1,7 +1,12 @@
 # dumpファイルから密度を計算する
+# コマンドライン引数一つ目で組成割合を何分割するかを指定
+# 例）20と入力すると、0.05,0.1,....0.95
+# コマンドライン引数二つ目で温度を指定
 
-import re
 import math
+import os
+import re
+import sys
 
 def loadfile(filename):
     with open(filename) as f:
@@ -20,7 +25,7 @@ def loadfile(filename):
                 line = line.split()
                 type = line[1]
                 x = line[2]
-                if type=="1":
+                if type == "1":
                     type1_x_list.append(x)
                 else:
                     type2_x_list.append(x)
@@ -32,59 +37,43 @@ def makefile(filename, density_list1, density_list2):
 
 half_volume = 40*40*40
 left_num = 22*22*22*4
-left_num_a_ratio = 0.9
-left_num_a = round(left_num * left_num_a_ratio)
-left_num_b = left_num - left_num_a
-right_num = 0
-left_density_a = left_num_a/half_volume
-left_density_b = left_num_b/half_volume
-temperature = 0.9
-length = round(math.pow(half_volume, 1/3))
+for i in range(1, int(sys.argv[1])):
+    left_num_a_ratio = (1/int(sys.argv[1])) * int(i)
+    left_num_a = round(left_num * left_num_a_ratio)
+    left_num_b = left_num - left_num_a
+    right_num = 0
+    left_density_a = left_num_a/half_volume
+    left_density_b = left_num_b/half_volume
+    temperature = float(sys.argv[2])
+    type1_x_list = []
+    type2_x_list = []
+    loadfile("dump.melt/T{}/lna{}-lnb{}-lda{}-ldb{}.dump".format(temperature, left_num_a, left_num_b, left_density_a, left_density_b))
 
-type1_x_list = []
-type2_x_list = []
-loadfile("dump.melt/lna{}-lnb{}-lda{}-ldb{}-T{}.dump".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature))
+    x_interval = 0.001
+    x_interval_num = int(1/float(x_interval))
+    type1_density_list = [0]*(x_interval_num)
+    type2_density_list = [0]*(x_interval_num)
 
-x_interval = 0.001
-x_interval_num = int(1/float(x_interval))
-type1_density_list = [0]*(x_interval_num)
-type2_density_list = [0]*(x_interval_num)
+    for i in range(len(type1_x_list)):
+        x = float(type1_x_list[i])
+        if x < 1:
+            density_position = math.floor(float(x)/float(0.001))
+            type1_density_list[density_position] += 1
+        elif x == 1:
+            type1_density_list[999] += 1
 
-for i in range(len(type1_x_list)):
-    x = float(type1_x_list[i])
-    if x < 1:
-        density_position = math.floor(float(x)/float(0.001))
-        type1_density_list[density_position] += 1
-    elif x == 1:
-        type1_density_list[999] += 1
+    for i in range(len(type2_x_list)):
+        x = float(type2_x_list[i])
+        if x < 1:
+            density_position = math.floor(float(x)/float(0.001))
+            type2_density_list[density_position] += 1
+        elif x == 1:
+            type2_density_list[999] += 1
 
-for i in range(len(type2_x_list)):
-    x = float(type2_x_list[i])
-    if x < 1:
-        density_position = math.floor(float(x)/float(0.001))
-        type2_density_list[density_position] += 1
-    elif x == 1:
-        type2_density_list[999] += 1
+    type1_density_list = list(map(lambda x: x/(0.001*half_volume*2*5), type1_density_list))
+    type2_density_list = list(map(lambda x: x/(0.001*half_volume*2*5), type2_density_list))
 
-type1_density_list = list(map(lambda x: x/(0.001*length**3*2*5), type1_density_list))
-type2_density_list = list(map(lambda x: x/(0.001*length**3*2*5), type2_density_list))
-
-makefile("density/lna{}-lnb{}-lda{}-ldb{}-T{}.density".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature), type1_density_list, type2_density_list)
-
-
-# liquid_density = 0
-# gas_density = 0
-# for i in range(100, 401):
-#     liquid_density += density_list[i]
-
-# for i in range(600, 901):
-#     gas_density += density_list[i]
-
-# ave_liquid_density = liquid_density/300
-# ave_gas_density = gas_density/300
-# ave_gas_liquid_density = (ave_gas_density + ave_liquid_density)/2
-
-# print("temperature:{}".format(temperature))
-# print("liquid_density:{}".format(ave_liquid_density))
-# print("gas_density:{}".format(ave_gas_density))
-# print("ave_density:{}".format(ave_gas_liquid_density))
+    if not os.path.exists('density/T{}'.format(temperature)):
+        os.mkdir(('density/T{}'.format(temperature)))
+    
+    makefile("density/T{}/lna{}-lnb{}-lda{}-ldb{}.density".format(temperature, left_num_a, left_num_b, left_density_a, left_density_b), type1_density_list, type2_density_list)
