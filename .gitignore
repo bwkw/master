@@ -11,3 +11,4 @@ log.lammps
 dump.melt/*
 log.md
 cps
+cps.log
