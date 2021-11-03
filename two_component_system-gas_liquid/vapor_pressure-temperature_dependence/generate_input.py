@@ -21,6 +21,7 @@ def make_file(filename, left_num_a, left_num_b, left_density_a, left_density_b, 
         f.write("pair_coeff 2 2 1.15 1.0 3.0\n\n")
         f.write("fix 1 all nvt temp {0} {0} 0.01\n\n".format(temperature))
         f.write("run 200000\n\n")
+        f.write("thermo 1000\n")
         f.write("thermo_style custom time temp press\n\n")
         f.write("run 5000")
 
