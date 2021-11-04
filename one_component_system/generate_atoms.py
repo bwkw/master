@@ -89,16 +89,15 @@ def make_file(filename, atoms, length):
         for i, a in enumerate(atoms):
             f.write("{} {} {} {}\n".format(i+1, a.vx, a.vy, a.vz))
 
-
+half_volume = 40*40*40
 atoms = []
-left_num = 30*30*30*4
+left_num = 22*22*22*4
 right_num = 0
-left_density = 0.8
-right_density = 0.0
-volume = left_num/left_density
-length = math.pow(volume, 1/3)
+left_density = left_num/half_volume
+right_density = 0
+length = math.pow(half_volume, 1/3)
 add_ball(atoms, left_num, right_num, length)
-make_file("atoms/ln{}-rn{}-ld{}-rd{}.atoms".format(left_num,right_num, left_density, right_density), atoms, length)
+make_file("atoms/ln{}-rn{}-ld{}-rd{}.atoms".format(left_num, right_num, left_density, right_density), atoms, length)
 
 #速度平均が≒0になっていることの確認
 sum_a_vx = 0
