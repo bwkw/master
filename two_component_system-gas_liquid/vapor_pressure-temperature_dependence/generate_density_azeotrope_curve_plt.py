@@ -7,7 +7,7 @@ def make_file(filename, temperature):
         f.write("set term pdf\n")
         f.write("set out 'density_azeotrope_curve_img/T{}.pdf'\n".format(temperature))
         f.write("set xlabel '{/Arial-Italic a-composition-ratio}'\n")
-        f.write("set ylabel '{/Arial-Italic density}'\n")
+        f.write("set ylabel '{/Arial-Italic vapor-pressure}'\n")
         f.write("set xlabel font 'Arial,15'\n")
         f.write("set ylabel font 'Arial,15'\n")
         f.write("set xrange [0.0:1.0]\n")

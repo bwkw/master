@@ -41,5 +41,5 @@ for filename in files:
     b_gas_density = min(b_density_list_10)
     result = re.findall(r"\d+", filename)
     a_composition_ratio = (int(result[0]))/(int(result[0])+int(result[1]))
-    makefile("density_azeotrope_curve_dat/T{}.dat".format(temperature), a_composition_ratio, a_gas_density, b_gas_density)
+    makefile("density_azeotrope_curve_dat/T{}.dat".format(temperature), a_composition_ratio, a_gas_density*temperature, b_gas_density*temperature)
     
