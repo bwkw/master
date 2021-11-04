@@ -11,7 +11,6 @@ def make_file(filename, left_num, right_num, left_density, right_density, temper
         f.write("timestep        0.001\n\n")
         f.write("pair_style lj/cut 3.0\n")
         f.write("pair_coeff 1 1 1.0 1.0 3.0\n\n")
-        f.write("fix 1 all nvt temp {} {} 0.01\n\n".format(temperature,temperature))
         f.write("fix 1 all nvt temp {0} {0} 0.01\n\n".format(temperature))
         f.write("run 200000\n\n")
         f.write("thermo 1000\n")
@@ -25,5 +24,5 @@ right_num = 0
 left_density = left_num/half_volume
 right_density = 0
 length = math.pow(half_volume, 1/3)
-temperature = 0.7
+temperature = 1.0
 make_file("input/ln{}-rn{}-ld{}-rd{}-T{}.input".format(left_num, right_num, left_density, right_density, temperature), left_num, right_num, left_density, right_density, temperature)
