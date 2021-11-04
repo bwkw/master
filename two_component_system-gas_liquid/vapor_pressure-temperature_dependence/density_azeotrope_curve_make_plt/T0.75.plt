@@ -1,7 +1,7 @@
 set term pdf
 set out 'density_azeotrope_curve_img/T0.75.pdf'
 set xlabel '{/Arial-Italic a-composition-ratio}'
-set ylabel '{/Arial-Italic density}'
+set ylabel '{/Arial-Italic vapor-pressure}'
 set xlabel font 'Arial,15'
 set ylabel font 'Arial,15'
 set xrange [0.0:1.0]
