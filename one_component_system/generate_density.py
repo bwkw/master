@@ -16,7 +16,7 @@ def loadfile(filename):
                 continue
             elif re.match("ITEM: TIMESTEP", line):
                 a = 0
-            if ((a == 1) and ((b >= 197) and (b <= 201))):
+            if ((a == 1) and ((b >= 2) and (b <= 6))):
                 line = line.split()
                 x = line[2]
                 x_list.append(x)
@@ -26,13 +26,13 @@ def makefile(filename, length):
         for i in range(len(density_list)):
             f.write("{} {}\n".format(round(float(0.001)*i, 3), density_list[i]))
 
-left_num = 30*30*30*4
+half_volume = 40*40*40
+left_num = 22*22*22*4
 right_num = 0
-left_density = 0.8
-right_density = 0.0
-temperature = 0.95
-volume = left_num/left_density
-length = math.pow(volume, 1/3)
+left_density = left_num/half_volume
+right_density = 0
+length = math.pow(half_volume, 1/3)
+temperature = 1.0
 line_list = []
 x_list = []
 loadfile("dump.melt/ln{}-rn{}-ld{}-rd{}-T{}.dump".format(left_num, right_num, left_density, right_density, temperature))
