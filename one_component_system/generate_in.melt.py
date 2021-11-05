@@ -24,4 +24,4 @@ left_density = left_num/half_volume
 right_density = 0
 length = math.pow(half_volume, 1/3)
 temperature = 1.0
-make_file("in.melt/ln{}-rn{}-ld{}-rd{}-T{}.in".format(left_num, right_num, left_density, right_density, temperature), left_num, right_num, left_density, right_density, temperature)
+make_file("in.melt/ln{}-rn{}-ld{}-rd{}-T{}-test.in".format(left_num, right_num, left_density, right_density, temperature), left_num, right_num, left_density, right_density, temperature)
