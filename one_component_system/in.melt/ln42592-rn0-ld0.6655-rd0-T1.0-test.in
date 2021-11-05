@@ -1,0 +1,21 @@
+units lj
+atom_style atomic
+boundary p p p
+
+read_data atoms/ln42592-rn0-ld0.6655-rd0.atoms
+
+mass 1 1.0
+
+reset_timestep  0
+timestep        0.001
+
+pair_style lj/cut 3.0
+pair_coeff 1 1 1.0 1.0 3.0
+
+fix 1 all nvt temp 1.0 1.0 0.01
+
+run 180000
+
+dump id all atom 1000 dump.melt/ln42592-rn0-ld0.6655-rd0-T1.0-test.dump
+
+run 25000
