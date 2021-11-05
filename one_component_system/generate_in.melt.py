@@ -12,9 +12,9 @@ def make_file(filename, left_num, right_num, left_density, right_density, temper
         f.write("pair_style lj/cut 3.0\n")
         f.write("pair_coeff 1 1 1.0 1.0 3.0\n\n")
         f.write("fix 1 all nvt temp {} {} 0.01\n\n".format(temperature, temperature))
-        f.write("run 200000\n\n")
-        f.write("dump id all atom 1000 dump.melt/ln{}-rn{}-ld{}-rd{}-T{}.dump\n\n".format(left_num, right_num, left_density, right_density, temperature))
-        f.write("run 5000")
+        f.write("run 180000\n\n")
+        f.write("dump id all atom 1000 dump.melt/ln{}-rn{}-ld{}-rd{}-T{}-test.dump\n\n".format(left_num, right_num, left_density, right_density, temperature))
+        f.write("run 25000")
 
 
 half_volume = 40*40*40

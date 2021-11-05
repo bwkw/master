@@ -28,5 +28,5 @@ def makefile(filename):
 tp_list = []
 time = []
 pressure = []
-loadfile("output/ln42592-rn0-ld0.6655-rd0-T1.0.output")
-makefile("time-temperature/ln42592-rn0-ld0.6655-rd0-T1.0.tt")
+loadfile("output/ln42592-rn0-ld0.6655-rd0-T1.0-thermo100-last5.output")
+makefile("time-temperature/ln42592-rn0-ld0.6655-rd0-T1.0-thermo100-last5.tt")
