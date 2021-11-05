@@ -16,7 +16,7 @@ def loadfile(filename):
                 continue
             elif re.match("ITEM: TIMESTEP", line):
                 a = 0
-            if ((a == 1) and ((b >= 2) and (b <= 6))):
+            if ((a == 1) and ((b >= 2) and (b <= 26))):
                 line = line.split()
                 x = line[2]
                 x_list.append(x)
@@ -35,7 +35,7 @@ length = math.pow(half_volume, 1/3)
 temperature = 1.0
 line_list = []
 x_list = []
-loadfile("dump.melt/ln{}-rn{}-ld{}-rd{}-T{}.dump".format(left_num, right_num, left_density, right_density, temperature))
+loadfile("dump.melt/ln{}-rn{}-ld{}-rd{}-T{}-test.dump".format(left_num, right_num, left_density, right_density, temperature))
 
 x_interval = 0.001
 x_interval_num = int(1/float(x_interval))
@@ -48,9 +48,9 @@ for i in range(len(x_list)):
     elif x == 1:
         density_list[999] += 1
 
-density_list = list(map(lambda x: x/(0.001*length**3*2*5), density_list))
+density_list = list(map(lambda x: x/(0.001*length**3*2*25), density_list))
 
-makefile("density/ln{}-rn{}-ld{}-rd{}-T{}.density".format(left_num, right_num, left_density, right_density, temperature), length)
+makefile("density/ln{}-rn{}-ld{}-rd{}-T{}-test.density".format(left_num, right_num, left_density, right_density, temperature), length)
 
 liquid_density = 0
 gas_density = 0
