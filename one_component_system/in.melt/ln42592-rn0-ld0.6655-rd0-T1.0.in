@@ -16,6 +16,6 @@ fix 1 all nvt temp 1.0 1.0 0.01
 
 run 200000
 
-dump id all atom 1000 dump.melt/ln42592-rn0-ld0.6655-rd0-T1.0.dump
+dump id all atom 100 dump.melt/ln42592-rn0-ld0.6655-rd0-T1.0.dump
 
 run 5000
