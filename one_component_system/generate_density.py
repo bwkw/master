@@ -43,10 +43,15 @@ density_list = [0]*(x_interval_num)
 for i in range(len(x_list)):
     x = float(x_list[i])
     if x < 1:
-        density_position = math.floor(float(x)/float(0.001))
+        density_position = math.floor(x/float(0.001))
         density_list[density_position] += 1
     elif x == 1:
-        density_list[999] += 1
+        print(x)
+        density_list[-1] += 1
+    else:
+        print(x)
+
+print(sum(density_list))
 
 density_list = list(map(lambda x: x/(0.001*length**3*2*50), density_list))
 
