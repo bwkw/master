@@ -27,7 +27,7 @@ Per MPI rank memory allocation (min/avg/max) = 1.619 | 4.481 | 7.329 Mbytes
 Step Temp E_pair E_mol TotEng Press 
        0   0.33353507   -4.6252921            0   -4.1250005   -2.3805389 
   200000   0.99658753   -3.8823626            0   -2.3875142   0.02450292 
-Loop time of 1233.01 on 8 procs for 200000 steps with 45508 atoms
+ time of 1233.01 on 8 procs for 200000 steps with 45508 atoms
 
 Performance: 14014.507 tau/day, 162.205 timesteps/s
 98.9% CPU use with 8 MPI tasks x no OpenMP threads
