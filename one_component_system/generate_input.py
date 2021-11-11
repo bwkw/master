@@ -15,14 +15,15 @@ def make_file(filename, left_num, right_num, left_density, right_density, temper
         f.write("run 200000\n\n")
         f.write("thermo 1000\n")
         f.write("thermo_style custom time temp press\n\n")
+        f.write("dump id all atom 1000 dump.melt/ln{}-rn{}-ld{}-rd{}-T{}.dump\n\n".format(left_num, right_num, left_density, right_density, temperature))
         f.write("run 5000")
 
 
 half_volume = 40*40*40
 left_num = 22*22*22*4
-right_num = 0
+right_num = 9*9*9*4
 left_density = left_num/half_volume
-right_density = 0
+right_density = right_num/half_volume
 length = math.pow(half_volume, 1/3)
 temperature = 1.0
 make_file("input/ln{}-rn{}-ld{}-rd{}-T{}.input".format(left_num, right_num, left_density, right_density, temperature), left_num, right_num, left_density, right_density, temperature)
