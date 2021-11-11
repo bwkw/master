@@ -32,4 +32,5 @@ loadfile("output/ln42592-rn0-ld0.6655-rd0-T1.0-thermo100-last5.output")
 makefile("time-pressure/ln42592-rn0-ld0.6655-rd0-T1.0-thermo100-last5.tp")
 
 pressure = [float(n) for n in pressure]
-print(sum(pressure[1:50])/len(pressure[1:50]))
+print(sum(pressure[1:51])/len(pressure[1:51]))
+print(len(pressure[1:51]))
