@@ -28,8 +28,8 @@ def makefile(filename):
 tp_list = []
 time = []
 pressure = []
-loadfile("output/ln42592-rn2916-ld0.6655-rd0.0455625-T1.0.output")
-makefile("time-pressure/ln42592-rn2916-ld0.6655-rd0.0455625-T1.0.tp")
+loadfile("output/ln42592-rn2916-ld0.6655-rd0.0455625-T1.0-last50.output")
+makefile("time-pressure/ln42592-rn2916-ld0.6655-rd0.0455625-T1.0-last50.tp")
 
 pressure = [float(n) for n in pressure]
 print(sum(pressure[1:51])/len(pressure[1:51]))

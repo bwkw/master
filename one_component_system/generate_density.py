@@ -35,7 +35,7 @@ length = math.pow(half_volume, 1/3)
 temperature = 1.0
 line_list = []
 x_list = []
-loadfile("dump.melt/ln{}-rn{}-ld{}-rd{}-T{}.dump".format(left_num, right_num, left_density, right_density, temperature))
+loadfile("dump.melt/ln{}-rn{}-ld{}-rd{}-T{}-last50.dump".format(left_num, right_num, left_density, right_density, temperature))
 
 x_interval = 0.001
 x_interval_num = int(1/float(x_interval))
@@ -52,7 +52,7 @@ print(sum(density_list))
 
 density_list = list(map(lambda x: x/(0.001*length**3*2*50), density_list))
 
-makefile("density/ln{}-rn{}-ld{}-rd{}-T{}.density".format(left_num, right_num, left_density, right_density, temperature), length)
+makefile("density/ln{}-rn{}-ld{}-rd{}-T{}-last50.density".format(left_num, right_num, left_density, right_density, temperature), length)
 
 liquid_density = 0
 gas_density = 0
