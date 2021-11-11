@@ -28,9 +28,9 @@ def makefile(filename, length):
 
 half_volume = 40*40*40
 left_num = 22*22*22*4
-right_num = 0
+right_num = 9*9*9*4
 left_density = left_num/half_volume
-right_density = 0
+right_density = right_num/half_volume
 length = math.pow(half_volume, 1/3)
 temperature = 1.0
 line_list = []
@@ -46,10 +46,7 @@ for i in range(len(x_list)):
         density_position = math.floor(x/float(0.001))
         density_list[density_position] += 1
     elif x == 1:
-        print(x)
         density_list[-1] += 1
-    else:
-        print(x)
 
 print(sum(density_list))
 
