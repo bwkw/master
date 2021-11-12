@@ -27,15 +27,15 @@ def makefile(filename, length):
             f.write("{} {}\n".format(round(float(0.001)*i, 3), density_list[i]))
 
 half_volume = 40*40*40
-left_num = 22*22*22*4
-right_num = 9*9*9*4
+left_num = 9*9*9*4
+right_num = 0
 left_density = left_num/half_volume
 right_density = right_num/half_volume
 length = math.pow(half_volume, 1/3)
 temperature = 1.0
 line_list = []
 x_list = []
-loadfile("dump.melt/ln{}-rn{}-ld{}-rd{}-T{}-last50.dump".format(left_num, right_num, left_density, right_density, temperature))
+loadfile("dump.melt/ln{}-rn{}-ld{}-rd{}-T{}.dump".format(left_num, right_num, left_density, right_density, temperature))
 
 x_interval = 0.001
 x_interval_num = int(1/float(x_interval))
@@ -52,7 +52,7 @@ print(sum(density_list))
 
 density_list = list(map(lambda x: x/(0.001*length**3*2*50), density_list))
 
-makefile("density/ln{}-rn{}-ld{}-rd{}-T{}-last50.density".format(left_num, right_num, left_density, right_density, temperature), length)
+makefile("density/ln{}-rn{}-ld{}-rd{}-T{}.density".format(left_num, right_num, left_density, right_density, temperature), length)
 
 liquid_density = 0
 gas_density = 0
@@ -62,11 +62,11 @@ for i in range(100, 401):
 for i in range(600, 901):
     gas_density += density_list[i]
 
-ave_liquid_density = liquid_density/300
-ave_gas_density = gas_density/300
-ave_gas_liquid_density = (ave_gas_density + ave_liquid_density)/2
+# ave_liquid_density = liquid_density/300
+# ave_gas_density = gas_density/300
+# ave_gas_liquid_density = (ave_gas_density + ave_liquid_density)/2
 
-print("temperature:{}".format(temperature))
-print("liquid_density:{}".format(ave_liquid_density))
-print("gas_density:{}".format(ave_gas_density))
-print("ave_density:{}".format(ave_gas_liquid_density))
+# print("temperature:{}".format(temperature))
+# print("liquid_density:{}".format(ave_liquid_density))
+# print("gas_density:{}".format(ave_gas_density))
+# print("ave_density:{}".format(ave_gas_liquid_density))
