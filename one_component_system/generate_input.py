@@ -21,7 +21,7 @@ def make_file(filename, left_num, right_num, left_density, right_density, temper
 
 half_volume = 40*40*40
 left_num = 9*9*9*4
-right_num = 0
+right_num = 9*9*9*4
 left_density = left_num/half_volume
 right_density = right_num/half_volume
 length = math.pow(half_volume, 1/3)
