@@ -1,6 +1,6 @@
 set term pdf
 set out 'density_azeotrope_curve.pdf'
-set xlabel '{/Arial-Italic a-composition-ratio}'
+set xlabel '{/Arial-Italic A-composition-ratio}'
 set ylabel '{/Arial-Italic density}'
 set xlabel font 'Arial,15'
 set ylabel font 'Arial,15'
