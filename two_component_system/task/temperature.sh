@@ -1,0 +1,13 @@
+/home/apps/lammps/lmp_serial < in.melt/ln42592-rn42592-ld0.6655-rd0.6655-T0.3.in
+/home/apps/lammps/lmp_serial < in.melt/ln42592-rn42592-ld0.6655-rd0.6655-T0.4.in
+/home/apps/lammps/lmp_serial < in.melt/ln42592-rn42592-ld0.6655-rd0.6655-T0.5.in
+/home/apps/lammps/lmp_serial < in.melt/ln42592-rn42592-ld0.6655-rd0.6655-T0.6.in
+/home/apps/lammps/lmp_serial < in.melt/ln42592-rn42592-ld0.6655-rd0.6655-T0.7.in
+/home/apps/lammps/lmp_serial < in.melt/ln42592-rn42592-ld0.6655-rd0.6655-T0.8.in
+/home/apps/lammps/lmp_serial < in.melt/ln42592-rn42592-ld0.6655-rd0.6655-T0.9.in
+/home/apps/lammps/lmp_serial < in.melt/ln42592-rn42592-ld0.6655-rd0.6655-T1.0.in
+/home/apps/lammps/lmp_serial < in.melt/ln42592-rn42592-ld0.6655-rd0.6655-T1.1.in
+/home/apps/lammps/lmp_serial < in.melt/ln42592-rn42592-ld0.6655-rd0.6655-T1.2.in
+/home/apps/lammps/lmp_serial < in.melt/ln42592-rn42592-ld0.6655-rd0.6655-T1.3.in
+/home/apps/lammps/lmp_serial < in.melt/ln42592-rn42592-ld0.6655-rd0.6655-T1.4.in
+/home/apps/lammps/lmp_serial < in.melt/ln42592-rn42592-ld0.6655-rd0.6655-T1.5.in
