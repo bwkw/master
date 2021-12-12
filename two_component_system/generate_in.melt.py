@@ -25,6 +25,6 @@ left_num = 22*22*22*4
 right_num = 22*22*22*4
 left_density = left_num/half_volume
 right_density = right_num/half_volume
-temperature = temperature = float(sys.argv[1])
+temperature = float(sys.argv[1])
 volume = (left_num/left_density)*2
 make_file("in.melt/ln{}-rn{}-ld{}-rd{}-T{}.in".format(left_num, right_num, left_density, right_density, temperature), left_num, right_num, left_density, right_density, temperature)

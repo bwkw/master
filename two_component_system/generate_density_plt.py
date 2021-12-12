@@ -1,3 +1,5 @@
+import sys
+
 def make_file(filename, left_num, right_num, left_density, right_density, temperature):
     with open(filename, "w") as f:
         f.write("set term pdf\n")
@@ -10,11 +12,11 @@ def make_file(filename, left_num, right_num, left_density, right_density, temper
         f.write("set key font 'Arial,16'\n")
         f.write("plot 'density/ln{0}-rn{1}-ld{2}-rd{3}-T{4}.density' u 1:2 title '粒子A', 'density/ln{0}-rn{1}-ld{2}-rd{3}-T{4}.density' u 1:3 title '粒子B',\n".format(left_num, right_num, left_density, right_density, temperature))
         
-half_volume = 20*20*20
-left_num = 11*11*11*4
-right_num = 11*11*11*4
+half_volume = 40*40*40
+left_num = 22*22*22*4
+right_num = 22*22*22*4
 left_density = left_num/half_volume
 right_density = right_num/half_volume
-temperature = 0.2
+temperature = float(sys.argv[1])
 
 make_file("make_plt/ln{}-rn{}-ld{}-rd{}-T{}.plt".format(left_num, right_num, left_density, right_density, temperature), left_num, right_num, left_density, right_density, temperature)
