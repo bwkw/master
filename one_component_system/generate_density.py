@@ -28,7 +28,7 @@ def makefile(filename, length):
 
 half_volume = 40*40*40
 left_num = 9*9*9*4
-right_num = 0
+right_num = 9*9*9*4
 left_density = left_num/half_volume
 right_density = right_num/half_volume
 length = math.pow(half_volume, 1/3)
@@ -56,11 +56,15 @@ makefile("density/ln{}-rn{}-ld{}-rd{}-T{}.density".format(left_num, right_num, l
 
 liquid_density = 0
 gas_density = 0
-for i in range(100, 401):
-    liquid_density += density_list[i]
-
-for i in range(600, 901):
+for i in range(1000):
     gas_density += density_list[i]
+ave_gas_density = gas_density/1000
+print("gas_density:{}".format(ave_gas_density))
+# for i in range(100, 401):
+#     liquid_density += density_list[i]
+
+# for i in range(600, 901):
+#     gas_density += density_list[i]
 
 # ave_liquid_density = liquid_density/300
 # ave_gas_density = gas_density/300

@@ -1,3 +1,4 @@
+import math
 import re
 
 def loadfile(filename):
@@ -28,9 +29,16 @@ def makefile(filename):
 tp_list = []
 time = []
 pressure = []
-loadfile("output/ln42592-rn2916-ld0.6655-rd0.0455625-T1.0-last50.output")
-makefile("time-pressure/ln42592-rn2916-ld0.6655-rd0.0455625-T1.0-last50.tp")
+half_volume = 40*40*40
+left_num = 9*9*9*4
+right_num = 9*9*9*4
+left_density = left_num/half_volume
+right_density = right_num/half_volume
+length = math.pow(half_volume, 1/3)
+temperature = 1.0
+loadfile("output/ln{}-rn{}-ld{}-rd{}-T{}.output".format(left_num, right_num, left_density, right_density, temperature))
+makefile("time-pressure/ln{}-rn{}-ld{}-rd{}-T{}_tp.dat".format(left_num, right_num, left_density, right_density, temperature))
 
 pressure = [float(n) for n in pressure]
 print(sum(pressure[1:51])/len(pressure[1:51]))
-print(len(pressure[1:51]))
+print(len(pressure))
