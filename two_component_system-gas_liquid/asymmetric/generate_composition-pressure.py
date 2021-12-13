@@ -23,9 +23,9 @@ def create_density_10(a_density_list_10, b_density_list_10, a_density_list_1000,
         a_density_list_10.append(a_ave_density)
         b_density_list_10.append(b_ave_density)
 
-def makefile(filename, a_composition_ratio, a_gas_density, b_gas_density):
+def makefile(filename, a_composition_ratio, composition_parameter):
     with open(filename, "a") as f:
-        f.write("{} {} {}\n".format(a_composition_ratio, a_gas_density, b_gas_density))
+        f.write("{} {}\n".format(a_composition_ratio, composition_parameter))
 
 
 files = os.listdir("density/")
@@ -38,8 +38,11 @@ for filename in files:
     b_density_list_10 = []
     create_density_10(a_density_list_10, b_density_list_10, a_density_list_1000, b_density_list_1000)
     a_gas_density = min(a_density_list_10)
+    a_liquid_density = max(a_density_list_10)
     b_gas_density = min(b_density_list_10)
+    b_liquid_density = max(b_density_list_10)
     result = re.findall(r"\d+", filename)
     a_composition_ratio = (int(result[0]))/(int(result[0])+int(result[1]))
-    makefile("density_azeotrope_curve.dat", a_composition_ratio, a_gas_density, b_gas_density)
+    composition_parameter = a_gas_density*b_liquid_density-a_liquid_density*b_gas_density
+    makefile("density_azeotrope_curve.dat", a_composition_ratio, composition_parameter)
     
