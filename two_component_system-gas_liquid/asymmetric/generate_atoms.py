@@ -2,6 +2,7 @@
 
 import math
 import random
+import sys
 
 class Atom:
     def __init__(self, x, y, z, xvel, yvel, zvel, type):
@@ -73,19 +74,19 @@ def make_file(filename, atoms, length):
         for i, a in enumerate(atoms):
             f.write("{} {} {} {}\n".format(i+1, a.vx, a.vy, a.vz))
 
-
-atoms = []
 half_volume = 40*40*40
 left_num = 22*22*22*4
-left_num_a_ratio = 0.1
-left_num_a = round(left_num * left_num_a_ratio)
-left_num_b = left_num - left_num_a
-right_num = 0
-left_density_a = left_num_a/half_volume
-left_density_b = left_num_b/half_volume
-length = round(math.pow(half_volume, 1/3))
-add_ball(atoms, left_num, left_num_a, length)
-make_file("atoms/lna{}-lnb{}-lda{}-ldb{}.atoms".format(left_num_a, left_num_b, left_density_a, left_density_b), atoms, length)
+for i in range(1, int(sys.argv[1])):
+    atoms = []
+    left_num_a_ratio = (1/int(sys.argv[1])) * int(i)
+    left_num_a = round(left_num * left_num_a_ratio)
+    left_num_b = left_num - left_num_a
+    right_num = 0
+    left_density_a = left_num_a/half_volume
+    left_density_b = left_num_b/half_volume
+    length = round(math.pow(half_volume, 1/3))
+    add_ball(atoms, left_num, left_num_a, length)
+    make_file("atoms/lna{}-lnb{}-lda{}-ldb{}.atoms".format(left_num_a, left_num_b, left_density_a, left_density_b), atoms, length)
 
 # 分子の速度平均が≒0になっていることの確認
 sum_a_vx = 0
