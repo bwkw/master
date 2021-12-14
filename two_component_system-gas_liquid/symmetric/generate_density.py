@@ -1,6 +1,7 @@
 # dumpファイルから密度を計算する
 
 import re
+import sys
 import math
 
 def loadfile(filename):
@@ -32,44 +33,43 @@ def makefile(filename, density_list1, density_list2):
 
 half_volume = 40*40*40
 left_num = 22*22*22*4
-left_num_a_ratio = 0.9
-left_num_a = round(left_num * left_num_a_ratio)
-left_num_b = left_num - left_num_a
-right_num = 0
-left_density_a = left_num_a/half_volume
-left_density_b = left_num_b/half_volume
-temperature = 0.9
-length = round(math.pow(half_volume, 1/3))
+for i in range(1, int(sys.argv[1])):
+    left_num_a_ratio = (1/int(sys.argv[1])) * int(i)
+    left_num_a = round(left_num * left_num_a_ratio)
+    left_num_b = left_num - left_num_a
+    right_num = 0
+    left_density_a = left_num_a/half_volume
+    left_density_b = left_num_b/half_volume
+    temperature = 0.9
+    type1_x_list = []
+    type2_x_list = []
+    loadfile("dump.melt/lna{}-lnb{}-lda{}-ldb{}-T{}.dump".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature))
 
-type1_x_list = []
-type2_x_list = []
-loadfile("dump.melt/lna{}-lnb{}-lda{}-ldb{}-T{}.dump".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature))
+    x_interval = 0.001
+    x_interval_num = int(1/float(x_interval))
+    type1_density_list = [0]*(x_interval_num)
+    type2_density_list = [0]*(x_interval_num)
 
-x_interval = 0.001
-x_interval_num = int(1/float(x_interval))
-type1_density_list = [0]*(x_interval_num)
-type2_density_list = [0]*(x_interval_num)
+    for i in range(len(type1_x_list)):
+        x = float(type1_x_list[i])
+        if x < 1:
+            density_position = math.floor(float(x)/float(0.001))
+            type1_density_list[density_position] += 1
+        elif x == 1:
+            type1_density_list[999] += 1
 
-for i in range(len(type1_x_list)):
-    x = float(type1_x_list[i])
-    if x < 1:
-        density_position = math.floor(float(x)/float(0.001))
-        type1_density_list[density_position] += 1
-    elif x == 1:
-        type1_density_list[999] += 1
+    for i in range(len(type2_x_list)):
+        x = float(type2_x_list[i])
+        if x < 1:
+            density_position = math.floor(float(x)/float(0.001))
+            type2_density_list[density_position] += 1
+        elif x == 1:
+            type2_density_list[999] += 1
 
-for i in range(len(type2_x_list)):
-    x = float(type2_x_list[i])
-    if x < 1:
-        density_position = math.floor(float(x)/float(0.001))
-        type2_density_list[density_position] += 1
-    elif x == 1:
-        type2_density_list[999] += 1
+    type1_density_list = list(map(lambda x: x/(0.001*half_volume*2*5), type1_density_list))
+    type2_density_list = list(map(lambda x: x/(0.001*half_volume*2*5), type2_density_list))
 
-type1_density_list = list(map(lambda x: x/(0.001*length**3*2*5), type1_density_list))
-type2_density_list = list(map(lambda x: x/(0.001*length**3*2*5), type2_density_list))
-
-makefile("density/lna{}-lnb{}-lda{}-ldb{}-T{}.density".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature), type1_density_list, type2_density_list)
+    makefile("density/lna{}-lnb{}-lda{}-ldb{}-T{}.density".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature), type1_density_list, type2_density_list)
 
 
 # liquid_density = 0
