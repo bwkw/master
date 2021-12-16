@@ -57,8 +57,9 @@ for filename in files:
     b_liquid_density = b_density_list_10[2]
     b_liquid_stdev = b_stdev_list_10[2]
     x = a_gas_density*b_liquid_density-a_liquid_density*b_gas_density
-    delta_x = math.sqrt((((b_liquid_density)**2)*((a_gas_stdev)**2)+((a_gas_density)**2)*((b_liquid_stdev)**2))+(((b_gas_density)**2)*((a_liquid_stdev)**2)+((a_liquid_density)**2)*((b_gas_stdev)**2)))
-    make_ab_gasliquid_file("ab_gasliquid.density", a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density, x)
+    # delta_x = math.sqrt((((b_liquid_density)**2)*((a_gas_stdev)**2)+((a_gas_density)**2)*((b_liquid_stdev)**2))+(((b_gas_density)**2)*((a_liquid_stdev)**2)+((a_liquid_density)**2)*((b_gas_stdev)**2)))
+    delta_x = b_liquid_density*a_gas_stdev + a_gas_density*b_liquid_stdev + b_gas_density*a_liquid_stdev + a_liquid_density*b_gas_stdev
+    make_ab_gasliquid_file("ab_gasliquid.density3", a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density, x)
     ratio_parameter = []
     ratio_parameter.append(a_composition_ratio)
     ratio_parameter.append(x)
@@ -68,4 +69,4 @@ for filename in files:
 ratio_parameters = sorted(ratio_parameters, reverse=False, key=lambda x: x[0]) 
 
 for ratio_parameter in ratio_parameters:
-    makefile("density_azeotrope_curve-2.dat", ratio_parameter[0], ratio_parameter[1], ratio_parameter[2])
+    makefile("density_azeotrope_curve-3.dat", ratio_parameter[0], ratio_parameter[1], ratio_parameter[2])
