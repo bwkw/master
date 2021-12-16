@@ -54,9 +54,12 @@ for filename in files:
     a_liquid_stdev = a_stdev_list_10[2]
     b_gas_density = b_density_list_10[7]
     b_gas_stdev = b_stdev_list_10[7]
-    print(b_gas_stdev)
     b_liquid_density = b_density_list_10[2]
     b_liquid_stdev = b_stdev_list_10[2]
+    print("a_gas_stdev:{}".format(a_gas_stdev))
+    print("a_liquid_stdev:{}".format(a_liquid_stdev))
+    print("b_gas_stdev:{}".format(b_gas_stdev))
+    print("b_liquid_stdev:{}".format(b_liquid_stdev))
     x = a_gas_density*b_liquid_density-a_liquid_density*b_gas_density
     # delta_x = math.sqrt((((b_liquid_density)**2)*((a_gas_stdev)**2)+((a_gas_density)**2)*((b_liquid_stdev)**2))+(((b_gas_density)**2)*((a_liquid_stdev)**2)+((a_liquid_density)**2)*((b_gas_stdev)**2)))
     delta_x = b_liquid_density*a_gas_stdev + a_gas_density*b_liquid_stdev + b_gas_density*a_liquid_stdev + a_liquid_density*b_gas_stdev
