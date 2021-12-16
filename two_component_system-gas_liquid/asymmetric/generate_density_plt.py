@@ -1,3 +1,5 @@
+import sys
+
 def make_file(filename, left_num_a, left_num_b, left_density_a, left_density_b, temperature):
     with open(filename, "w") as f:
         f.write("set term pdf\n")
@@ -12,12 +14,12 @@ def make_file(filename, left_num_a, left_num_b, left_density_a, left_density_b, 
         
 half_volume = 40*40*40
 left_num = 22*22*22*4
-left_num_a_ratio = 0.9
-left_num_a = round(left_num * left_num_a_ratio)
-left_num_b = left_num - left_num_a
-right_num = 0
-left_density_a = left_num_a/half_volume
-left_density_b = left_num_b/half_volume
-temperature = 0.9
-
-make_file("make_plt/lna{}-lnb{}-lda{}-ldb{}-T{}.plt".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature), left_num_a, left_num_b, left_density_a, left_density_b, temperature)
+for i in range(1, int(sys.argv[1])):
+    left_num_a_ratio = (1/int(sys.argv[1])) * int(i)
+    left_num_a = round(left_num * left_num_a_ratio)
+    left_num_b = left_num - left_num_a
+    right_num = 0
+    left_density_a = left_num_a/half_volume
+    left_density_b = left_num_b/half_volume
+    temperature = 0.9
+    make_file("make_plt/lna{}-lnb{}-lda{}-ldb{}-T{}.plt".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature), left_num_a, left_num_b, left_density_a, left_density_b, temperature)
