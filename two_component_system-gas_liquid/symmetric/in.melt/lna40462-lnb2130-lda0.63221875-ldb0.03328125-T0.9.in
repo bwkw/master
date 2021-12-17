@@ -17,7 +17,7 @@ pair_coeff 2 2 1.0 1.0 3.0
 
 fix 1 all nvt temp 0.9 0.9 0.01
 
-run 300000
+run 500000
 
 dump id all atom 1000 dump.melt/lna40462-lnb2130-lda0.63221875-ldb0.03328125-T0.9.dump
 
