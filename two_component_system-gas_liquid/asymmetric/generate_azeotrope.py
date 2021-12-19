@@ -18,9 +18,9 @@ def create_density_10(a_density_list_10, b_density_list_10, a_density_list_1000,
         first = 100*i
         last = 100*(i+1)
         a_ave_density = sum(a_density_list_1000[first:last])/len(a_density_list_1000[first:last])
-        a_stdev = statistics.pstdev(a_density_list_1000[first:last]) / math.sqrt(len(a_density_list_1000[first:last]))
+        a_stdev = statistics.pstdev(a_density_list_1000[first:last])/math.sqrt(len(a_density_list_1000[first:last]))
         b_ave_density = sum(b_density_list_1000[first:last])/len(b_density_list_1000[first:last])
-        b_stdev = statistics.pstdev(b_density_list_1000[first:last]) / math.sqrt(len(a_density_list_1000[first:last]))
+        b_stdev = statistics.pstdev(b_density_list_1000[first:last])/math.sqrt(len(b_density_list_1000[first:last]))
         a_density_list_10.append(a_ave_density)
         a_stdev_list_10.append(a_stdev)
         b_density_list_10.append(b_ave_density)
@@ -65,8 +65,10 @@ for filename in files:
     ratio_parameter.append(x)
     ratio_parameter.append(delta_x)
     ratio_parameters.append(ratio_parameter)
-
+    
+# print(ratio_parameters)
 ratio_parameters = sorted(ratio_parameters, reverse=False, key=lambda x: x[0]) 
-
+# print(ratio_parameters)
 for ratio_parameter in ratio_parameters:
     makefile("density_azeotrope_curve.dat", ratio_parameter[0], ratio_parameter[1], ratio_parameter[2])
+    
