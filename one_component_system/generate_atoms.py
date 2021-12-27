@@ -91,10 +91,10 @@ def make_file(filename, atoms, length):
 
 half_volume = 40*40*40
 atoms = []
-left_num = 30*30*30*4
+left_num = 22*22*22*4
 right_num = 0
 left_density = left_num/half_volume
-right_density = right_num/half_volume
+right_density = 0
 length = math.pow(half_volume, 1/3)
 add_ball(atoms, left_num, right_num, length)
 make_file("atoms/ln{}-rn{}-ld{}-rd{}.atoms".format(left_num, right_num, left_density, right_density), atoms, length)
