@@ -16,7 +16,7 @@ def loadfile(filename):
                 continue
             elif re.match("ITEM: TIMESTEP", line):
                 a = 0
-            if ((a == 1) and ((b >= 2) and (b <= 51))):
+            if ((a == 1) and ((b >= 2) and (b <= 6))):
                 line = line.split()
                 x = line[2]
                 x_list.append(x)
@@ -27,12 +27,12 @@ def makefile(filename, length):
             f.write("{} {}\n".format(round(float(0.001)*i, 3), density_list[i]))
 
 half_volume = 40*40*40
-left_num = 9*9*9*4
-right_num = 9*9*9*4
+left_num = 22*22*22*4
+right_num = 0
 left_density = left_num/half_volume
-right_density = right_num/half_volume
+right_density = 0
 length = math.pow(half_volume, 1/3)
-temperature = 1.0
+temperature = 0.9
 line_list = []
 x_list = []
 loadfile("dump.melt/ln{}-rn{}-ld{}-rd{}-T{}.dump".format(left_num, right_num, left_density, right_density, temperature))
@@ -50,16 +50,16 @@ for i in range(len(x_list)):
 
 print(sum(density_list))
 
-density_list = list(map(lambda x: x/(0.001*length**3*2*50), density_list))
+density_list = list(map(lambda x: x/(0.001*length**3*2*5), density_list))
 
 makefile("density/ln{}-rn{}-ld{}-rd{}-T{}.density".format(left_num, right_num, left_density, right_density, temperature), length)
 
-liquid_density = 0
-gas_density = 0
-for i in range(1000):
-    gas_density += density_list[i]
-ave_gas_density = gas_density/1000
-print("gas_density:{}".format(ave_gas_density))
+# liquid_density = 0
+# gas_density = 0
+# for i in range(1000):
+#     gas_density += density_list[i]
+# ave_gas_density = gas_density/1000
+# print("gas_density:{}".format(ave_gas_density))
 # for i in range(100, 401):
 #     liquid_density += density_list[i]
 
