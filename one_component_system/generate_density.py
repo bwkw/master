@@ -54,23 +54,20 @@ density_list = list(map(lambda x: x/(0.001*length**3*2*5), density_list))
 
 makefile("density/ln{}-rn{}-ld{}-rd{}-T{}.density".format(left_num, right_num, left_density, right_density, temperature), length)
 
-# liquid_density = 0
-# gas_density = 0
-# for i in range(1000):
-#     gas_density += density_list[i]
-# ave_gas_density = gas_density/1000
-# print("gas_density:{}".format(ave_gas_density))
-# for i in range(100, 401):
-#     liquid_density += density_list[i]
+liquid_density = 0
+gas_density = 0
 
-# for i in range(600, 901):
-#     gas_density += density_list[i]
+for i in range(100, 401):
+    liquid_density += density_list[i]
 
-# ave_liquid_density = liquid_density/300
-# ave_gas_density = gas_density/300
-# ave_gas_liquid_density = (ave_gas_density + ave_liquid_density)/2
+for i in range(600, 901):
+    gas_density += density_list[i]
 
-# print("temperature:{}".format(temperature))
-# print("liquid_density:{}".format(ave_liquid_density))
-# print("gas_density:{}".format(ave_gas_density))
-# print("ave_density:{}".format(ave_gas_liquid_density))
+ave_liquid_density = liquid_density/300
+ave_gas_density = gas_density/300
+ave_gas_liquid_density = (ave_gas_density + ave_liquid_density)/2
+
+print("temperature:{}".format(temperature))
+print("liquid_density:{}".format(ave_liquid_density))
+print("gas_density:{}".format(ave_gas_density))
+print("ave_density:{}".format(ave_gas_liquid_density))
