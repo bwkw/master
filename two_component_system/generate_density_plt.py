@@ -9,8 +9,8 @@ def make_file(filename, left_num, right_num, left_density, right_density, temper
         f.write("set xlabel font 'Arial,15'\n")
         f.write("set ylabel font 'Arial,15'\n")
         f.write("set tics font 'Arial,10'\n")
-        f.write("set key font 'Arial,16'\n")
-        f.write("plot 'density/ln{0}-rn{1}-ld{2}-rd{3}-T{4}.density' u 1:2 title '粒子A', 'density/ln{0}-rn{1}-ld{2}-rd{3}-T{4}.density' u 1:3 title '粒子B',\n".format(left_num, right_num, left_density, right_density, temperature))
+        f.write("set nokey\n")
+        f.write("plot 'density/ln{0}-rn{1}-ld{2}-rd{3}-T{4}.density' u 1:2, 'density/ln{0}-rn{1}-ld{2}-rd{3}-T{4}.density' u 1:3,\n".format(left_num, right_num, left_density, right_density, temperature))
         
 half_volume = 40*40*40
 left_num = 22*22*22*4
