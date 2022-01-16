@@ -45,9 +45,11 @@ for i in range(1, int(sys.argv[1])):
     temperature = float(sys.argv[2])
     if not os.path.exists('in.melt/N{}'.format(total_num)):
         os.mkdir('in.melt/N{}'.format(total_num))
+    if not os.path.exists('dump.melt/N{}'.format(total_num)):
         os.mkdir('dump.melt/N{}'.format(total_num))
     if not os.path.exists('in.melt/N{}/T{}'.format(total_num, temperature)):
         os.mkdir('in.melt/N{}/T{}'.format(total_num, temperature))
+    if not os.path.exists('dump.melt/N{}/T{}'.format(total_num, temperature)):
         os.mkdir('dump.melt/N{}/T{}'.format(total_num, temperature))
     make_file("in.melt/N{}/T{}/lna{}-lnb{}-lda{}-ldb{}-rna{}-rnb{}-rda{}-rdb{}.in"
     .format(total_num, temperature, left_num_a, left_num_b, left_density_a, left_density_b, right_num_a, right_num_b, right_density_a, right_density_b),
