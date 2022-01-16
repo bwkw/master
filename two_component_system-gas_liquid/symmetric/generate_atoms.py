@@ -1,4 +1,6 @@
 # atomsファイルを作成
+# コマンドライン引数は、
+# 1. 組成比を何分割するか？
 
 import math
 import os
@@ -139,27 +141,27 @@ for i in range(1, int(sys.argv[1])):
     make_file("atoms/N{}/lna{}-lnb{}-lda{}-ldb{}-rna{}-rnb{}-rda{}-rdb{}.atoms"
     .format(total_num, left_num_a, left_num_b, left_density_a, left_density_b, right_num_a, right_num_b, right_density_a, right_density_b), atoms, length)
 
-# 分子の速度平均が≒0になっていることの確認
-sum_a_vx = 0
-sum_a_vy = 0
-sum_a_vz = 0
-num_a = 0
-for i, a in enumerate(atoms):
-    num_a += 1
-    sum_a_vx += a.vx
-    sum_a_vy += a.vy
-    sum_a_vz += a.vz
+# # 分子の速度平均が≒0になっていることの確認
+# sum_a_vx = 0
+# sum_a_vy = 0
+# sum_a_vz = 0
+# num_a = 0
+# for i, a in enumerate(atoms):
+#     num_a += 1
+#     sum_a_vx += a.vx
+#     sum_a_vy += a.vy
+#     sum_a_vz += a.vz
 
-av_sum_a_vx = sum_a_vx/num_a
-av_sum_a_vy = sum_a_vy/num_a
-av_sum_a_vz = sum_a_vz/num_a
+# av_sum_a_vx = sum_a_vx/num_a
+# av_sum_a_vy = sum_a_vy/num_a
+# av_sum_a_vz = sum_a_vz/num_a
 
-print(av_sum_a_vx)
-print(av_sum_a_vy)
-print(av_sum_a_vz)
+# print(av_sum_a_vx)
+# print(av_sum_a_vy)
+# print(av_sum_a_vz)
 
-a_num = 0
-for i, a in enumerate(atoms):
-    if a.type == 1:
-        a_num += 1
-print(a_num)
+# a_num = 0
+# for i, a in enumerate(atoms):
+#     if a.type == 1:
+#         a_num += 1
+# print(a_num)
