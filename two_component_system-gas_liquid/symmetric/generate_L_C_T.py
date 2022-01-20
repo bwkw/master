@@ -1,4 +1,5 @@
-# パラメータとして、系の長さ（Length）、Aの組成比（CompositionRatio）、温度（Temperature）
+# パラメータファイルを作成
+# 系の長さ（Length）、Aの組成比（CompositionRatio）、温度（Temperature）
 # コマンドライン引数に、系の長さ、Aの組成比分割個数、温度を入れてしまおう
 
 import sys
