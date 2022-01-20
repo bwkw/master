@@ -1,5 +1,7 @@
 find . -size +100M | sed -e 's/^\.\///'
 *.dump
+*.atom
+*.in
 dump/*
 dat/*
 lmp_serial
