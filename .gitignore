@@ -1,6 +1,7 @@
 find . -size +100M | sed -e 's/^\.\///'
 *.dump
-*.atom
+*.atoms
+*.atoms.icloud
 *.in
 dump/*
 dat/*
