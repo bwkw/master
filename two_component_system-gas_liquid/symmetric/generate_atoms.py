@@ -3,7 +3,6 @@
 import math
 import os
 import random
-import sys
 
 
 ## 粒子クラス
@@ -18,7 +17,7 @@ class Atom:
         self.type = type
 
 
-## 各粒子のパラメータを決定するファイル
+## 各粒子のパラメータを決定する関数
 def add_ball(atoms, left_num, left_a_num, right_num, right_a_num, length):
     left_n = round((left_num/4)**(1/3))
     left_s = length/left_n
