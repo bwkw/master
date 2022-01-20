@@ -1,12 +1,12 @@
-# atomsファイルを作成
-# コマンドライン引数は、
-# 1. 組成比を何分割するか？
+# atomsファイル作成
 
 import math
 import os
 import random
 import sys
 
+
+## 粒子クラス
 class Atom:
     def __init__(self, x, y, z, xvel, yvel, zvel, type):
         self.x = x
@@ -18,7 +18,8 @@ class Atom:
         self.type = type
 
 
-def add_ball(atoms, left_num, left_num_a, right_num, right_num_a, length):
+## 各粒子のパラメータを決定するファイル
+def add_ball(atoms, left_num, left_a_num, right_num, right_a_num, length):
     left_n = round((left_num/4)**(1/3))
     left_s = length/left_n
     left_h = left_s/2
@@ -43,7 +44,7 @@ def add_ball(atoms, left_num, left_num_a, right_num, right_num_a, length):
     left_zvel_list = list(map(lambda z: z - left_zvel_list_av, left_zvel_list))
 
     left_type_list = [2] * (left_num)
-    for i in range(left_num_a):
+    for i in range(left_a_num):
         left_type_list[i] = 1
     random.shuffle(left_type_list)
 
@@ -84,7 +85,7 @@ def add_ball(atoms, left_num, left_num_a, right_num, right_num_a, length):
     right_zvel_list = list(map(lambda z: z - right_zvel_list_av, right_zvel_list))
 
     right_type_list = [2] * (right_num)
-    for i in range(right_num_a):
+    for i in range(right_a_num):
         right_type_list[i] = 1
     random.shuffle(right_type_list)
 
@@ -102,6 +103,7 @@ def add_ball(atoms, left_num, left_num_a, right_num, right_num_a, length):
                 num+=4
 
 
+## atomsファイルを作成する関数
 def make_file(filename, atoms, length):
     with open(filename, "w") as f:
         f.write("Position Data\n\n")
@@ -119,27 +121,37 @@ def make_file(filename, atoms, length):
         for i, a in enumerate(atoms):
             f.write("{} {} {} {}\n".format(i+1, a.vx, a.vy, a.vz))
 
-half_volume = 40*40*40
-left_num = 22*22*22*4
-right_num = 8*8*8*4
+
+## 標準入力（paramファイル）からパラメータ取得
+param_dic = {}
+for l in range(2):
+    a, b = input().split("=")
+    param_dic[a] = b
+
+length = int(param_dic["length"])
+a_composition_ratio = float(param_dic["a_composition_ratio"])
+half_volume = length**3
+left_s = round(math.pow((half_volume*0.7/4), 1/3))
+right_s = round(math.pow((half_volume*0.02/4), 1/3))
+left_num = left_s**3*4
+right_num = right_s**3*4
 total_num = left_num + right_num
-for i in range(1, int(sys.argv[1])):
-    atoms = []
-    a_ratio = (1/int(sys.argv[1])) * int(i)
-    left_num_a = round(left_num * a_ratio)
-    left_num_b = left_num - left_num_a
-    right_num_a = round(right_num * a_ratio)
-    right_num_b = right_num - right_num_a
-    left_density_a = left_num_a/half_volume
-    left_density_b = left_num_b/half_volume
-    right_density_a = right_num_a/half_volume
-    right_density_b = right_num_b/half_volume
-    length = round(math.pow(half_volume, 1/3))
-    add_ball(atoms, left_num, left_num_a, right_num, right_num_a, length)
-    if not os.path.exists('atoms/N{}'.format(total_num)):
-        os.mkdir(('atoms/N{}'.format(total_num)))
-    make_file("atoms/N{}/lna{}-lnb{}-lda{}-ldb{}-rna{}-rnb{}-rda{}-rdb{}.atoms"
-    .format(total_num, left_num_a, left_num_b, left_density_a, left_density_b, right_num_a, right_num_b, right_density_a, right_density_b), atoms, length)
+# print(total_num)
+
+atoms = []
+left_a_num = round(left_num * a_composition_ratio)
+left_b_num = left_num - left_a_num
+right_a_num = round(right_num * a_composition_ratio)
+right_b_num = right_num - right_a_num
+left_density_a = left_a_num/half_volume
+left_density_b = left_b_num/half_volume
+right_density_a = right_a_num/half_volume
+right_density_b = right_b_num/half_volume
+add_ball(atoms, left_num, left_a_num, right_num, right_a_num, length)
+if not os.path.exists('data/atoms/L{}'.format(length)):
+    os.mkdir(('data/atoms/L{}'.format(length)))
+make_file("data/atoms/L{}/lan{}-lbn{}-ran{}-rbn{}.atoms"
+.format(length, left_a_num, left_b_num, right_a_num, right_b_num), atoms, length)
 
 # # 分子の速度平均が≒0になっていることの確認
 # sum_a_vx = 0
