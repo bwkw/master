@@ -148,6 +148,8 @@ left_density_b = left_b_num/half_volume
 right_density_a = right_a_num/half_volume
 right_density_b = right_b_num/half_volume
 add_ball(atoms, left_num, left_a_num, right_num, right_a_num, length)
+if not os.path.exists('data/atoms'):
+    os.mkdir('data/atoms')
 if not os.path.exists('data/atoms/L{}'.format(length)):
     os.mkdir(('data/atoms/L{}'.format(length)))
 make_file("data/atoms/L{}/lan{}-lbn{}-ran{}-rbn{}.atoms"
