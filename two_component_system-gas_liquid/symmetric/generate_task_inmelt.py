@@ -1,37 +1,18 @@
-# 並列実行するin.meltを書き出したshell scriptを作成
-# コマンドライン引数は、
-# 1. 組成比を何分割するか？
-# 2. 温度
+# task/in.meltファイル作成
+# 系の長さ（Length）、Aの組成比（CompositionRatio）、温度（Temperature）
+# コマンドライン引数に、系の長さ、Aの組成比分割個数、温度を入れる
 
 import os
 import sys
 
-def make_file(filename, total_num, temperature, left_num_a, left_num_b, left_density_a, left_density_b, right_num_a, right_num_b, right_density_a, right_density_b):
-    with open(filename, "a") as f:      
-        f.write("/home/apps/lammps/lmp_serial < in.melt/N{}/T{}/lna{}-lnb{}-lda{}-ldb{}-rna{}-rnb{}-rda{}-rdb{}.in\n"
-    .format(total_num, temperature, left_num_a, left_num_b, left_density_a, left_density_b, right_num_a, right_num_b, right_density_a, right_density_b))
 
+def make_file(filename, length, temperature, a_composition_ratio):
+    with open(filename, "a") as f:
+        f.write("python3 generate_in.melt.py < data/param/L{}T{}/C{}.param\n".format(length, temperature, a_composition_ratio))
 
-half_volume = 40*40*40
-left_num = 22*22*22*4
-right_num = 8*8*8*4
-total_num = left_num + right_num
-for i in range(1, int(sys.argv[1])):
-    atoms = []
-    a_ratio = (1/int(sys.argv[1])) * int(i)
-    left_num_a = round(left_num * a_ratio)
-    left_num_b = left_num - left_num_a
-    right_num_a = round(right_num * a_ratio)
-    right_num_b = right_num - right_num_a
-    left_density_a = left_num_a/half_volume
-    left_density_b = left_num_b/half_volume
-    right_density_a = right_num_a/half_volume
-    right_density_b = right_num_b/half_volume
-    temperature = float(sys.argv[2])
-    if not os.path.exists('task/N{}'.format(total_num)):
-        os.mkdir('task//N{}'.format(total_num))
-    if not os.path.exists('task/N{}/T{}'.format(total_num, temperature)):
-        os.mkdir('task/N{}/T{}'.format(total_num, temperature))
-    make_file("task/N{}/T{}/inmelt.sh"
-    .format(total_num, temperature, left_num_a, left_num_b, left_density_a, left_density_b, right_num_a, right_num_b, right_density_a, right_density_b),
-    total_num, temperature, left_num_a, left_num_b, left_density_a, left_density_b, right_num_a, right_num_b, right_density_a, right_density_b)
+length = int(sys.argv[1])
+composition_number = int(sys.argv[2])
+temperature = float(sys.argv[3])
+for i in range(1, composition_number):
+    a_composition_ratio = round((1/composition_number)*int(i), 3)
+    make_file("task/in.melt/L{}T{}C{}inmelt.sh".format(length, temperature, composition_number), length, temperature, a_composition_ratio)
