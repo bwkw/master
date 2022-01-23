@@ -9,7 +9,7 @@ def make_file(filename, length, temperature, left_a_num, left_b_num, right_a_num
         f.write("units lj\n")
         f.write("atom_style atomic\n")
         f.write("boundary p p p\n\n")
-        f.write("read_data data/atoms/L{}/lan{}-lbn{}-ran{}-rbn{}.atoms".format(length, left_a_num, left_b_num, right_a_num, right_b_num))
+        f.write("read_data data/atoms/L{}/lan{}-lbn{}-ran{}-rbn{}.atoms\n\n".format(length, left_a_num, left_b_num, right_a_num, right_b_num))
         f.write("mass 1 1.0\n")
         f.write("mass 2 1.0\n\n")
         f.write("reset_timestep  0\n")
