@@ -17,3 +17,4 @@ cps
 cps.log
 test.py
 .*
+*.out
