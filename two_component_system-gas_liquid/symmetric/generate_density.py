@@ -1,14 +1,15 @@
-# dumpファイルから密度を計算する
+# dumpファイルからdensityファイルを出力する
 
 import re
 import sys
 import math
 
+## dumpファイルを読み込み、二種類の粒子の位置リストを作成する
 def loadfile(filename):
     with open(filename) as f:
-        # aは出力する範囲を特定する変数
+        ### aは出力する範囲を特定する変数
         a = 0
-        # bはdumpを吐いている数(最大2001)
+        ### bはdumpを吐いている数(最大6)
         b = 0
         for line in f:
             if re.match("ITEM: ATOMS id type xs ys zs", line):
