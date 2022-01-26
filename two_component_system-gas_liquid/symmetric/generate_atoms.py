@@ -135,24 +135,19 @@ right_s = round(math.pow((half_volume*0.02/4), 1/3))
 left_num = left_s**3*4
 right_num = right_s**3*4
 total_num = left_num + right_num
-# print(total_num)
 
 atoms = []
 left_a_num = round(left_num * a_composition_ratio)
 left_b_num = left_num - left_a_num
 right_a_num = round(right_num * a_composition_ratio)
 right_b_num = right_num - right_a_num
-left_density_a = left_a_num/half_volume
-left_density_b = left_b_num/half_volume
-right_density_a = right_a_num/half_volume
-right_density_b = right_b_num/half_volume
 add_ball(atoms, left_num, left_a_num, right_num, right_a_num, length)
+
 if not os.path.exists('data/atoms'):
     os.mkdir('data/atoms')
 if not os.path.exists('data/atoms/L{}'.format(length)):
     os.mkdir(('data/atoms/L{}'.format(length)))
-make_file("data/atoms/L{}/lan{}-lbn{}-ran{}-rbn{}.atoms"
-.format(length, left_a_num, left_b_num, right_a_num, right_b_num), atoms, length)
+make_file("data/atoms/L{}/lan{}-lbn{}-ran{}-rbn{}.atoms".format(length, left_a_num, left_b_num, right_a_num, right_b_num), atoms, length)
 
 # # 分子の速度平均が≒0になっていることの確認
 # sum_a_vx = 0

@@ -39,15 +39,11 @@ right_s = round(math.pow((half_volume*0.02/4), 1/3))
 left_num = left_s**3*4
 right_num = right_s**3*4
 total_num = left_num + right_num
-
 left_a_num = round(left_num * a_composition_ratio)
 left_b_num = left_num - left_a_num
 right_a_num = round(right_num * a_composition_ratio)
 right_b_num = right_num - right_a_num
-left_density_a = left_a_num/half_volume
-left_density_b = left_b_num/half_volume
-right_density_a = right_a_num/half_volume
-right_density_b = right_b_num/half_volume
+
 if not os.path.exists('data/in.melt'):
     os.mkdir('data/in.melt')
 if not os.path.exists('data/in.melt/L{}T{}'.format(length, temperature)):
@@ -56,6 +52,5 @@ if not os.path.exists('data/dump.melt'):
     os.mkdir('data/dump.melt')
 if not os.path.exists('data/dump.melt/L{}T{}'.format(length, temperature)):
     os.mkdir(('data/dump.melt/L{}T{}'.format(length, temperature)))
-make_file("data/in.melt/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.in"
-.format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num),
+make_file("data/in.melt/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.in".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num),
 length, temperature, left_a_num, left_b_num, right_a_num, right_b_num)
