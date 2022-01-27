@@ -95,7 +95,7 @@ if not os.path.exists('density'):
 if not os.path.exists('density/density'):
     os.mkdir('density/density')
 if not os.path.exists('density/density/L{}T{}'.format(length, temperature)):
-    os.mkdir(('density/density/L{}T{}'.format(length, temperature)))
+    os.mkdir('density/density/L{}T{}'.format(length, temperature))
 makefile("density/density/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.density".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num), type1_density_list, type2_density_list)
 
 
