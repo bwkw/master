@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#SBATCH -p i8cpu
+#SBATCH -p F1cpu
 #SBATCH -N 1
 #SBATCH -n 128
 #SBATCH --mail-type=ALL
