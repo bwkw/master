@@ -38,8 +38,8 @@ right_b_num = right_num - right_a_num
 
 if not os.path.exists('density'):
     os.mkdir('density')
-    if not os.path.exists('density/density_plt'):
-        os.mkdir('density/density_plt')
-        if not os.path.exists('density/density_plt/L{}T{}'.format(length, temperature)):
-            os.mkdir(('density/density_plt/L{}T{}'.format(length, temperature)))
+if not os.path.exists('density/density_plt'):
+    os.mkdir('density/density_plt')
+if not os.path.exists('density/density_plt/L{}T{}'.format(length, temperature)):
+    os.mkdir(('density/density_plt/L{}T{}'.format(length, temperature)))
 make_file("density/density_plt/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.plt".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num), length, temperature, left_a_num, left_b_num, right_a_num, right_b_num)
