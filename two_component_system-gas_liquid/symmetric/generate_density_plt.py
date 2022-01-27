@@ -13,7 +13,7 @@ def make_file(filename, length, temperature, left_a_num, left_b_num, right_a_num
         f.write("set ylabel font 'Arial,15'\n")
         f.write("set tics font 'Arial,10'\n")
         f.write("set key font 'Arial,16'\n")
-        f.write("plot 'density/density/L{0}T{1}/lan{2}-lbn{3}-ran{4}-rbn{5}.density' u 1:2 title '粒子A', 'densitydensity/L{0}T{1}/lan{2}-lbn{3}-ran{4}-rbn{5}.density' u 1:3 title '粒子B',\n".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
+        f.write("plot 'density/density/L{0}T{1}/lan{2}-lbn{3}-ran{4}-rbn{5}.density' u 1:2 title '粒子A', 'density/density/L{0}T{1}/lan{2}-lbn{3}-ran{4}-rbn{5}.density' u 1:3 title '粒子B',\n".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
 
 
 ## 標準入力（paramファイル）からパラメータ取得
