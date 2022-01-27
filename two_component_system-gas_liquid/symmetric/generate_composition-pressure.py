@@ -31,12 +31,12 @@ def makefile(filename, a_composition_ratio, a_gas_density, b_gas_density):
         f.write("{} {} {}\n".format(a_composition_ratio, a_gas_density, b_gas_density))
 
 
-files = os.listdir("density_azeotrope_curve/")
+files = os.listdir("density/density")
 
 for filename in files:
     a_density_list_1000 = []
     b_density_list_1000 = []
-    create_density_1000("density_azeotrope_curve/"+filename, a_density_list_1000, b_density_list_1000)
+    create_density_1000("density/density"+filename, a_density_list_1000, b_density_list_1000)
     a_density_list_10 = []
     b_density_list_10 = []
     create_density_10(a_density_list_10, b_density_list_10, a_density_list_1000, b_density_list_1000)
