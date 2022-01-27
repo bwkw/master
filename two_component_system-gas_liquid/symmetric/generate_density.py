@@ -3,7 +3,6 @@
 import math
 import os
 import re
-import sys
 
 
 ## dumpファイルを読み込み、二種類の粒子の位置リストを作成する
@@ -55,17 +54,10 @@ left_b_num = left_num - left_a_num
 right_a_num = round(right_num * a_composition_ratio)
 right_b_num = right_num - right_a_num
 
-if not os.path.exists('density'):
-    os.mkdir('density')
-    if not os.path.exists('density/density'):
-        os.mkdir('density/density')
-if not os.path.exists('density/density/L{}T{}'.format(length, temperature)):
-    os.mkdir(('density/density/L{}T{}'.format(length, temperature)))
 type1_x_list = []
 type2_x_list = []
 loadfile("data/dump.melt/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.dump".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
 
-# ここから
 x_interval = 0.001
 x_interval_num = int(1/float(x_interval))
 type1_density_list = [0]*(x_interval_num)
@@ -78,6 +70,10 @@ for i in range(len(type1_x_list)):
         type1_density_list[density_position] += 1
     elif x == 1:
         type1_density_list[999] += 1
+    else:
+        x -= 1
+        density_position = math.floor(float(x)/float(0.001))
+        type1_density_list[density_position] += 1
 
 for i in range(len(type2_x_list)):
     x = float(type2_x_list[i])
@@ -86,11 +82,21 @@ for i in range(len(type2_x_list)):
         type2_density_list[density_position] += 1
     elif x == 1:
         type2_density_list[999] += 1
+    else:
+        x -= 1
+        density_position = math.floor(float(x)/float(0.001))
+        type1_density_list[density_position] += 1
 
 type1_density_list = list(map(lambda x: x/(0.001*half_volume*2*5), type1_density_list))
 type2_density_list = list(map(lambda x: x/(0.001*half_volume*2*5), type2_density_list))
 
-makefile("density/lna{}-lnb{}-lda{}-ldb{}-T{}.density".format(left_num_a, left_num_b, left_density_a, left_density_b, temperature), type1_density_list, type2_density_list)
+if not os.path.exists('density'):
+    os.mkdir('density')
+    if not os.path.exists('density/density'):
+        os.mkdir('density/density')
+        if not os.path.exists('density/density/L{}T{}'.format(length, temperature)):
+            os.mkdir(('density/density/L{}T{}'.format(length, temperature)))
+makefile("density/density/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.density".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num), type1_density_list, type2_density_list)
 
 
 # liquid_density = 0
