@@ -8,7 +8,8 @@ dat/*
 lmp_serial
 dump.sh.*
 temp.sh.*
-
+*.sh.e*
+*.sh.o*
 *.dat
 log.lammps
 dump.melt/*
