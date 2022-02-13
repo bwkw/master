@@ -36,4 +36,4 @@ python3 generate_density.py < data/param/L80T1.1/C0.875.param
 python3 generate_density.py < data/param/L80T1.1/C0.9.param
 python3 generate_density.py < data/param/L80T1.1/C0.925.param
 python3 generate_density.py < data/param/L80T1.1/C0.95.param
-python3 generate_density.py < data/param/L80T1.1/C0975.param
+python3 generate_density.py < data/param/L80T1.1/C0.975.param
