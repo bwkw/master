@@ -66,15 +66,15 @@ for filename in files:
     x = a_gas_density*b_liquid_density-a_liquid_density*b_gas_density
     # delta_x = math.sqrt((((b_liquid_density)**2)*((a_gas_stdev)**2)+((a_gas_density)**2)*((b_liquid_stdev)**2))+(((b_gas_density)**2)*((a_liquid_stdev)**2)+((a_liquid_density)**2)*((b_gas_stdev)**2)))
     delta_x = b_liquid_density*a_gas_stdev + a_gas_density*b_liquid_stdev + b_gas_density*a_liquid_stdev + a_liquid_density*b_gas_stdev
-    print(a_composition_ratio)
-    print(a_gas_density)
-    print(a_gas_stdev)
-    print(a_liquid_density)
-    print(a_liquid_stdev)
-    print(b_gas_density)
-    print(b_gas_stdev)
-    print(b_liquid_density)
-    print(b_liquid_stdev)
+    # print(a_composition_ratio)
+    # print(a_gas_density)
+    # print(a_gas_stdev)
+    # print(a_liquid_density)
+    # print(a_liquid_stdev)
+    # print(b_gas_density)
+    # print(b_gas_stdev)
+    # print(b_liquid_density)
+    # print(b_liquid_stdev)
     if not os.path.exists('azeotrope'):
         os.mkdir('azeotrope')
     if not os.path.exists('azeotrope/gas_liquid_density'):
