@@ -19,3 +19,4 @@ cps.log
 test.py
 .*
 *.out
+*.pdf
