@@ -20,3 +20,4 @@ test.py
 .*
 *.out
 *.pdf
+density_img/*
