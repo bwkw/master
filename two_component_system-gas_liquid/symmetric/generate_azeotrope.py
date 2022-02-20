@@ -8,24 +8,24 @@ import statistics
 import sys
 
 
-## densityファイルを基に、1000区切りの密度リストを作成する
-def create_density_1000(filename, a_density_list_1000, b_density_list_1000):
+## densityファイルを基に、10000区切りの密度リストを作成する
+def create_density_10000(filename, a_density_list_10000, b_density_list_10000):
     with open(filename) as f:
         for line in f:
             line = line.split(' ')
             line[2] = line[2].replace('\n', '')
-            a_density_list_1000.append(float(line[1]))
-            b_density_list_1000.append(float(line[2]))
+            a_density_list_10000.append(float(line[1]))
+            b_density_list_10000.append(float(line[2]))
 
 ## densityファイルを基に、10区切りの密度平均/標準偏差リストを作成する
-def create_density_10(a_density_list_10, b_density_list_10, a_density_list_1000, b_density_list_1000, a_stdev_list_10, b_stdev_list_10):
+def create_density_10(a_density_list_10, b_density_list_10, a_density_list_10000, b_density_list_10000, a_stdev_list_10, b_stdev_list_10):
     for i in range(10):
-        first = 100*i
-        last = 100*(i+1)
-        a_ave_density = sum(a_density_list_1000[first:last])/len(a_density_list_1000[first:last])
-        a_stdev = statistics.pstdev(a_density_list_1000[first:last])/math.sqrt(len(a_density_list_1000[first:last]))
-        b_ave_density = sum(b_density_list_1000[first:last])/len(b_density_list_1000[first:last])
-        b_stdev = statistics.pstdev(b_density_list_1000[first:last])/math.sqrt(len(a_density_list_1000[first:last]))
+        first = 1000*i
+        last = 1000*(i+1)
+        a_ave_density = sum(a_density_list_10000[first:last])/len(a_density_list_10000[first:last])
+        a_stdev = statistics.pstdev(a_density_list_10000[first:last])/math.sqrt(len(a_density_list_10000[first:last]))
+        b_ave_density = sum(b_density_list_10000[first:last])/len(b_density_list_10000[first:last])
+        b_stdev = statistics.pstdev(b_density_list_10000[first:last])/math.sqrt(len(a_density_list_10000[first:last]))
         a_density_list_10.append(a_ave_density)
         a_stdev_list_10.append(a_stdev)
         b_density_list_10.append(b_ave_density)
@@ -47,14 +47,14 @@ files = os.listdir("density/density/L{}T{}/".format(length, temperature))
 for filename in files:
     result = re.findall(r"\d+", filename)
     a_composition_ratio = round((int(result[0]))/(int(result[0])+int(result[1])), 3)
-    a_density_list_1000 = []
-    b_density_list_1000 = []
-    create_density_1000("density/density/L{}T{}/".format(length, temperature)+filename, a_density_list_1000, b_density_list_1000)
+    a_density_list_10000 = []
+    b_density_list_10000 = []
+    create_density_10000("density/density/L{}T{}/".format(length, temperature)+filename, a_density_list_10000, b_density_list_10000)
     a_density_list_10 = []
     a_stdev_list_10 = []
     b_density_list_10 = []
     b_stdev_list_10 = []
-    create_density_10(a_density_list_10, b_density_list_10, a_density_list_1000, b_density_list_1000, a_stdev_list_10, b_stdev_list_10)
+    create_density_10(a_density_list_10, b_density_list_10, a_density_list_10000, b_density_list_10000, a_stdev_list_10, b_stdev_list_10)
     a_gas_density = a_density_list_10[7]
     a_gas_stdev = a_stdev_list_10[7]
     a_liquid_density = a_density_list_10[2]
