@@ -4,7 +4,7 @@ set xlabel '{/Arial-Italic A-composition-ratio}'
 set ylabel '{/Arial-Italic X}'
 set xlabel font 'Arial,15'
 set ylabel font 'Arial,15'
-set xrange [0.4:0.6]
+set xrange [0.0:1.0]
 set tics font 'Arial,10'
 
 f(x) = a*x**2 + b*x + c
