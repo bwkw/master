@@ -19,9 +19,9 @@ def make_file(filename, length, temperature, left_a_num, left_b_num, right_a_num
         f.write("pair_coeff 1 2 1.05 0.9 3.0\n")
         f.write("pair_coeff 2 2 1.0 1.0 3.0\n\n")
         f.write("fix 1 all nvt temp {} {} 0.01\n\n".format(temperature, temperature))
-        f.write("run 1000000\n\n")
+        f.write("run 2000000\n\n")
         f.write("dump id all atom 100 data/dump.melt/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.dump\n\n".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
-        f.write("run 10000")
+        f.write("run 100000")
 
 
 ## 標準入力（paramファイル）からパラメータ取得
