@@ -19,7 +19,7 @@ def loadfile(filename):
                 continue
             elif re.match("ITEM: TIMESTEP", line):
                 a = 0
-            if ((a == 1) and ((b >= 2) and (b <= 101))):
+            if ((a == 1) and ((b >= 2) and (b <= 1001))):
                 line = line.split()
                 type = line[1]
                 x = line[2]
@@ -87,8 +87,8 @@ for i in range(len(type2_x_list)):
         density_position = math.floor(float(x)/float(0.0001))
         type1_density_list[density_position] += 1
 
-type1_density_list = list(map(lambda x: x/(0.0001*half_volume*2*100), type1_density_list))
-type2_density_list = list(map(lambda x: x/(0.0001*half_volume*2*100), type2_density_list))
+type1_density_list = list(map(lambda x: x/(0.0001*half_volume*2*1000), type1_density_list))
+type2_density_list = list(map(lambda x: x/(0.0001*half_volume*2*1000), type2_density_list))
 
 if not os.path.exists('density'):
     os.mkdir('density')
