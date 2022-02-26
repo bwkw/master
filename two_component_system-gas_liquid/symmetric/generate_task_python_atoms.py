@@ -13,4 +13,4 @@ composition_number = int(sys.argv[2])
 temperature = float(sys.argv[3])
 for i in range(1, composition_number):
     a_composition_ratio = round((1/composition_number)*int(i), 3)
-    make_file("task/python/atoms/L{}T{}C{}atoms.sh".format(length, temperature, composition_number), length, temperature, a_composition_ratio)
+    make_file("task/python/atoms/L{}C{}atoms.sh".format(length, composition_number), length, temperature, a_composition_ratio)
