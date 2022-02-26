@@ -78,13 +78,13 @@ for i in range(len(type1_x_list)):
 for i in range(len(type2_x_list)):
     x = float(type2_x_list[i])
     if x < 1:
-        density_position = math.floor(float(x)/float(0.001))
+        density_position = math.floor(float(x)/float(0.0001))
         type2_density_list[density_position] += 1
     elif x == 1:
         type2_density_list[9999] += 1
     else:
         x -= 1
-        density_position = math.floor(float(x)/float(0.001))
+        density_position = math.floor(float(x)/float(0.0001))
         type1_density_list[density_position] += 1
 
 type1_density_list = list(map(lambda x: x/(0.0001*half_volume*2*1000), type1_density_list))
