@@ -95,7 +95,7 @@ for filename in files:
         os.mkdir('azeotrope')
     if not os.path.exists('azeotrope/gas_liquid_density'):
         os.mkdir('azeotrope/gas_liquid_density')
-    # make_ab_gasliquid_file("azeotrope/gas_liquid_density/L{}T{}.dat".format(length, temperature), a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density, x)
+    make_ab_gasliquid_file("azeotrope/gas_liquid_density/L{}T{}.dat".format(length, temperature), a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density, x)
     ratio_parameter = []
     ratio_parameter.append(a_composition_ratio)
     ratio_parameter.append(x)
@@ -112,4 +112,4 @@ ratio_parameters = sorted(ratio_parameters, reverse=False, key=lambda x: x[0])
 for ratio_parameter in ratio_parameters:
     if not os.path.exists('azeotrope/azeotrope'):
         os.mkdir('azeotrope/azeotrope')
-    # make_azeotrope_file("azeotrope/azeotrope/L{}T{}.dat".format(length, temperature), ratio_parameter[0], ratio_parameter[1], ratio_parameter[2])
+    make_azeotrope_file("azeotrope/azeotrope/L{}T{}.dat".format(length, temperature), ratio_parameter[0], ratio_parameter[1], ratio_parameter[2])

@@ -152,3 +152,315 @@ correlation matrix of the fit parameters:
 d               1.000 
 e              -0.969  1.000 
 f               0.760 -0.876  1.000 
+
+
+*******************************************************************************
+Sun Feb 27 09:39:22 2022
+
+
+FIT:    data read from 'azeotrope/yz/L80T1.1.dat' u 1:2
+        format = x:z
+        x range restricted to [0.00000 : 1.00000]
+        #datapoints = 49
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c            
+   0 1.7842974426e+02   0.00e+00  7.13e-01    1.000000e+00   1.000000e+00   1.000000e+00
+   4 4.5539130223e-06  -1.65e-02  7.13e-05   -5.490190e-02   5.550367e-02  -6.024378e-04
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 4.55391e-06
+rel. change during last iteration : -1.6475e-07
+
+degrees of freedom    (FIT_NDF)                        : 46
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00031464
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.89981e-08
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -0.0549019       +/- 0.0006286    (1.145%)
+b               = 0.0555037        +/- 0.0006483    (1.168%)
+c               = -0.000602438     +/- 0.0001405    (23.33%)
+
+correlation matrix of the fit parameters:
+                a      b      c      
+a               1.000 
+b              -0.969  1.000 
+c               0.760 -0.876  1.000 
+
+
+*******************************************************************************
+Sun Feb 27 09:39:22 2022
+
+
+FIT:    data read from 'azeotrope/yz/L80T1.1.dat' u 1:3
+        format = x:z
+        x range restricted to [0.00000 : 1.00000]
+        #datapoints = 49
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = d*x**2 + e*x + f
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   d             e             f            
+   0 1.7843722095e+02   0.00e+00  7.13e-01    1.000000e+00   1.000000e+00   1.000000e+00
+   4 3.6579665969e-06  -2.03e-02  7.13e-05   -5.476265e-02   5.451522e-02  -1.218696e-04
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 3.65797e-06
+rel. change during last iteration : -2.03171e-07
+
+degrees of freedom    (FIT_NDF)                        : 46
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000281995
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.9521e-08
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+d               = -0.0547626       +/- 0.0005634    (1.029%)
+e               = 0.0545152        +/- 0.0005811    (1.066%)
+f               = -0.00012187      +/- 0.000126     (103.4%)
+
+correlation matrix of the fit parameters:
+                d      e      f      
+d               1.000 
+e              -0.969  1.000 
+f               0.760 -0.876  1.000 
+
+
+*******************************************************************************
+Sun Feb 27 09:40:22 2022
+
+
+FIT:    data read from 'azeotrope/yz/L80T1.0.dat' u 1:2
+        format = x:z
+        x range restricted to [0.00000 : 1.00000]
+        #datapoints = 49
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c            
+   0 1.7890794928e+02   0.00e+00  7.13e-01    1.000000e+00   1.000000e+00   1.000000e+00
+   4 7.0167210614e-06  -8.16e-03  7.13e-05   -3.810706e-02   3.923354e-02  -7.826813e-04
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 7.01672e-06
+rel. change during last iteration : -8.15708e-08
+
+degrees of freedom    (FIT_NDF)                        : 46
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00039056
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.52537e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -0.0381071       +/- 0.0007802    (2.047%)
+b               = 0.0392335        +/- 0.0008048    (2.051%)
+c               = -0.000782681     +/- 0.0001745    (22.29%)
+
+correlation matrix of the fit parameters:
+                a      b      c      
+a               1.000 
+b              -0.969  1.000 
+c               0.760 -0.876  1.000 
+
+
+*******************************************************************************
+Sun Feb 27 09:40:22 2022
+
+
+FIT:    data read from 'azeotrope/yz/L80T1.0.dat' u 1:3
+        format = x:z
+        x range restricted to [0.00000 : 1.00000]
+        #datapoints = 49
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = d*x**2 + e*x + f
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   d             e             f            
+   0 1.7894643499e+02   0.00e+00  7.13e-01    1.000000e+00   1.000000e+00   1.000000e+00
+   4 8.5945713637e-06  -6.49e-03  7.13e-05   -3.782622e-02   3.679629e-02   3.163048e-04
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 8.59457e-06
+rel. change during last iteration : -6.48778e-08
+
+degrees of freedom    (FIT_NDF)                        : 46
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000432248
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.86839e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+d               = -0.0378262       +/- 0.0008635    (2.283%)
+e               = 0.0367963        +/- 0.0008907    (2.421%)
+f               = 0.000316305      +/- 0.0001931    (61.04%)
+
+correlation matrix of the fit parameters:
+                d      e      f      
+d               1.000 
+e              -0.969  1.000 
+f               0.760 -0.876  1.000 
+
+
+*******************************************************************************
+Sun Feb 27 09:40:23 2022
+
+
+FIT:    data read from 'azeotrope/yz/L80T1.1.dat' u 1:2
+        format = x:z
+        x range restricted to [0.00000 : 1.00000]
+        #datapoints = 49
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c            
+   0 4.5309970999e-04   0.00e+00  1.62e-02   -3.810706e-02   3.923354e-02  -7.826813e-04
+   4 4.5539130223e-06  -2.83e-02  1.62e-06   -5.490190e-02   5.550367e-02  -6.024379e-04
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 4.55391e-06
+rel. change during last iteration : -2.82749e-07
+
+degrees of freedom    (FIT_NDF)                        : 46
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00031464
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.89981e-08
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -0.0549019       +/- 0.0006286    (1.145%)
+b               = 0.0555037        +/- 0.0006483    (1.168%)
+c               = -0.000602438     +/- 0.0001405    (23.33%)
+
+correlation matrix of the fit parameters:
+                a      b      c      
+a               1.000 
+b              -0.969  1.000 
+c               0.760 -0.876  1.000 
+
+
+*******************************************************************************
+Sun Feb 27 09:40:23 2022
+
+
+FIT:    data read from 'azeotrope/yz/L80T1.1.dat' u 1:3
+        format = x:z
+        x range restricted to [0.00000 : 1.00000]
+        #datapoints = 49
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = d*x**2 + e*x + f
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   d             e             f            
+   0 4.7099632922e-04   0.00e+00  1.55e-02   -3.782622e-02   3.679629e-02   3.163048e-04
+   5 3.6579665969e-06  -9.21e-06  1.55e-07   -5.476265e-02   5.451522e-02  -1.218696e-04
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 3.65797e-06
+rel. change during last iteration : -9.20857e-11
+
+degrees of freedom    (FIT_NDF)                        : 46
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000281995
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.9521e-08
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+d               = -0.0547626       +/- 0.0005634    (1.029%)
+e               = 0.0545152        +/- 0.0005811    (1.066%)
+f               = -0.00012187      +/- 0.000126     (103.4%)
+
+correlation matrix of the fit parameters:
+                d      e      f      
+d               1.000 
+e              -0.969  1.000 
+f               0.760 -0.876  1.000 
+
+
+*******************************************************************************
+Sun Feb 27 09:41:50 2022
+
+
+FIT:    data read from 'azeotrope/yz/L80T1.0.dat' u 1:2
+        format = x:z
+        x range restricted to [0.00000 : 1.00000]
+        #datapoints = 49
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x**2 + b*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c            
+   0 1.7890794928e+02   0.00e+00  7.13e-01    1.000000e+00   1.000000e+00   1.000000e+00
+   4 7.0167210614e-06  -8.16e-03  7.13e-05   -3.810706e-02   3.923354e-02  -7.826813e-04
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 7.01672e-06
+rel. change during last iteration : -8.15708e-08
+
+degrees of freedom    (FIT_NDF)                        : 46
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00039056
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.52537e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -0.0381071       +/- 0.0007802    (2.047%)
+b               = 0.0392335        +/- 0.0008048    (2.051%)
+c               = -0.000782681     +/- 0.0001745    (22.29%)
+
+correlation matrix of the fit parameters:
+                a      b      c      
+a               1.000 
+b              -0.969  1.000 
+c               0.760 -0.876  1.000 
+
+
+*******************************************************************************
+Sun Feb 27 09:41:50 2022
+
+
+FIT:    data read from 'azeotrope/yz/L80T1.0.dat' u 1:3
+        format = x:z
+        x range restricted to [0.00000 : 1.00000]
+        #datapoints = 49
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = d*x**2 + e*x + f
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   d             e             f            
+   0 1.7894643499e+02   0.00e+00  7.13e-01    1.000000e+00   1.000000e+00   1.000000e+00
+   4 8.5945713637e-06  -6.49e-03  7.13e-05   -3.782622e-02   3.679629e-02   3.163048e-04
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 8.59457e-06
+rel. change during last iteration : -6.48778e-08
+
+degrees of freedom    (FIT_NDF)                        : 46
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000432248
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.86839e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+d               = -0.0378262       +/- 0.0008635    (2.283%)
+e               = 0.0367963        +/- 0.0008907    (2.421%)
+f               = 0.000316305      +/- 0.0001931    (61.04%)
+
+correlation matrix of the fit parameters:
+                d      e      f      
+d               1.000 
+e              -0.969  1.000 
+f               0.760 -0.876  1.000 
