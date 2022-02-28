@@ -32,7 +32,7 @@ def loadfile(filename):
 def makefile(filename, density_list1, density_list2):
     with open(filename, "w") as f:
         for i in range(len(density_list1)):
-            f.write("{} {} {}\n".format(round(float(0.0001)*i, 4), density_list1[i], density_list2[i]))
+            f.write("{} {} {}\n".format(round(float(0.0025)*i, 4), density_list1[i], density_list2[i]))
 
 ## 標準入力（paramファイル）からパラメータ取得
 param_dic = {}
@@ -58,7 +58,7 @@ type1_x_list = []
 type2_x_list = []
 loadfile("data/dump.melt/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.dump".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
 
-x_interval = 0.0001
+x_interval = 0.0025
 x_interval_num = int(1/float(x_interval))
 type1_density_list = [0]*(x_interval_num)
 type2_density_list = [0]*(x_interval_num)
@@ -66,29 +66,29 @@ type2_density_list = [0]*(x_interval_num)
 for i in range(len(type1_x_list)):
     x = float(type1_x_list[i])
     if x < 1:
-        density_position = math.floor(float(x)/float(0.0001))
+        density_position = math.floor(float(x)/float(0.0025))
         type1_density_list[density_position] += 1
     elif x == 1:
-        type1_density_list[9999] += 1
+        type1_density_list[400] += 1
     else:
         x -= 1
-        density_position = math.floor(float(x)/float(0.0001))
+        density_position = math.floor(float(x)/float(0.0025))
         type1_density_list[density_position] += 1
 
 for i in range(len(type2_x_list)):
     x = float(type2_x_list[i])
     if x < 1:
-        density_position = math.floor(float(x)/float(0.0001))
+        density_position = math.floor(float(x)/float(0.0025))
         type2_density_list[density_position] += 1
     elif x == 1:
-        type2_density_list[9999] += 1
+        type2_density_list[400] += 1
     else:
         x -= 1
-        density_position = math.floor(float(x)/float(0.0001))
+        density_position = math.floor(float(x)/float(0.0025))
         type1_density_list[density_position] += 1
 
-type1_density_list = list(map(lambda x: x/(0.0001*half_volume*2*1000), type1_density_list))
-type2_density_list = list(map(lambda x: x/(0.0001*half_volume*2*1000), type2_density_list))
+type1_density_list = list(map(lambda x: x/(0.0025*half_volume*2*1000), type1_density_list))
+type2_density_list = list(map(lambda x: x/(0.0025*half_volume*2*1000), type2_density_list))
 
 if not os.path.exists('density'):
     os.mkdir('density')

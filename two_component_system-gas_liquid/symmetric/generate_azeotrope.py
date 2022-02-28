@@ -73,7 +73,7 @@ for filename in files:
     z = a_liquid_density*b_gas_density
     delta_z = b_gas_density*a_liquid_stdev + a_liquid_density*b_gas_stdev
     x = y-z
-    delta_x = delta_y+delta_z
+    delta_x = delta_y-delta_z
     yz_list = []
     yz_list.append(a_composition_ratio)
     yz_list.append(y)
