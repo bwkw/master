@@ -69,7 +69,7 @@ for i in range(len(type1_x_list)):
         density_position = math.floor(float(x)/float(0.0025))
         type1_density_list[density_position] += 1
     elif x == 1:
-        type1_density_list[400] += 1
+        type1_density_list[399] += 1
     else:
         x -= 1
         density_position = math.floor(float(x)/float(0.0025))
@@ -81,7 +81,7 @@ for i in range(len(type2_x_list)):
         density_position = math.floor(float(x)/float(0.0025))
         type2_density_list[density_position] += 1
     elif x == 1:
-        type2_density_list[400] += 1
+        type2_density_list[399] += 1
     else:
         x -= 1
         density_position = math.floor(float(x)/float(0.0025))
