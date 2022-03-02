@@ -4,7 +4,7 @@ set xlabel '{/Arial-Italic x}'
 set ylabel '{/Arial-Italic density}'
 set xlabel font 'Arial,15'
 set ylabel font 'Arial,15'
-set xrange [0.05:0.95]
+set xrange [0.0:1.0]
 set tics font 'Arial,10'
 set key font 'Arial,16'
 
