@@ -17,8 +17,8 @@ def make_file(filename, length, temperature, left_a_num, left_b_num, right_a_num
         f.write("db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh(x-c/2*d)\n")
         f.write("fit da(x) 'density/density/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.density' u 1:2 via a, b, dal, dag\n".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
         f.write("fit db(x) 'density/density/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.density' u 1:3 via c, d, dbl, dbg\n".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
-        f.write("plot density/density/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.density u 1:2 title 'density_a' with points pt 1, da(x) title 'density_a-fit' with line lt 1 lc rgb hsv2rgb(0, 1, 1)\n".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
-        f.write("replot density/density/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.density u 1:3 title 'density_b' with points pt 1, db(x) title 'density_b-fit' with line lt 1 lc rgb hsv2rgb(1, 1, 0)\n".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
+        f.write("plot 'density/density/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.density' u 1:2 title 'density_a' with points pt 1, da(x) title 'density_a-fit' with line lt 1 lc rgb hsv2rgb(0, 1, 1)\n".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
+        f.write("replot 'density/density/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.density' u 1:3 title 'density_b' with points pt 1, db(x) title 'density_b-fit' with line lt 1 lc rgb hsv2rgb(1, 1, 0)\n".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
 
 ## 標準入力（paramファイル）からパラメータ取得
 param_dic = {}
