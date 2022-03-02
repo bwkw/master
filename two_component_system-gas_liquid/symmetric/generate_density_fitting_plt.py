@@ -11,7 +11,7 @@ def make_file(filename, length, temperature, left_a_num, left_b_num, right_a_num
         f.write("set ylabel '{/Arial-Italic density}'\n")
         f.write("set xlabel font 'Arial,15'\n")
         f.write("set ylabel font 'Arial,15'\n")
-        f.write("set xrange [0.0:1.0]\n")
+        f.write("set xrange [0.1:0.9]\n")
         f.write("set tics font 'Arial,10'\n")
         f.write("set key font 'Arial,16'\n\n")
         f.write("da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))\n")
