@@ -4,7 +4,7 @@ set xlabel '{/Arial-Italic A-composition-ratio}'
 set ylabel '{/Arial-Italic X}'
 set xlabel font 'Arial,15'
 set ylabel font 'Arial,15'
-set xrange [0.4:0.6]
+set xrange [0.0:1.0]
 set tics font 'Arial,10'
 
-plot 'azeotrope/yz/L80T1.0.dat' u 1:2 title 'y' smooth bezier with lines lc 1, 'azeotrope/yz/L80T1.0.dat' u 1:3 title 'z' smooth bezier with lines lc 1
+plot 'azeotrope/yz/L80T1.0.dat' u 1:2 title 'y' with yerrorbars pt 4, 'azeotrope/yz/L80T1.0.dat' u 1:3 title 'z' with yerrorbars pt 4

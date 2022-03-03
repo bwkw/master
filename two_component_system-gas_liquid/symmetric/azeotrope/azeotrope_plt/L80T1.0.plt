@@ -7,4 +7,4 @@ set ylabel font 'Arial,15'
 set xrange [0.0:1.0]
 set tics font 'Arial,10'
 set nokey
-plot 'azeotrope/azeotrope/L80T1.0.dat' with errorbars pt 4 ps 1, 0.0
+plot 'azeotrope/azeotrope/L80T1.0.dat' with yerrorbars pt 2, 0.0
