@@ -21,7 +21,7 @@ def make_file(filename, length, temperature, left_a_num, left_b_num, right_a_num
         f.write("fix 1 all nvt temp {} {} 0.01\n\n".format(temperature, temperature))
         f.write("run 3000000\n\n")
         f.write("dump id all atom 1000 ../../../../../../work/k0117/k011706/data/dump.melt/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.dump\n\n".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
-        f.write("run 200000")
+        f.write("run 1000000")
 
 
 ## 標準入力（paramファイル）からパラメータ取得
