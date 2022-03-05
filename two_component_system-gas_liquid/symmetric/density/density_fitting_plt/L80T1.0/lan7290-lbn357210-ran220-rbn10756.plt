@@ -7,6 +7,7 @@ set ylabel font 'Arial,15'
 set xrange [0.1:0.9]
 set tics font 'Arial,10'
 set key font 'Arial,16'
+set fit logfile 'test.log'
 
 da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
 db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))

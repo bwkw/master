@@ -1,10 +1,9 @@
 # densityファイルから共沸点を取得するファイル
-# 系の長さ（Length）、温度（Temperature）
+# コマンドライン引数に、系の長さ、Aの組成比分割個数、温度を入れる
 
-import math
-import os
 import re
-from uncertainties import ufloat, umath
+import sys
+from uncertainties import ufloat
 
 ## fit.logファイルから粒子Aの気相/液相密度、粒子Bの気相/液相密度取得
 def loadfile(filename):
@@ -59,7 +58,10 @@ def make_azeotrope_file(filename, a_composition_ratio, X):
         f.write("{} {}\n".format(a_composition_ratio, X))
 
 parameters = []
-loadfile("fit.log")
+length = int(sys.argv[1])
+composition_number = int(sys.argv[2])
+temperature = float(sys.argv[3])
+loadfile("density/density_fitting/L{}T{}C{}.log".format(length, temperature, composition_number))
 
 for parameter in parameters:
     a_composition_ratio = parameter[0]

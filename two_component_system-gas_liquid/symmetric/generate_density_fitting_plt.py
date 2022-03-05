@@ -1,9 +1,11 @@
 # densityを可視化する用のpltファイル作成
+# コマンドライン引数に、Aの組成比分割個数を入れる
 
 import math
 import os
+import sys
 
-def make_file(filename, length, temperature, left_a_num, left_b_num, right_a_num, right_b_num):
+def make_file(filename, length, temperature, composition_number, left_a_num, left_b_num, right_a_num, right_b_num):
     with open(filename, "w") as f:
         f.write("set term pdf\n")
         f.write("set out 'density/density_fitting_img/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.pdf'\n".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
@@ -13,7 +15,8 @@ def make_file(filename, length, temperature, left_a_num, left_b_num, right_a_num
         f.write("set ylabel font 'Arial,15'\n")
         f.write("set xrange [0.1:0.9]\n")
         f.write("set tics font 'Arial,10'\n")
-        f.write("set key font 'Arial,16'\n\n")
+        f.write("set key font 'Arial,16'\n")
+        f.write("set fit logfile 'density/density_fitting/L{}T{}C{}.log'\n\n".format(length, temperature, composition_number))
         f.write("da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))\n")
         f.write("db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))\n")
         f.write("fit da(x) 'density/density/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.density' u 1:2 via a, b, dal, dag\n".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num))
@@ -27,6 +30,7 @@ for l in range(3):
     a, b = input().split("=")
     param_dic[a] = b
 
+composition_number = int(sys.argv[1])
 length = int(param_dic["length"])
 a_composition_ratio = float(param_dic["a_composition_ratio"])
 temperature = float(param_dic["temperature"])
@@ -47,4 +51,4 @@ if not os.path.exists('density/density_fitting_plt'):
     os.mkdir('density/density_fitting_plt')
 if not os.path.exists('density/density_fitting_plt/L{}T{}'.format(length, temperature)):
     os.mkdir(('density/density_fitting_plt/L{}T{}'.format(length, temperature)))
-make_file("density/density_fitting_plt/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.plt".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num), length, temperature, left_a_num, left_b_num, right_a_num, right_b_num)
+make_file("density/density_fitting_plt/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.plt".format(length, temperature, composition_number, left_a_num, left_b_num, right_a_num, right_b_num), length, temperature, left_a_num, left_b_num, right_a_num, right_b_num)
