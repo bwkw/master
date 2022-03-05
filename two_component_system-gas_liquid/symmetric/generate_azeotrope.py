@@ -51,11 +51,11 @@ def make_ab_gasliquid_file(filename, a_composition_ratio, a_gas_density, a_liqui
 
 def make_yz_file(filename, a_composition_ratio, Y, Z):
     with open(filename, "a") as f:
-        f.write("{} {} {}\n".format(a_composition_ratio, Y, Z))
+        f.write("{} {} {} {} {}\n".format(a_composition_ratio, Y.n, Y.s, Z.n, Z.s))
 
 def make_azeotrope_file(filename, a_composition_ratio, X):
     with open(filename, "a") as f:
-        f.write("{} {}\n".format(a_composition_ratio, X))
+        f.write("{} {} {}\n".format(a_composition_ratio, X.n, X.s))
 
 parameters = []
 length = int(sys.argv[1])
