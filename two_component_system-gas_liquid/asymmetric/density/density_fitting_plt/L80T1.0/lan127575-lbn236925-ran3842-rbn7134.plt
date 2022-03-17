@@ -4,7 +4,7 @@ set xlabel '{/Arial-Italic x}'
 set ylabel '{/Arial-Italic density}'
 set xlabel font 'Arial,15'
 set ylabel font 'Arial,15'
-set xrange [0.1:0.9]
+set xrange [0.2:0.8]
 set tics font 'Arial,10'
 set key font 'Arial,16'
 set fit logfile 'density/density_fitting/L80T1.0C100.log'
