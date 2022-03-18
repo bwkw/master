@@ -16,4 +16,4 @@ half_volume = length**3
 
 for i in range(1, composition_number):
     a_composition_ratio = round((1/composition_number)*int(i), 3)
-    make_file("task/python/density/L{}T{}C{}.sh".format(length, temperature, composition_number), length, temperature, a_composition_ratio)
+    make_file("task/python/density/L{}T{}C{}density.sh".format(length, temperature, composition_number), length, temperature, a_composition_ratio)
