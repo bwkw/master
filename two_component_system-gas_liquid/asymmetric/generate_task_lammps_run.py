@@ -8,7 +8,7 @@ import sys
 def make_base_file(filename):
     with open(filename, "w") as f:
         f.write("#!/bin/sh\n\n")
-        f.write("#SBATCH -p L144cpu\n")
+        f.write("#SBATCH -p F144cpu\n")
         f.write("#SBATCH -N 144\n")
         f.write("#SBATCH -n 18432\n")
         f.write("#SBATCH --mail-type=ALL\n")
