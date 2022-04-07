@@ -13,7 +13,7 @@ def make_file(filename, length, temperature, composition_number, left_a_num, lef
         f.write("set ylabel '{/Arial-Italic density}'\n")
         f.write("set xlabel font 'Arial,15'\n")
         f.write("set ylabel font 'Arial,15'\n")
-        f.write("set xrange [0.1:0.9]\n")
+        f.write("set xrange [0.2:0.8]\n")
         f.write("set tics font 'Arial,10'\n")
         f.write("set key font 'Arial,16'\n")
         f.write("set fit logfile 'density/density_fitting/L{}T{}C{}.log'\n\n".format(length, temperature, composition_number))
@@ -30,7 +30,7 @@ for l in range(3):
     a, b = input().split("=")
     param_dic[a] = b
 
-composition_number = 100
+composition_number = 50
 length = int(param_dic["length"])
 a_composition_ratio = float(param_dic["a_composition_ratio"])
 temperature = float(param_dic["temperature"])
