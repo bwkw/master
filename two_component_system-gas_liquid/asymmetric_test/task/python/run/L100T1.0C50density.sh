@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #SBATCH -p F144cpu
-#SBATCH -N 72
+#SBATCH -N 144
 #SBATCH -n 256
 #SBATCH -c 72
 #SBATCH --mail-type=ALL
