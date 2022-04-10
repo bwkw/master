@@ -1,9 +1,9 @@
 #!/bin/sh
 
-#SBATCH -p F72cpu
-#SBATCH -N 72
-#SBATCH -n 128
-#SBATCH -c 72
+#SBATCH -p F144cpu
+#SBATCH -N 144
+#SBATCH -n 576
+#SBATCH -c 32
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=n.shota.1139@keio.jp
 
