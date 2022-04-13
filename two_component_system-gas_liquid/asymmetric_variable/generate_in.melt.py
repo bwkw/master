@@ -51,4 +51,4 @@ if not os.path.exists('data/in.melt'):
 if not os.path.exists('data/in.melt/L{}T{}S{}'.format(length, temperature, variable_sigma)):
     os.mkdir(('data/in.melt/L{}T{}S{}'.format(length, temperature, variable_sigma)))
 make_file("data/in.melt/L{}T{}S{}/lan{}-lbn{}-ran{}-rbn{}.in".format(length, temperature, variable_sigma, left_a_num, left_b_num, right_a_num, right_b_num),
-length, temperature, left_a_num, left_b_num, right_a_num, right_b_num)
+length, temperature, left_a_num, left_b_num, right_a_num, right_b_num, variable_sigma)
