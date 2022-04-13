@@ -26,7 +26,7 @@ def make_file(filename, length, temperature, left_a_num, left_b_num, right_a_num
 
 ## 標準入力（paramファイル）からパラメータ取得
 param_dic = {}
-for l in range(3):
+for l in range(4):
     a, b = input().split("=")
     param_dic[a] = b
 
