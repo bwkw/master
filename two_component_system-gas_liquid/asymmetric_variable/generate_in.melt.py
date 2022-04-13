@@ -33,6 +33,8 @@ for l in range(3):
 length = int(param_dic["length"])
 a_composition_ratio = float(param_dic["a_composition_ratio"])
 temperature = float(param_dic["temperature"])
+variable_sigma = float(param_dic["variable_sigma"])
+
 half_volume = length**3
 left_s = round(math.pow((half_volume*0.7/4), 1/3))
 right_s = round(math.pow((half_volume*0.02/4), 1/3))
@@ -46,11 +48,7 @@ right_b_num = right_num - right_a_num
 
 if not os.path.exists('data/in.melt'):
     os.mkdir('data/in.melt')
-if not os.path.exists('data/in.melt/L{}T{}'.format(length, temperature)):
-    os.mkdir(('data/in.melt/L{}T{}'.format(length, temperature)))
-if not os.path.exists('data/dump.melt'):
-    os.mkdir('data/dump.melt')
-if not os.path.exists('data/dump.melt/L{}T{}'.format(length, temperature)):
-    os.mkdir(('data/dump.melt/L{}T{}'.format(length, temperature)))
-make_file("data/in.melt/L{}T{}/lan{}-lbn{}-ran{}-rbn{}.in".format(length, temperature, left_a_num, left_b_num, right_a_num, right_b_num),
+if not os.path.exists('data/in.melt/L{}T{}S{}'.format(length, temperature, variable_sigma)):
+    os.mkdir(('data/in.melt/L{}T{}S{}'.format(length, temperature, variable_sigma)))
+make_file("data/in.melt/L{}T{}S{}/lan{}-lbn{}-ran{}-rbn{}.in".format(length, temperature, variable_sigma, left_a_num, left_b_num, right_a_num, right_b_num),
 length, temperature, left_a_num, left_b_num, right_a_num, right_b_num)
