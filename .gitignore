@@ -21,3 +21,4 @@ test.py
 *.out
 *.pdf
 density_img/*
+parameter_test/*
