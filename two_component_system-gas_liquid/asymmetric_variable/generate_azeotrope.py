@@ -1,5 +1,5 @@
 # densityファイルから共沸点を取得するファイル
-# コマンドライン引数に、系の長さ、Aの組成比分割個数、温度を入れる
+# コマンドライン引数に、系の長さ、Aの組成比分割個数、温度、シグマを入れる
 
 import re
 import sys
@@ -17,7 +17,7 @@ def loadfile(filename):
         for line in f:
             if re.match("FIT:    data read from ", line):
                 result = re.findall(r"\d+", line)
-                a_composition_ratio = round((int(result[3]))/(int(result[3])+int(result[4])), 2)
+                a_composition_ratio = round((int(result[5]))/(int(result[5])+int(result[6])), 2)
             if re.match("dal             =", line):
                 result = line.split()
                 dal = ufloat(float(result[2]), float(result[4]))
@@ -61,7 +61,8 @@ parameters = []
 length = int(sys.argv[1])
 composition_number = int(sys.argv[2])
 temperature = float(sys.argv[3])
-loadfile("density/density_fitting/L{}T{}C{}.log".format(length, temperature, composition_number))
+variable_sigma = float(sys.argv[4])
+loadfile("density/density_fitting/L{}T{}C{}S{}.log".format(length, temperature, composition_number, variable_sigma))
 
 for parameter in parameters:
     a_composition_ratio = parameter[0]
@@ -72,8 +73,8 @@ for parameter in parameters:
     Y = a_gas_density * b_liquid_density
     Z = a_liquid_density * b_gas_density
     X = Y-Z
-    make_azeotrope_file("azeotrope/azeotrope/L{}T{}.dat".format(length, temperature), a_composition_ratio, X)
-    make_yz_file("azeotrope/yz/L{}T{}.dat".format(length, temperature), a_composition_ratio, Y, Z)
+    make_azeotrope_file("azeotrope/azeotrope/L{}T{}S{}.dat".format(length, temperature, variable_sigma), a_composition_ratio, X)
+    make_yz_file("azeotrope/yz/L{}T{}S{}.dat".format(length, temperature, variable_sigma), a_composition_ratio, Y, Z)
 
 
 # ratio_parameters = []
