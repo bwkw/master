@@ -16,7 +16,7 @@ def make_file(filename, length, temperature, left_a_num, left_b_num, right_a_num
         f.write("timestep        0.001\n\n")
         f.write("pair_style lj/cut 3.0\n")
         f.write("pair_coeff 1 1 1.0 1.0 3.0\n")
-        f.write("pair_coeff 1 2 0.9 1.0 3.0\n")
+        f.write("pair_coeff 1 2 0.9 1.05 3.0\n")
         f.write("pair_coeff 2 2 1.0 1.0 3.0\n\n")
         f.write("fix 1 all nvt temp {} {} 0.01\n\n".format(temperature, temperature))
         f.write("run 3000000\n\n")
