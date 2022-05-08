@@ -4,7 +4,7 @@ import math
 import os
 
 
-def make_file(filename, length, temperature, left_a_num, left_b_num, right_a_num, right_b_num, variable_sigma):
+def make_file(filename, length, temperature, left_a_num, left_b_num, right_a_num, right_b_num, epsilon):
     with open(filename, "w") as f:
         f.write("units lj\n")
         f.write("atom_style atomic\n")
@@ -17,10 +17,10 @@ def make_file(filename, length, temperature, left_a_num, left_b_num, right_a_num
         f.write("pair_style lj/cut 3.0\n")
         f.write("pair_coeff 1 1 1.0 1.0 3.0\n")
         f.write("pair_coeff 1 2 0.9 1.05 3.0\n")
-        f.write("pair_coeff 2 2 1.0 {} 3.0\n\n".format(variable_sigma))
+        f.write("pair_coeff 2 2 1.0 {} 3.0\n\n".format(epsilon))
         f.write("fix 1 all nvt temp {} {} 0.01\n\n".format(temperature, temperature))
         f.write("run 3000000\n\n")
-        f.write("dump id all atom 1000 ../../../../../../work/k0117/k011706/asymmetric_variable/data/dump.melt/L{}T{}S{}/lan{}-lbn{}-ran{}-rbn{}.dump\n\n".format(length, temperature, variable_sigma, left_a_num, left_b_num, right_a_num, right_b_num))
+        f.write("dump id all atom 1000 ../../../../../../work/k0117/k011706/asymmetric_epsilon_variable/data/dump.melt/L{}T{}E{}/lan{}-lbn{}-ran{}-rbn{}.dump\n\n".format(length, temperature, epsilon, left_a_num, left_b_num, right_a_num, right_b_num))
         f.write("run 1000000")
 
 
@@ -33,7 +33,7 @@ for l in range(4):
 length = int(param_dic["length"])
 a_composition_ratio = float(param_dic["a_composition_ratio"])
 temperature = float(param_dic["temperature"])
-variable_sigma = float(param_dic["variable_sigma"])
+epsilon = float(param_dic["epsilon"])
 
 half_volume = length**3
 left_s = round(math.pow((half_volume*0.7/4), 1/3))
@@ -48,7 +48,7 @@ right_b_num = right_num - right_a_num
 
 if not os.path.exists('data/in.melt'):
     os.mkdir('data/in.melt')
-if not os.path.exists('data/in.melt/L{}T{}S{}'.format(length, temperature, variable_sigma)):
-    os.mkdir(('data/in.melt/L{}T{}S{}'.format(length, temperature, variable_sigma)))
-make_file("data/in.melt/L{}T{}S{}/lan{}-lbn{}-ran{}-rbn{}.in".format(length, temperature, variable_sigma, left_a_num, left_b_num, right_a_num, right_b_num),
-length, temperature, left_a_num, left_b_num, right_a_num, right_b_num, variable_sigma)
+if not os.path.exists('data/in.melt/L{}T{}E{}'.format(length, temperature, epsilon)):
+    os.mkdir(('data/in.melt/L{}T{}E{}'.format(length, temperature, epsilon)))
+make_file("data/in.melt/L{}T{}E{}/lan{}-lbn{}-ran{}-rbn{}.in".format(length, temperature, epsilon, left_a_num, left_b_num, right_a_num, right_b_num),
+length, temperature, left_a_num, left_b_num, right_a_num, right_b_num, epsilon)
