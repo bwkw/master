@@ -5,15 +5,15 @@
 import sys
 
 
-def make_file(filename, length, temperature, a_composition_ratio, variable_sigma):
+def make_file(filename, length, temperature, a_composition_ratio, epsilon):
     with open(filename, "a") as f:
-        f.write("python3 generate_in.melt.py < data/param/L{}T{}S{}/C{}.param\n".format(length, temperature, variable_sigma, a_composition_ratio))
+        f.write("python3 generate_in.melt.py < data/param/L{}T{}E{}/C{}.param\n".format(length, temperature, epsilon, a_composition_ratio))
 
 length = int(sys.argv[1])
 composition_number = int(sys.argv[2])
 temperature = float(sys.argv[3])
-variable_sigma = float(sys.argv[4])
+epsilon = float(sys.argv[4])
 
 for i in range(1, composition_number):
     a_composition_ratio = round((1/composition_number)*int(i), 3)
-    make_file("task/python/in.melt/L{}T{}C{}S{}inmelt.sh".format(length, temperature, composition_number, variable_sigma), length, temperature, a_composition_ratio, variable_sigma)
+    make_file("task/python/in.melt/L{}T{}C{}E{}inmelt.sh".format(length, temperature, composition_number, epsilon), length, temperature, a_composition_ratio, epsilon)
