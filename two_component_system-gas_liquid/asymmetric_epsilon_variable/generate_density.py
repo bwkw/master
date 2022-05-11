@@ -43,7 +43,7 @@ for l in range(4):
 length = int(param_dic["length"])
 a_composition_ratio = float(param_dic["a_composition_ratio"])
 temperature = float(param_dic["temperature"])
-variable_sigma = float(param_dic["variable_sigma"])
+variable_epsilon = float(param_dic["variable_epsilon"])
 
 half_volume = length**3
 left_s = round(math.pow((half_volume*0.7/4), 1/3))
@@ -58,7 +58,7 @@ right_b_num = right_num - right_a_num
 
 type1_x_list = []
 type2_x_list = []
-loadfile("../../../../../../work/k0117/k011706/asymmetric_variable/data/dump.melt/L{}T{}S{}/lan{}-lbn{}-ran{}-rbn{}.dump".format(length, temperature, variable_sigma, left_a_num, left_b_num, right_a_num, right_b_num))
+loadfile("../../../../../../work/k0117/k011706/asymmetric_epsilon_variable/data/dump.melt/L{}T{}E{}/lan{}-lbn{}-ran{}-rbn{}.dump".format(length, temperature, variable_epsilon, left_a_num, left_b_num, right_a_num, right_b_num))
 
 x_interval = 0.0025
 x_interval_num = int(1/float(x_interval))
@@ -96,6 +96,6 @@ if not os.path.exists('density'):
     os.mkdir('density')
 if not os.path.exists('density/density'):
     os.mkdir('density/density')
-if not os.path.exists('density/density/L{}T{}S{}'.format(length, temperature, variable_sigma)):
-    os.mkdir('density/density/L{}T{}S{}'.format(length, temperature, variable_sigma))
-makefile("density/density/L{}T{}S{}/lan{}-lbn{}-ran{}-rbn{}.density".format(length, temperature, variable_sigma, left_a_num, left_b_num, right_a_num, right_b_num), type1_density_list, type2_density_list)
+if not os.path.exists('density/density/L{}T{}E{}'.format(length, temperature, variable_epsilon)):
+    os.mkdir('density/density/L{}T{}E{}'.format(length, temperature, variable_epsilon))
+makefile("density/density/L{}T{}E{}/lan{}-lbn{}-ran{}-rbn{}.density".format(length, temperature, variable_epsilon, left_a_num, left_b_num, right_a_num, right_b_num), type1_density_list, type2_density_list)

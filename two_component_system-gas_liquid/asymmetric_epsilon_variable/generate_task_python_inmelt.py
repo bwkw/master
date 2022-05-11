@@ -1,6 +1,6 @@
 # task/python/in.meltファイル作成
-# 系の長さ（Length）、Aの組成比（CompositionRatio）、温度（Temperature）、シグマ(Sigma)
-# コマンドライン引数に、系の長さ、Aの組成比分割個数、温度、変数シグマを入れる
+# 系の長さ（Length）、Aの組成比（CompositionRatio）、温度（Temperature）、イプシロン（epsilon)
+# コマンドライン引数に、系の長さ、Aの組成比分割個数、温度、変数イプシロンを入れる
 
 import sys
 
