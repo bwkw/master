@@ -34,7 +34,7 @@ composition_number = 50
 length = int(param_dic["length"])
 a_composition_ratio = float(param_dic["a_composition_ratio"])
 temperature = float(param_dic["temperature"])
-variable_epsilon = float(param_dic["variable_epsilon"])
+variable_epsilon = float(param_dic["epsilon"])
 
 half_volume = length**3
 left_s = round(math.pow((half_volume*0.7/4), 1/3))
