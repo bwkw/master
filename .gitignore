@@ -22,3 +22,4 @@ test.py
 *.pdf
 density_img/*
 parameter_test/*
+base_folder/*
