@@ -18,7 +18,7 @@ class Atom:
 
 
 ## 各粒子のパラメータを決定する関数
-def add_ball(atoms, left_num, left_a_num, right_num, right_a_num, length):
+def add_ball(atoms, left_num, left_a_num, left_c_num, right_num, right_a_num, right_c_num, length):
     left_n = round((left_num/4)**(1/3))
     left_s = length/left_n
     left_h = left_s/2
@@ -45,6 +45,8 @@ def add_ball(atoms, left_num, left_a_num, right_num, right_a_num, length):
     left_type_list = [2] * (left_num)
     for i in range(left_a_num):
         left_type_list[i] = 1
+    for j in range(left_a_num, left_a_num+left_c_num):
+        left_type_list[j] = 3
     random.shuffle(left_type_list)
 
     num=0
@@ -86,6 +88,8 @@ def add_ball(atoms, left_num, left_a_num, right_num, right_a_num, length):
     right_type_list = [2] * (right_num)
     for i in range(right_a_num):
         right_type_list[i] = 1
+    for j in range(right_a_num, right_a_num+right_c_num):
+        right_type_list[j] = 3
     random.shuffle(right_type_list)
 
     num=0
