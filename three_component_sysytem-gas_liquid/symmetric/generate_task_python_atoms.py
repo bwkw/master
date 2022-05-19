@@ -14,4 +14,4 @@ temperature = float(sys.argv[3])
 variable_epsilon = float(sys.argv[4])
 for i in range(1, composition_number):
     a_composition_ratio = round((1/composition_number)*int(i), 3)
-    make_file("task/python/atoms/L{}C{}E{}atoms.sh".format(length, composition_number, variable_epsilon), length, temperature, a_composition_ratio, variable_epsilon)
+    make_file("task/python/atoms/L{}C{}atoms.sh".format(length, composition_number), length, temperature, a_composition_ratio, variable_epsilon)
