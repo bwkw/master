@@ -61,8 +61,8 @@ parameters = []
 length = int(sys.argv[1])
 composition_number = int(sys.argv[2])
 temperature = float(sys.argv[3])
-variable_sigma = float(sys.argv[4])
-loadfile("density/density_fitting/L{}T{}C{}S{}.log".format(length, temperature, composition_number, variable_sigma))
+variable_epsilon = float(sys.argv[4])
+loadfile("density/density_fitting/L{}T{}C{}E{}.log".format(length, temperature, composition_number, variable_epsilon))
 
 for parameter in parameters:
     a_composition_ratio = parameter[0]
@@ -73,8 +73,8 @@ for parameter in parameters:
     Y = a_gas_density * b_liquid_density
     Z = a_liquid_density * b_gas_density
     X = Y-Z
-    make_azeotrope_file("azeotrope/azeotrope/L{}T{}S{}.dat".format(length, temperature, variable_sigma), a_composition_ratio, X)
-    make_yz_file("azeotrope/yz/L{}T{}S{}.dat".format(length, temperature, variable_sigma), a_composition_ratio, Y, Z)
+    make_azeotrope_file("azeotrope/azeotrope/L{}T{}E{}.dat".format(length, temperature, variable_epsilon), a_composition_ratio, X)
+    make_yz_file("azeotrope/yz/L{}T{}E{}.dat".format(length, temperature, variable_epsilon), a_composition_ratio, Y, Z)
 
 
 # ratio_parameters = []
