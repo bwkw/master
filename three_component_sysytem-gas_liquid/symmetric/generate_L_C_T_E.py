@@ -10,7 +10,7 @@ def make_file(filename, length, a_composition_ratio, temperature, variable_epsil
         f.write("length={}\n".format(length))
         f.write("a_composition_ratio={}\n".format(a_composition_ratio))
         f.write("temperature={}\n".format(temperature))
-        f.write("varialbe_epsilon={}\n".format(variable_epsilon))
+        f.write("variable_epsilon={}\n".format(variable_epsilon))
 
 length = int(sys.argv[1])
 composition_number = int(sys.argv[2])
