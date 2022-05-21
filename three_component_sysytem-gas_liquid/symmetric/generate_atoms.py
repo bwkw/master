@@ -141,11 +141,11 @@ right_num = right_s**3*4
 total_num = left_num + right_num
 
 atoms = []
-left_c_num = 700
+left_c_num = 7000
 left_ab_num = left_num - left_c_num
 left_a_num = round(left_ab_num * a_composition_ratio)
 left_b_num = left_ab_num - left_a_num
-right_c_num = 20
+right_c_num = 200
 right_ab_num = right_num - right_c_num
 right_a_num = round(right_ab_num * a_composition_ratio)
 right_b_num = right_ab_num - right_a_num
