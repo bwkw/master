@@ -8,7 +8,7 @@ import sys
 def make_file(filename, length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num):
     with open(filename, "w") as f:
         f.write("set term pdf\n")
-        f.write("set out 'density/density_fitting_img/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.pdf".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
+        f.write("set out 'density/density_fitting_img/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.pdf\n".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
         f.write("set xlabel '{/Arial-Italic x}'\n")
         f.write("set ylabel '{/Arial-Italic density}'\n")
         f.write("set xlabel font 'Arial,15'\n")
