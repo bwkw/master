@@ -15,4 +15,4 @@ variable_epsilon = float(sys.argv[4])
 c_density = float(sys.argv[5])
 for i in range(1, composition_number):
     a_composition_ratio = round((1/composition_number)*int(i), 3)
-    make_file("task/python/atoms/L{}CD{}CN{}atoms.sh".format(length, c_density, composition_number), length, temperature, a_composition_ratio, variable_epsilon, c_density)
+    make_file("task/python/atoms/L{}CN{}CD{}atoms.sh".format(length, composition_number, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
