@@ -7,7 +7,7 @@ import sys
 
 def make_file(filename, length, temperature, a_composition_ratio, variable_epsilon, c_density):
     with open(filename, "a") as f:
-        f.write("python3 generate_in.melt.py <data/param/L{}T{}E{}CD{}/AC{}.param\n".format(length, temperature, variable_epsilon, c_density, a_composition_ratio))
+        f.write("python3 generate_in.melt.py < data/param/L{}T{}E{}CD{}/AC{}.param\n".format(length, temperature, variable_epsilon, c_density, a_composition_ratio))
 
 length = int(sys.argv[1])
 composition_number = int(sys.argv[2])
