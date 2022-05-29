@@ -24,11 +24,16 @@ def make_end_file(filename):
         f.write("wait\n")
 
 
-length = int(sys.argv[1])
-composition_number = int(sys.argv[2])
-temperature = float(sys.argv[3])
-variable_epsilon = float(sys.argv[4])
-c_density = float(sys.argv[5])
+param_dic = {}
+for l in range(5):
+    a, b = input().split("=")
+    param_dic[a] = b
+
+length = int(param_dic["length"])
+composition_number = float(param_dic["composition_number"])
+temperature = float(param_dic["temperature"])
+variable_epsilon = float(param_dic["variable_epsilon"])
+c_density = float(param_dic["c_density"])
 
 half_volume = length**3
 make_base_file("task/lammps/run/L{}T{}CN{}E{}CD{}.sh".format(length, temperature, composition_number, variable_epsilon, c_density))

@@ -9,11 +9,17 @@ def make_file(filename, length, temperature, a_composition_ratio, variable_epsil
     with open(filename, "a") as f:
         f.write("python3 generate_density_fitting_plt.py < data/param/L{}T{}E{}CD{}/AC{}.param\n".format(length, temperature, variable_epsilon, c_density, a_composition_ratio))
 
-length = int(sys.argv[1])
-composition_number = int(sys.argv[2])
-temperature = float(sys.argv[3])
-variable_epsilon = float(sys.argv[4])
-c_density = float(sys.argv[5])
+param_dic = {}
+for l in range(5):
+    a, b = input().split("=")
+    param_dic[a] = b
+
+length = int(param_dic["length"])
+composition_number = float(param_dic["composition_number"])
+temperature = float(param_dic["temperature"])
+variable_epsilon = float(param_dic["variable_epsilon"])
+c_density = float(param_dic["c_density"])
+
 for i in range(1, composition_number):
     a_composition_ratio = round((1/composition_number)*int(i), 3)
     make_file("task/python/density_fitting_plt/L{}T{}CN{}E{}CD{}density_fitting_plt.sh".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
