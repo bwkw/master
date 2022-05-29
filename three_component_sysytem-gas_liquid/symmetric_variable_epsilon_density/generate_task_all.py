@@ -1,6 +1,6 @@
 # task/lammps/runファイル作成
-# 系の長さ（Length）、Aの組成比（CompositionRatio）、温度（Temperature）
-# コマンドライン引数に、系の長さ、Aの組成比分割個数、温度を入れる
+# 系の長さ（Length）、温度（Temperature）、組成比分割数（CompositionNumber）、変数イプシロン（Epsilon）、Cの密度（Density）
+# コマンドライン引数に、系の長さ、温度、組成比分割数、変数イプシロン、Cの密度を入れる
 
 import math
 import sys
@@ -40,8 +40,8 @@ def make_inmelt_file(filename, length, temperature, a_composition_ratio, variabl
         f.write("python3 generate_in.melt.py < data/param/L{}T{}E{}CD{}/AC{}.param\n".format(length, temperature, variable_epsilon, c_density, a_composition_ratio))
 
 length = int(sys.argv[1])
-composition_number = int(sys.argv[2])
-temperature = float(sys.argv[3])
+temperature = float(sys.argv[2])
+composition_number = int(sys.argv[3])
 variable_epsilon = float(sys.argv[4])
 c_density = float(sys.argv[5])
 
