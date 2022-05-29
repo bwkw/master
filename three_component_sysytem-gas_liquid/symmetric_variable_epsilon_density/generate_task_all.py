@@ -15,11 +15,11 @@ def make_task_parameter_file(filename, length, composition_number, temperature, 
 
 def make_task_all_file(filename, length, composition_number, temperature, variable_epsilon, c_density):
     with open(filename, "a") as f:
-        f.write("python3 generate_task_python_atoms.py < task/param/L{}CN{}T{}E{}CD{}.param\n".format(length, composition_number, temperature, variable_epsilon, c_density))
-        f.write("python3 generate_task_python_inmelt.py < task/param/L{}CN{}T{}E{}CD{}.param\n".format(length, composition_number, temperature, variable_epsilon, c_density))
-        f.write("python3 generate_task_python_density.py < task/param/L{}CN{}T{}E{}CD{}.param\n".format(length, composition_number, temperature, variable_epsilon, c_density))
-        f.write("python3 generate_task_python_density_fitting_plt.py < task/param/L{}CN{}T{}E{}CD{}.param\n".format(length, composition_number, temperature, variable_epsilon, c_density))
-        f.write("python3 generate_task_lammps_run.py < task/param/L{}CN{}T{}E{}CD{}.param\n".format(length, composition_number, temperature, variable_epsilon, c_density))
+        f.write("python3 generate_task_python_atoms.py < task/param/L{}CN{}T{}E{}CD{}.sh\n".format(length, composition_number, temperature, variable_epsilon, c_density))
+        f.write("python3 generate_task_python_inmelt.py < task/param/L{}CN{}T{}E{}CD{}.sh\n".format(length, composition_number, temperature, variable_epsilon, c_density))
+        f.write("python3 generate_task_python_density.py < task/param/L{}CN{}T{}E{}CD{}.sh\n".format(length, composition_number, temperature, variable_epsilon, c_density))
+        f.write("python3 generate_task_python_density_fitting_plt.py < task/param/L{}CN{}T{}E{}CD{}.sh\n".format(length, composition_number, temperature, variable_epsilon, c_density))
+        f.write("python3 generate_task_lammps_run.py < task/param/L{}CN{}T{}E{}CD{}.sh\n".format(length, composition_number, temperature, variable_epsilon, c_density))
 
 
 length = int(sys.argv[1])
@@ -34,6 +34,6 @@ if not os.path.exists("task/param"):
 if not os.path.exists("task/python/all"):
     os.mkdir("task/python/all")
 
-make_task_parameter_file("task/param/L{}CN{}T{}E{}CD{}.param".format(length, composition_number, temperature, variable_epsilon, c_density), length, composition_number, temperature, variable_epsilon, c_density)
+make_task_parameter_file("task/param/L{}CN{}T{}E{}CD{}.sh".format(length, composition_number, temperature, variable_epsilon, c_density), length, composition_number, temperature, variable_epsilon, c_density)
 
 make_task_all_file("task/python/all/L{}CN{}T{}E{}CD{}.sh".format(length, composition_number, temperature, variable_epsilon, c_density), length, composition_number, temperature, variable_epsilon, c_density)
