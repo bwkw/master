@@ -1,0 +1,5 @@
+length=80
+a_composition_ratio=0.2
+temperature=1.0
+variable_epsilon=1.05
+c_density=0.02

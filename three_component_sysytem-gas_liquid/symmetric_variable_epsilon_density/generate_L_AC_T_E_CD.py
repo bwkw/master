@@ -14,8 +14,8 @@ def make_file(filename, length, a_composition_ratio, temperature, variable_epsil
         f.write("c_density={}\n".format(c_density))
 
 length = int(sys.argv[1])
-composition_number = int(sys.argv[2])
-temperature = float(sys.argv[3])
+temperature = float(sys.argv[2])
+composition_number = int(sys.argv[3])
 variable_epsilon = float(sys.argv[4])
 c_density = float(sys.argv[5])
 

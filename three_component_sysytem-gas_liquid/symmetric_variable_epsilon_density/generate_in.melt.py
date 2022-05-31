@@ -20,7 +20,7 @@ def make_file(filename, length, temperature, variable_epsilon, c_density, left_a
         f.write("pair_coeff 1 2 0.9 1.05 3.0\n")
         f.write("pair_coeff 2 2 1.0 1.0 3.0\n")
         f.write("pair_coeff 1 3 {} 1.0 3.0\n".format(variable_epsilon))
-        f.write("pair_coeff 2 3 0.9 1.05 3.0\n")
+        f.write("pair_coeff 2 3 0.9 1.05 1.12246\n")
         f.write("pair_coeff 3 3 1.0 1.0 3.0\n")
         f.write("fix 1 all nvt temp {} {} 0.01\n\n".format(temperature, temperature))
         f.write("run 1000000\n\n")
