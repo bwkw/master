@@ -6,4 +6,4 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=n.shota.1139@keio.jp
 
-srun task/cps task/python/density/L80T1.0CN50E1.1density.sh
+srun task/cps task/python/density/L80T1.0CN25E1.1density.sh
