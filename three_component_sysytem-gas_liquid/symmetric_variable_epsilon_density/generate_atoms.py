@@ -3,7 +3,6 @@
 import math
 import os
 import random
-from turtle import right
 
 
 ## 粒子クラス
