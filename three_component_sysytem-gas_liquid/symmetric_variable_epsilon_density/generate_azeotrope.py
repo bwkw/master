@@ -59,8 +59,8 @@ def make_azeotrope_file(filename, a_composition_ratio, X):
 
 parameters = []
 length = int(sys.argv[1])
-composition_number = int(sys.argv[2])
-temperature = float(sys.argv[3])
+temperature = float(sys.argv[2])
+composition_number = int(sys.argv[3])
 variable_epsilon = float(sys.argv[4])
 c_density = float(sys.argv[5])
 loadfile("density/density_fitting/L{}T{}CN{}E{}CD{}.log".format(length, temperature, composition_number, variable_epsilon, c_density))

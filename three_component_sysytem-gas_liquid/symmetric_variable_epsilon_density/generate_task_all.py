@@ -18,7 +18,7 @@ def make_lammps_base_file(filename):
 
 def make_lammps_file(filename, length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num):
     with open(filename, "a") as f:
-        f.write("srun --exclusive --mem-per-cpu=1840 -n 256 -c 1 -N 4 lammps < data/in.melt/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.in\n".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
+        f.write("srun --exclusive --mem-per-cpu=1840 -n 256 -c 3 -N 4 lammps < data/in.melt/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.in\n".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
 
 def make_lammps_end_file(filename):
     with open(filename, "a") as f:
