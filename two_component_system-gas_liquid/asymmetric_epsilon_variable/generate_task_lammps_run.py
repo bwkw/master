@@ -26,12 +26,12 @@ def make_end_file(filename):
 
 
 length = int(sys.argv[1])
-composition_number = int(sys.argv[2])
-temperature = float(sys.argv[3])
+temperature = float(sys.argv[2])
+composition_number = int(sys.argv[3])
 epsilon = float(sys.argv[4])
 
 half_volume = length**3
-make_base_file("task/lammps/run/L{}T{}C{}E{}.sh".format(length, temperature, composition_number, epsilon))
+make_base_file("task/lammps/run/L{}T{}CN{}E{}.sh".format(length, temperature, composition_number, epsilon))
 left_s = round(math.pow((half_volume*0.7/4), 1/3))
 right_s = round(math.pow((half_volume*0.02/4), 1/3))
 left_num = left_s**3*4
@@ -43,6 +43,6 @@ for i in range(1, composition_number):
     left_b_num = left_num - left_a_num
     right_a_num = round(right_num * a_composition_ratio)
     right_b_num = right_num - right_a_num
-    make_file("task/lammps/run/L{}T{}C{}E{}.sh".format(length, temperature, composition_number, epsilon), length, temperature, epsilon, left_a_num, left_b_num, right_a_num, right_b_num)
+    make_file("task/lammps/run/L{}T{}CN{}E{}.sh".format(length, temperature, composition_number, epsilon), length, temperature, epsilon, left_a_num, left_b_num, right_a_num, right_b_num)
 
-make_end_file("task/lammps/run/L{}T{}C{}E{}.sh".format(length, temperature, composition_number, epsilon))
+make_end_file("task/lammps/run/L{}T{}CN{}E{}.sh".format(length, temperature, composition_number, epsilon))
