@@ -60,7 +60,7 @@ for i in range(1, composition_number):
     right_a_num = round(right_num * a_composition_ratio)
     right_b_num = right_num - right_a_num
     make_lammps_file("task/lammps/run/L{}T{}CN{}E{}.sh".format(length, temperature, composition_number, variable_epsilon), length, temperature, variable_epsilon, left_a_num, left_b_num, right_a_num, right_b_num)
-    make_atoms_file("task/python/atoms/L{}CN{}atoms.sh".format(length, composition_number), length, temperature, a_composition_ratio, variable_epsilon)
+    # make_atoms_file("task/python/atoms/L{}CN{}atoms.sh".format(length, composition_number), length, temperature, a_composition_ratio, variable_epsilon)
     make_inmelt_file("task/python/in.melt/L{}T{}CN{}E{}inmelt.sh".format(length, temperature, composition_number, variable_epsilon), length, temperature, a_composition_ratio, variable_epsilon)
     make_density_file("task/python/density/L{}T{}CN{}E{}density.sh".format(length, temperature, composition_number, variable_epsilon), length, temperature, a_composition_ratio, variable_epsilon)
     make_density_fitting_plt_file("task/python/density_fitting_plt/L{}T{}CN{}E{}density_fitting_plt.sh".format(length, temperature, composition_number, variable_epsilon), length, temperature, a_composition_ratio, variable_epsilon)
