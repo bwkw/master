@@ -30,7 +30,7 @@ for l in range(5):
     a, b = input().split("=")
     param_dic[a] = b
 
-composition_number = 20
+composition_number = 50
 length = int(param_dic["length"])
 a_composition_ratio = float(param_dic["a_composition_ratio"])
 temperature = float(param_dic["temperature"])

@@ -19,7 +19,7 @@ def loadfile(filename):
                 continue
             elif re.match("ITEM: TIMESTEP", line):
                 a = 0
-            if ((a == 1) and ((b >= 2) and (b <= 501))):
+            if ((a == 1) and ((b >= 2) and (b <= 1001))):
                 line = line.split()
                 type = line[1]
                 x = line[2]

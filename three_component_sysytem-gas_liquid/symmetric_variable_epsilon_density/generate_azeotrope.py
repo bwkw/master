@@ -17,9 +17,11 @@ def loadfile(filename):
         for line in f:
             if re.match("FIT:    data read from ", line):
                 result = re.findall(r"\d+", line)
-                a_composition_ratio = round((int(result[5]))/(int(result[5])+int(result[6])), 2)
+                print(result[7])
+                a_composition_ratio = round((int(result[7]))/(int(result[7])+int(result[8])), 2)
             if re.match("dal             =", line):
                 result = line.split()
+                print(float(result[2]))
                 dal = ufloat(float(result[2]), float(result[4]))
             if re.match("dag             =", line):
                 result = line.split()
