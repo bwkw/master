@@ -41,7 +41,7 @@ temperature = float(sys.argv[2])
 composition_number = int(sys.argv[3])
 variable_epsilon = float(sys.argv[4])
 
-make_atoms_file("task/python/run/L{}CN{}atoms.sh".format(length, composition_number), length, composition_number)
+# make_atoms_file("task/python/run/L{}CN{}atoms.sh".format(length, composition_number), length, composition_number)
 make_inmelt_file("task/python/run/L{}T{}CN{}E{}inmelt.sh".format(length, temperature, composition_number, variable_epsilon),length, temperature, composition_number, variable_epsilon)
 make_density_file("task/python/run/L{}T{}CN{}E{}density.sh".format(length, temperature, composition_number, variable_epsilon),length, temperature, composition_number, variable_epsilon)
 make_density_fitting_plt_file("task/python/run/L{}T{}CN{}E{}density_fitting_plt.sh".format(length, temperature, composition_number, variable_epsilon),length, temperature, composition_number, variable_epsilon)
