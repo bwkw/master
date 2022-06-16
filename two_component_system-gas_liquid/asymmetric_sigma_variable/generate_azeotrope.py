@@ -44,6 +44,19 @@ def loadfile(filename):
                 dbl = 0
                 dbg = 0
 
+def make_plt_file(filename, length, temperature, variable_sigma):
+    with open(filename, "w") as f:
+        f.write("set term pdf\n")
+        f.write("set out 'azeotrope/azeotrope_img/L{}T{}S{}.pdf'\n".format(length, temperature, variable_sigma))
+        f.write("set xlabel '{/Arial-Italic A-composition-ratio}'\n")
+        f.write("set ylabel '{/Arial-Italic X}'\n")
+        f.write("set xlabel font 'Arial,15'\n")
+        f.write("set ylabel font 'Arial,15'\n")
+        f.write("set xrange [0.0:1.0]\n")
+        f.write("set tics font 'Arial,10'\n")
+        f.write("set nokey\n")
+        f.write("plot 'azeotrope/azeotrope/L{}T{}S{}.dat' with yerrorbars pt 0, 0.0\n".format(length, temperature, variable_sigma))
+
 
 def make_ab_gasliquid_file(filename, a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density, x):
     with open(filename, "a") as f:
@@ -59,10 +72,10 @@ def make_azeotrope_file(filename, a_composition_ratio, X):
 
 parameters = []
 length = int(sys.argv[1])
-composition_number = int(sys.argv[2])
-temperature = float(sys.argv[3])
+temperature = float(sys.argv[2])
+composition_number = int(sys.argv[3])
 variable_sigma = float(sys.argv[4])
-loadfile("density/density_fitting/L{}T{}C{}S{}.log".format(length, temperature, composition_number, variable_sigma))
+loadfile("density/density_fitting/L{}T{}CN{}S{}.log".format(length, temperature, composition_number, variable_sigma))
 
 for parameter in parameters:
     a_composition_ratio = parameter[0]
@@ -76,49 +89,4 @@ for parameter in parameters:
     make_azeotrope_file("azeotrope/azeotrope/L{}T{}S{}.dat".format(length, temperature, variable_sigma), a_composition_ratio, X)
     make_yz_file("azeotrope/yz/L{}T{}S{}.dat".format(length, temperature, variable_sigma), a_composition_ratio, Y, Z)
 
-
-# ratio_parameters = []
-# yz_lists = []
-# length = int(sys.argv[1])
-# temperature = float(sys.argv[2])
-# files = os.listdir("density/density/L{}T{}/".format(length, temperature))
-# for filename in files:
-#     result = re.findall(r"\d+", filename)
-#     a_composition_ratio = round((int(result[0]))/(int(result[0])+int(result[1])), 3)
-    
-#     # y = a_gas_density*b_liquid_density
-#     # delta_y = b_liquid_density*a_gas_stdev + a_gas_density*b_liquid_stdev
-#     # z = a_liquid_density*b_gas_density
-#     # delta_z = b_gas_density*a_liquid_stdev + a_liquid_density*b_gas_stdev
-#     # x = y-z
-#     # delta_x = delta_y-delta_z
-#     # yz_list = []
-#     # yz_list.append(a_composition_ratio)
-#     # yz_list.append(y)
-#     # yz_list.append(z)
-#     # yz_list.append(delta_y)
-#     # yz_list.append(delta_z)
-#     # yz_lists.append(yz_list)
-
-#     if not os.path.exists('azeotrope'):
-#         os.mkdir('azeotrope')
-#     if not os.path.exists('azeotrope/gas_liquid_density'):
-#         os.mkdir('azeotrope/gas_liquid_density')
-#     make_ab_gasliquid_file("azeotrope/gas_liquid_density/L{}T{}.dat".format(length, temperature), a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density, x)
-#     ratio_parameter = []
-#     ratio_parameter.append(a_composition_ratio)
-#     ratio_parameter.append(x)
-#     ratio_parameter.append(delta_x)
-#     ratio_parameters.append(ratio_parameter)
-
-# yz_lists = sorted(yz_lists, reverse=False, key=lambda x: x[0])
-# for yz_list in yz_lists:
-#     if not os.path.exists('azeotrope/yz'):
-#         os.mkdir('azeotrope/yz')
-#     make_yz_file("azeotrope/yz/L{}T{}.dat".format(length, temperature), yz_list[0], yz_list[1], yz_list[2], yz_list[3], yz_list[4])
-
-# ratio_parameters = sorted(ratio_parameters, reverse=False, key=lambda x: x[0]) 
-# for ratio_parameter in ratio_parameters:
-#     if not os.path.exists('azeotrope/azeotrope'):
-#         os.mkdir('azeotrope/azeotrope')
-#     make_azeotrope_file("azeotrope/azeotrope/L{}T{}.dat".format(length, temperature), ratio_parameter[0], ratio_parameter[1], ratio_parameter[2])
+make_plt_file("azeotrope/azeotrope_plt/L{}T{}S{}.plt".format(length, temperature, variable_sigma), length, temperature, variable_sigma)

@@ -16,7 +16,7 @@ def make_file(filename, length, temperature, composition_number, variable_sigma,
         f.write("set xrange [0.2:0.8]\n")
         f.write("set tics font 'Arial,10'\n")
         f.write("set key font 'Arial,16'\n")
-        f.write("set fit logfile 'density/density_fitting/L{}T{}C{}S{}.log'\n\n".format(length, temperature, composition_number, variable_sigma))
+        f.write("set fit logfile 'density/density_fitting/L{}T{}CN{}S{}.log'\n\n".format(length, temperature, composition_number, variable_sigma))
         f.write("da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))\n")
         f.write("db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))\n")
         f.write("fit da(x) 'density/density/L{}T{}S{}/lan{}-lbn{}-ran{}-rbn{}.density' u 1:2 via a, b, dal, dag\n".format(length, temperature, variable_sigma, left_a_num, left_b_num, right_a_num, right_b_num))

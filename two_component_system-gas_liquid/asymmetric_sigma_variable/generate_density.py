@@ -58,7 +58,7 @@ right_b_num = right_num - right_a_num
 
 type1_x_list = []
 type2_x_list = []
-loadfile("../../../../../../work/k0117/k011706/asymmetric_variable/data/dump.melt/L{}T{}S{}/lan{}-lbn{}-ran{}-rbn{}.dump".format(length, temperature, variable_sigma, left_a_num, left_b_num, right_a_num, right_b_num))
+loadfile("../../../../../../work/k0117/k011706/asymmetric_sigma_variable/data/dump.melt/L{}T{}S{}/lan{}-lbn{}-ran{}-rbn{}.dump".format(length, temperature, variable_sigma, left_a_num, left_b_num, right_a_num, right_b_num))
 
 x_interval = 0.0025
 x_interval_num = int(1/float(x_interval))
