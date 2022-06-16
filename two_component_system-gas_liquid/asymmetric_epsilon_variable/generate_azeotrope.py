@@ -44,6 +44,19 @@ def loadfile(filename):
                 dbl = 0
                 dbg = 0
 
+def make_plt_file(filename, length, temperature, variable_epsilon):
+    with open(filename, "w") as f:
+        f.write("set term pdf\n")
+        f.write("set out 'azeotrope/azeotrope_img/L{}T{}E{}.pdf'\n".format(length, temperature, variable_epsilon))
+        f.write("set xlabel '{/Arial-Italic A-composition-ratio}'\n")
+        f.write("set ylabel '{/Arial-Italic X}'\n")
+        f.write("set xlabel font 'Arial,15'\n")
+        f.write("set ylabel font 'Arial,15'\n")
+        f.write("set xrange [0.0:1.0]\n")
+        f.write("set tics font 'Arial,10'\n")
+        f.write("set nokey\n")
+        f.write("plot 'azeotrope/azeotrope/L{}T{}E{}.dat' with yerrorbars pt 0, 0.0\n".format(length, temperature, variable_epsilon))
+
 
 def make_ab_gasliquid_file(filename, a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density, x):
     with open(filename, "a") as f:
@@ -76,6 +89,7 @@ for parameter in parameters:
     make_azeotrope_file("azeotrope/azeotrope/L{}T{}E{}.dat".format(length, temperature, variable_epsilon), a_composition_ratio, X)
     make_yz_file("azeotrope/yz/L{}T{}E{}.dat".format(length, temperature, variable_epsilon), a_composition_ratio, Y, Z)
 
+make_plt_file("azeotrope/azeotrope_plt/L{}T{}E{}.plt".format(length, temperature, variable_epsilon), length, temperature, variable_epsilon)
 
 # ratio_parameters = []
 # yz_lists = []
