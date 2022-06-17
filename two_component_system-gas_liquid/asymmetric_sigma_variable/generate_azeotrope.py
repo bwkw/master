@@ -1,6 +1,7 @@
 # densityファイルから共沸点を取得するファイル
 # コマンドライン引数に、系の長さ、Aの組成比分割個数、温度、シグマを入れる
 
+import os
 import re
 import sys
 from uncertainties import ufloat
@@ -90,3 +91,6 @@ for parameter in parameters:
     make_yz_file("azeotrope/yz/L{}T{}S{}.dat".format(length, temperature, variable_sigma), a_composition_ratio, Y, Z)
 
 make_plt_file("azeotrope/azeotrope_plt/L{}T{}S{}.plt".format(length, temperature, variable_sigma), length, temperature, variable_sigma)
+
+if not os.path.exists('density/density_fitting_img/L{}T{}S{}'.format(length, temperature, variable_sigma)):
+    os.mkdir('density/density_fitting_img/L{}T{}S{}'.format(length, temperature, variable_sigma))
