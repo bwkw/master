@@ -30,7 +30,7 @@ def add_ball(atoms, left_num, left_a_num, left_c_num, right_num, right_a_num, ri
         random_x = random.uniform(-1, 1)
         left_xvel_list[i] = random_x
     for i in range(len(left_yvel_list)):
-        random_y = random.uniform(-1, 1) 
+        random_y = random.uniform(-1, 1)
         left_yvel_list[i] = random_y
     for i in range(len(left_zvel_list)):
         random_z = random.uniform(-1, 1)

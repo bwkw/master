@@ -1,0 +1,4018 @@
+
+
+*******************************************************************************
+Sun Jun 19 08:23:18 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan110146-lbn578269-lcn14049-ran3081-rbn16178-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 7.1048577027e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  18 5.9713790948e-02  -4.14e-01  4.70e-06    6.208266e-01   3.897929e-03   1.586111e-02   6.502806e-02
+
+After 18 iterations the fit converged.
+final sum of squares of residuals : 0.0597138
+rel. change during last iteration : -4.1373e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0158732
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000251957
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.620827         +/- 0.00253      (0.4076%)
+b               = 0.00389793       +/- 0.002216     (56.85%)
+dal             = 0.0158611        +/- 0.001947     (12.28%)
+dag             = 0.0650281        +/- 0.001243     (1.911%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.018  1.000 
+dal            -0.181 -0.157  1.000 
+dag            -0.116  0.109 -0.010  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:18 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan110146-lbn578269-lcn14049-ran3081-rbn16178-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.0819542797e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  15 2.3584148846e+00  -1.87e-01  4.70e-05    6.180115e-01   3.605759e-03   6.481262e-02   3.587300e-01
+
+After 15 iterations the fit converged.
+final sum of squares of residuals : 2.35841
+rel. change during last iteration : -1.87093e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0997553
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00995112
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.618012         +/- 0.002554     (0.4132%)
+d               = 0.00360576       +/- 0.002237     (62.04%)
+dbl             = 0.0648126        +/- 0.0121       (18.66%)
+dbg             = 0.35873          +/- 0.007828     (2.182%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.022  1.000 
+dbl            -0.173 -0.149  1.000 
+dbg            -0.112  0.106 -0.009  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:19 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan123915-lbn564500-lcn14049-ran3467-rbn15792-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 6.9704657355e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  21 1.4223334288e-01  -1.48e-01  4.70e-06    6.225948e-01   3.942321e-03   1.782822e-02   7.117746e-02
+
+After 21 iterations the fit converged.
+final sum of squares of residuals : 0.142233
+rel. change during last iteration : -1.4753e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0244978
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000600141
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.622595         +/- 0.003621     (0.5816%)
+b               = 0.00394232       +/- 0.003171     (80.43%)
+dal             = 0.0178282        +/- 0.003022     (16.95%)
+dag             = 0.0711775        +/- 0.001915     (2.69%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.017  1.000 
+dal            -0.183 -0.159  1.000 
+dag            -0.116  0.110 -0.010  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:19 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan123915-lbn564500-lcn14049-ran3467-rbn15792-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.1854691566e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  16 4.0566174755e+00  -3.05e-01  4.70e-03    6.198476e-01   3.804318e-03   6.440486e-02   3.382913e-01
+
+After 16 iterations the fit converged.
+final sum of squares of residuals : 4.05662
+rel. change during last iteration : -3.05122e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.13083
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0171165
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.619848         +/- 0.003696     (0.5964%)
+d               = 0.00380432       +/- 0.003237     (85.1%)
+dbl             = 0.0644049        +/- 0.01598      (24.82%)
+dbg             = 0.338291         +/- 0.01025      (3.031%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.019  1.000 
+dbl            -0.179 -0.154  1.000 
+dbg            -0.115  0.108 -0.010  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:19 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan13768-lbn674647-lcn14049-ran385-rbn18874-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.0153757651e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  19 4.9515957275e-04  -4.50e-01  4.70e-10    5.954998e-01   3.120491e-03   2.122754e-03   8.921016e-03
+
+After 19 iterations the fit converged.
+final sum of squares of residuals : 0.00049516
+rel. change during last iteration : -4.50066e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00144543
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.08928e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.5955           +/- 0.001482     (0.2489%)
+b               = 0.00312049       +/- 0.0013       (41.65%)
+dal             = 0.00212275       +/- 0.0001639    (7.723%)
+dag             = 0.00892102       +/- 0.0001164    (1.305%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.032  1.000 
+dal            -0.151 -0.129  1.000 
+dag            -0.108  0.101 -0.008  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:19 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan13768-lbn674647-lcn14049-ran385-rbn18874-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.4834150715e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  16 2.2420859198e+00  -8.60e-01  4.70e-09    5.910171e-01   3.541350e-03   6.327925e-02   4.708744e-01
+
+After 16 iterations the fit converged.
+final sum of squares of residuals : 2.24209
+rel. change during last iteration : -8.59762e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.097264
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00946028
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.591017         +/- 0.001776     (0.3005%)
+d               = 0.00354135       +/- 0.001557     (43.95%)
+dbl             = 0.0632792        +/- 0.01095      (17.3%)
+dbg             = 0.470874         +/- 0.007897     (1.677%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.026  1.000 
+dbl            -0.159 -0.137  1.000 
+dbg            -0.115  0.108 -0.009  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:20 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan137683-lbn550732-lcn14049-ran3852-rbn15407-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 5.7794709093e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  12 6.4366271501e-02  -7.65e-01  4.70e-09    6.039987e-01   4.563685e-03   1.927030e-02   8.831246e-02
+
+After 12 iterations the fit converged.
+final sum of squares of residuals : 0.0643663
+rel. change during last iteration : -7.65385e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0164799
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000271588
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.603999         +/- 0.00203      (0.336%)
+b               = 0.00456369       +/- 0.001777     (38.93%)
+dal             = 0.0192703        +/- 0.001939     (10.06%)
+dag             = 0.0883125        +/- 0.001322     (1.497%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.012  1.000 
+dal            -0.188 -0.164  1.000 
+dag            -0.128  0.120 -0.011  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:20 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan137683-lbn550732-lcn14049-ran3852-rbn15407-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 8.2504149720e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  16 1.3406637685e+00  -7.73e-01  4.70e-09    6.016139e-01   4.374616e-03   6.292747e-02   3.686791e-01
+
+After 16 iterations the fit converged.
+final sum of squares of residuals : 1.34066
+rel. change during last iteration : -7.73197e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0752118
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00565681
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.601614         +/- 0.002045     (0.3399%)
+d               = 0.00437462       +/- 0.001791     (40.94%)
+dbl             = 0.0629275        +/- 0.008776     (13.95%)
+dbg             = 0.368679         +/- 0.006047     (1.64%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.015  1.000 
+dbl            -0.182 -0.159  1.000 
+dbg            -0.126  0.118 -0.011  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:20 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan151451-lbn536964-lcn14049-ran4237-rbn15022-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 5.6315688015e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  17 5.8054625150e-02  -8.62e-01  4.70e-11    6.070704e-01   4.488270e-03   2.078059e-02   9.428419e-02
+
+After 17 iterations the fit converged.
+final sum of squares of residuals : 0.0580546
+rel. change during last iteration : -8.62087e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0156511
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000244956
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.60707          +/- 0.001795     (0.2957%)
+b               = 0.00448827       +/- 0.001571     (35.01%)
+dal             = 0.0207806        +/- 0.001856     (8.932%)
+dag             = 0.0942842        +/- 0.00125      (1.326%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.013  1.000 
+dal            -0.188 -0.164  1.000 
+dag            -0.126  0.119 -0.011  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:20 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan151451-lbn536964-lcn14049-ran4237-rbn15022-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 7.2820270894e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  12 9.5225143154e-01  -5.64e-01  4.70e-07    6.046860e-01   4.504453e-03   6.263111e-02   3.481328e-01
+
+After 12 iterations the fit converged.
+final sum of squares of residuals : 0.952251
+rel. change during last iteration : -5.64323e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0633872
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00401794
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.604686         +/- 0.001875     (0.3101%)
+d               = 0.00450445       +/- 0.001641     (36.44%)
+dbl             = 0.0626311        +/- 0.007469     (11.92%)
+dbg             = 0.348133         +/- 0.005079     (1.459%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.013  1.000 
+dbl            -0.187 -0.163  1.000 
+dbg            -0.127  0.119 -0.011  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:20 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan165220-lbn523195-lcn14049-ran4622-rbn14637-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 4.7889438055e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  10 7.8652329007e-02  -9.91e-01  4.70e-08    5.908640e-01   5.206779e-03   2.261610e-02   1.093999e-01
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 0.0786523
+rel. change during last iteration : -9.91234e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0182172
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000331866
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.590864         +/- 0.001912     (0.3235%)
+b               = 0.00520678       +/- 0.001673     (32.13%)
+dal             = 0.0226161        +/- 0.002082     (9.208%)
+dag             = 0.1094           +/- 0.001492     (1.363%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.009  1.000 
+dal            -0.194 -0.171  1.000 
+dag            -0.138  0.130 -0.013  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:20 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan165220-lbn523195-lcn14049-ran4622-rbn14637-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 6.3900927712e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  13 1.0309204030e+00  -3.43e-01  4.70e-10    5.889322e-01   4.860956e-03   6.172470e-02   3.619449e-01
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 1.03092
+rel. change during last iteration : -3.42709e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0659536
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00434988
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.588932         +/- 0.001929     (0.3275%)
+d               = 0.00486096       +/- 0.001689     (34.74%)
+dbl             = 0.0617247        +/- 0.007477     (12.11%)
+dbg             = 0.361945         +/- 0.005405     (1.493%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.012  1.000 
+dbl            -0.186 -0.163  1.000 
+dbg            -0.134  0.126 -0.012  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:20 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan178988-lbn509427-lcn14049-ran5007-rbn14252-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 4.4808390446e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  14 6.8686304706e-02  -6.82e-01  4.70e-10    5.917585e-01   4.831712e-03   2.481177e-02   1.184308e-01
+
+After 14 iterations the fit converged.
+final sum of squares of residuals : 0.0686863
+rel. change during last iteration : -6.81993e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.017024
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000289816
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.591759         +/- 0.001592     (0.269%)
+b               = 0.00483171       +/- 0.001394     (28.84%)
+dal             = 0.0248118        +/- 0.001944     (7.833%)
+dag             = 0.118431         +/- 0.00139      (1.173%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.012  1.000 
+dal            -0.187 -0.164  1.000 
+dag            -0.133  0.125 -0.012  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:20 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan178988-lbn509427-lcn14049-ran5007-rbn14252-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 5.7104201667e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  13 7.0552159392e-01  -6.13e-01  4.70e-10    5.896561e-01   4.741129e-03   6.214413e-02   3.522996e-01
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 0.705522
+rel. change during last iteration : -6.12899e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0545608
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00297688
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.589656         +/- 0.00163      (0.2764%)
+d               = 0.00474113       +/- 0.001427     (30.09%)
+dbl             = 0.0621441        +/- 0.00619      (9.961%)
+dbg             = 0.3523           +/- 0.004464     (1.267%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.013  1.000 
+dbl            -0.184 -0.161  1.000 
+dbg            -0.133  0.125 -0.012  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:20 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan192756-lbn495659-lcn14049-ran5393-rbn13866-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 3.7741889610e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  10 5.4222001085e-02  -6.49e-01  4.70e-08    5.831849e-01   5.982631e-03   2.620582e-02   1.330529e-01
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 0.054222
+rel. change during last iteration : -6.48764e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0151256
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000228785
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.583185         +/- 0.001387     (0.2379%)
+b               = 0.00598263       +/- 0.001213     (20.28%)
+dal             = 0.0262058        +/- 0.001708     (6.516%)
+dag             = 0.133053         +/- 0.001256     (0.9442%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.004  1.000 
+dal            -0.204 -0.181  1.000 
+dag            -0.150  0.141 -0.015  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:20 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan192756-lbn495659-lcn14049-ran5393-rbn13866-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 4.8792546226e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  11 4.9211598087e-01  -3.09e-01  4.70e-10    5.815576e-01   5.650959e-03   6.089354e-02   3.572038e-01
+
+After 11 iterations the fit converged.
+final sum of squares of residuals : 0.492116
+rel. change during last iteration : -3.09011e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.045568
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00207644
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.581558         +/- 0.001462     (0.2513%)
+d               = 0.00565096       +/- 0.001279     (22.63%)
+dbl             = 0.0608935        +/- 0.005108     (8.388%)
+dbg             = 0.357204         +/- 0.003787     (1.06%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.007  1.000 
+dbl            -0.197 -0.175  1.000 
+dbg            -0.146  0.137 -0.014  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:20 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan206524-lbn481891-lcn14049-ran5778-rbn13481-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 3.3315632116e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   9 4.1320904764e-02  -9.41e-01  4.70e-10    5.740019e-01   6.006645e-03   2.739272e-02   1.438336e-01
+
+After 9 iterations the fit converged.
+final sum of squares of residuals : 0.0413209
+rel. change during last iteration : -9.41085e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0132042
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00017435
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.574002         +/- 0.001113     (0.1939%)
+b               = 0.00600665       +/- 0.0009734    (16.21%)
+dal             = 0.0273927        +/- 0.001457     (5.32%)
+dag             = 0.143834         +/- 0.001111     (0.7724%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.006  1.000 
+dal            -0.200 -0.178  1.000 
+dag            -0.152  0.143 -0.015  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:20 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan206524-lbn481891-lcn14049-ran5778-rbn13481-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 3.9167278344e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   8 3.2365243263e-01  -7.46e-01  4.70e-07    5.728836e-01   5.548720e-03   5.987339e-02   3.481088e-01
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.323652
+rel. change during last iteration : -7.45966e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0369543
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00136562
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.572884         +/- 0.001206     (0.2105%)
+d               = 0.00554872       +/- 0.001056     (19.02%)
+dbl             = 0.0598734        +/- 0.004051     (6.766%)
+dbg             = 0.348109         +/- 0.003107     (0.8925%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.009  1.000 
+dbl            -0.192 -0.169  1.000 
+dbg            -0.147  0.138 -0.014  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:20 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan220293-lbn468122-lcn14049-ran6163-rbn13096-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 3.2098691566e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  10 3.6651898022e-02  -8.40e-01  4.70e-11    5.786385e-01   5.592452e-03   2.890061e-02   1.507605e-01
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 0.0366519
+rel. change during last iteration : -8.40372e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0124358
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000154649
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.578639         +/- 0.0009644    (0.1667%)
+b               = 0.00559245       +/- 0.0008438    (15.09%)
+dal             = 0.0289006        +/- 0.001383     (4.786%)
+dag             = 0.15076          +/- 0.001037     (0.6881%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.008  1.000 
+dal            -0.195 -0.172  1.000 
+dag            -0.146  0.137 -0.014  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan220293-lbn468122-lcn14049-ran6163-rbn13096-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 3.6782341394e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  11 2.7565460896e-01  -6.50e-01  4.70e-10    5.775436e-01   5.261539e-03   5.848082e-02   3.308695e-01
+
+After 11 iterations the fit converged.
+final sum of squares of residuals : 0.275655
+rel. change during last iteration : -6.50335e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0341042
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0011631
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.577544         +/- 0.001146     (0.1983%)
+d               = 0.00526154       +/- 0.001003     (19.06%)
+dbl             = 0.0584808        +/- 0.003771     (6.449%)
+dbg             = 0.330869         +/- 0.002844     (0.8597%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.011  1.000 
+dbl            -0.189 -0.166  1.000 
+dbg            -0.142  0.133 -0.013  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan234061-lbn454354-lcn14049-ran6548-rbn12711-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 2.7393235645e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  10 3.2275936824e-02  -2.84e-01  4.70e-11    5.710091e-01   5.956434e-03   3.066254e-02   1.635978e-01
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 0.0322759
+rel. change during last iteration : -2.84434e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0116698
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000136185
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.571009         +/- 0.0008575    (0.1502%)
+b               = 0.00595643       +/- 0.0007501    (12.59%)
+dal             = 0.0306625        +/- 0.001278     (4.168%)
+dag             = 0.163598         +/- 0.0009858    (0.6026%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.007  1.000 
+dal            -0.198 -0.175  1.000 
+dag            -0.152  0.143 -0.015  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan234061-lbn454354-lcn14049-ran6548-rbn12711-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 3.0602351707e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  10 2.0820625828e-01  -9.41e-02  4.70e-09    5.700367e-01   5.525353e-03   5.761085e-02   3.286497e-01
+
+After 10 iterations the fit converged.
+final sum of squares of residuals : 0.208206
+rel. change during last iteration : -9.4089e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0296396
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000878507
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.570037         +/- 0.001026     (0.18%)
+d               = 0.00552535       +/- 0.0008982    (16.26%)
+dbl             = 0.0576109        +/- 0.003226     (5.601%)
+dbg             = 0.32865          +/- 0.002502     (0.7612%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.010  1.000 
+dbl            -0.190 -0.168  1.000 
+dbg            -0.147  0.138 -0.013  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan247829-lbn440586-lcn14049-ran6933-rbn12326-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.6428348194e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.6212889652e-03  -4.82e-03  4.70e-08    5.454113e-01   7.789232e-03   3.044732e-02   1.912033e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.00162129
+rel. change during last iteration : -4.82038e-08
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00261551
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.84088e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.545411         +/- 0.0001833    (0.03362%)
+b               = 0.00778923       +/- 0.0001602    (2.056%)
+dal             = 0.0304473        +/- 0.0002743    (0.901%)
+dag             = 0.191203         +/- 0.0002319    (0.1213%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.004  1.000 
+dal            -0.214 -0.193  1.000 
+dag            -0.180  0.170 -0.019  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan247829-lbn440586-lcn14049-ran6933-rbn12326-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.9315941827e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   8 1.6569093946e-02   0.00e+00  4.70e+04    5.450441e-01   6.767405e-03   5.454772e-02   3.511185e-01
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.0165691
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00836133
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.99118e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.545044         +/- 0.0002945    (0.05403%)
+d               = 0.00676741       +/- 0.0002575    (3.805%)
+dbl             = 0.0545477        +/- 0.0008691    (1.593%)
+dbg             = 0.351119         +/- 0.0007375    (0.21%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.008  1.000 
+dbl            -0.199 -0.178  1.000 
+dbg            -0.169  0.158 -0.016  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan261598-lbn426817-lcn14049-ran7318-rbn11941-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.7527389397e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   8 1.7436984695e-02  -1.54e-01  4.70e-09    5.557608e-01   7.005691e-03   3.239312e-02   1.946347e-01
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.017437
+rel. change during last iteration : -1.53838e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00857752
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.35738e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.555761         +/- 0.0005629    (0.1013%)
+b               = 0.00700569       +/- 0.000492     (7.023%)
+dal             = 0.0323931        +/- 0.0009148    (2.824%)
+dag             = 0.194635         +/- 0.0007452    (0.3829%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.004  1.000 
+dal            -0.207 -0.186  1.000 
+dag            -0.168  0.158 -0.017  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan261598-lbn426817-lcn14049-ran7318-rbn11941-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 2.0732820411e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   9 8.7939810702e-02  -9.26e-01  4.70e-09    5.555258e-01   6.264618e-03   5.395309e-02   3.292571e-01
+
+After 9 iterations the fit converged.
+final sum of squares of residuals : 0.0879398
+rel. change during last iteration : -9.2582e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0192628
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000371054
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.555526         +/- 0.0007015    (0.1263%)
+d               = 0.00626462       +/- 0.0006137    (9.796%)
+dbl             = 0.0539531        +/- 0.002041     (3.782%)
+dbg             = 0.329257         +/- 0.001667     (0.5064%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.008  1.000 
+dbl            -0.196 -0.174  1.000 
+dbg            -0.160  0.150 -0.015  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan275366-lbn413049-lcn14049-ran7704-rbn11555-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.2064095378e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.8405502359e-04  -8.41e-03  4.70e-08    5.445426e-01   8.187099e-03   3.318098e-02   2.144571e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000184055
+rel. change during last iteration : -8.41036e-08
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000881251
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.76603e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.544543         +/- 5.628e-05    (0.01034%)
+b               = 0.0081871        +/- 4.916e-05    (0.6005%)
+dal             = 0.033181         +/- 9.255e-05    (0.2789%)
+dag             = 0.214457         +/- 7.843e-05    (0.03657%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.002  1.000 
+dal            -0.219 -0.198  1.000 
+dag            -0.185  0.174 -0.020  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan275366-lbn413049-lcn14049-ran7704-rbn11555-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.4509309808e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 4.8481985916e-03  -3.18e-03  4.70e-08    5.443499e-01   7.407699e-03   5.241936e-02   3.324862e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.0048482
+rel. change during last iteration : -3.18329e-08
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00452289
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.04565e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.54435          +/- 0.0001771    (0.03253%)
+d               = 0.0074077        +/- 0.0001548    (2.089%)
+dbl             = 0.0524194        +/- 0.0004718    (0.9001%)
+dbg             = 0.332486         +/- 0.0004008    (0.1206%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.005  1.000 
+dbl            -0.208 -0.187  1.000 
+dbg            -0.176  0.166 -0.018  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan27537-lbn660878-lcn14049-ran770-rbn18489-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 9.5979297758e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   8 1.3045499374e-02  -1.87e-01  4.70e-04    3.111779e-01   1.078429e-02   1.389628e-02   1.043773e-02
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.0130455
+rel. change during last iteration : -1.87149e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00741918
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.50443e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.311178         +/- 0.03052      (9.809%)
+b               = 0.0107843        +/- 0.02641      (244.9%)
+dal             = 0.0138963        +/- 0.0005531    (3.98%)
+dag             = 0.0104377        +/- 0.001375     (13.17%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.140  1.000 
+dal             0.153  0.166  1.000 
+dag             0.415 -0.386 -0.039  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan27537-lbn660878-lcn14049-ran770-rbn18489-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.5873254053e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  14 3.7224828508e+00  -7.30e-01  4.70e-11    6.016525e-01   3.659781e-03   6.433903e-02   4.465807e-01
+
+After 14 iterations the fit converged.
+final sum of squares of residuals : 3.72248
+rel. change during last iteration : -7.29814e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.125326
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0157067
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.601652         +/- 0.002483     (0.4127%)
+d               = 0.00365978       +/- 0.002176     (59.46%)
+dbl             = 0.064339         +/- 0.01452      (22.57%)
+dbg             = 0.446581         +/- 0.01004      (2.249%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.023  1.000 
+dbl            -0.166 -0.144  1.000 
+dbg            -0.115  0.108 -0.009  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan289134-lbn399281-lcn14049-ran8089-rbn11170-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.0782715690e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 7.5325874443e-05  -3.30e-02  4.70e-08    5.450267e-01   7.955058e-03   3.514739e-02   2.249375e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 7.53259e-05
+rel. change during last iteration : -3.29609e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000563765
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.17831e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.545027         +/- 3.386e-05    (0.006212%)
+b               = 0.00795506       +/- 2.958e-05    (0.3718%)
+dal             = 0.0351474        +/- 5.916e-05    (0.1683%)
+dag             = 0.224938         +/- 5.007e-05    (0.02226%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.003  1.000 
+dal            -0.216 -0.195  1.000 
+dag            -0.182  0.172 -0.020  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan289134-lbn399281-lcn14049-ran8089-rbn11170-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.2628607482e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 4.6164024144e-03  -2.24e-03  4.70e-08    5.447034e-01   7.422546e-03   5.106255e-02   3.200299e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.0046164
+rel. change during last iteration : -2.23832e-08
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00441344
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.94785e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.544703         +/- 0.0001801    (0.03307%)
+d               = 0.00742255       +/- 0.0001574    (2.121%)
+dbl             = 0.0510625        +/- 0.0004608    (0.9025%)
+dbg             = 0.32003          +/- 0.000391     (0.1222%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.005  1.000 
+dbl            -0.208 -0.188  1.000 
+dbg            -0.176  0.166 -0.018  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan302903-lbn385512-lcn14049-ran8474-rbn10785-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 9.4580631004e-01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.7711637470e-04  -9.54e-03  4.70e-08    5.444383e-01   7.866464e-03   3.593432e-02   2.366957e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000177116
+rel. change during last iteration : -9.54274e-08
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00086448
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.47326e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.544438         +/- 4.878e-05    (0.00896%)
+b               = 0.00786646       +/- 4.262e-05    (0.5418%)
+dal             = 0.0359343        +/- 9.053e-05    (0.2519%)
+dag             = 0.236696         +/- 7.681e-05    (0.03245%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.004  1.000 
+dal            -0.214 -0.194  1.000 
+dag            -0.181  0.171 -0.019  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan302903-lbn385512-lcn14049-ran8474-rbn10785-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.1309441253e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 3.2661245609e-03  -2.66e-11  4.70e+04    5.448594e-01   7.159188e-03   5.002372e-02   3.089990e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.00326612
+rel. change during last iteration : -2.65563e-16
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00371229
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.37811e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.544859         +/- 0.0001543    (0.02832%)
+d               = 0.00715919       +/- 0.0001349    (1.884%)
+dbl             = 0.0500237        +/- 0.0003869    (0.7735%)
+dbg             = 0.308999         +/- 0.0003283    (0.1062%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.006  1.000 
+dbl            -0.204 -0.184  1.000 
+dbg            -0.173  0.163 -0.018  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan316671-lbn371744-lcn14049-ran8859-rbn10400-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 8.7140258197e-01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.2910022381e-04  -1.68e-10  4.70e+03    5.449132e-01   8.198262e-03   3.761583e-02   2.469293e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.0001291
+rel. change during last iteration : -1.67963e-15
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000738056
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.44727e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.544913         +/- 4.086e-05    (0.007498%)
+b               = 0.00819826       +/- 3.568e-05    (0.4353%)
+dal             = 0.0376158        +/- 7.758e-05    (0.2063%)
+dag             = 0.246929         +/- 6.565e-05    (0.02659%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.002  1.000 
+dal            -0.219 -0.198  1.000 
+dag            -0.185  0.174 -0.020  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan316671-lbn371744-lcn14049-ran8859-rbn10400-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.0026676683e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.9817787457e-03  -4.26e-01  4.70e-08    5.448862e-01   7.680535e-03   4.876884e-02   2.983068e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.00198178
+rel. change during last iteration : -4.25998e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0028917
+variance of residuals (reduced chisquare) = WSSR/ndf   : 8.36194e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.544886         +/- 0.0001296    (0.02378%)
+d               = 0.00768054       +/- 0.0001132    (1.474%)
+dbl             = 0.0487688        +/- 0.0003027    (0.6206%)
+dbg             = 0.298307         +/- 0.0002565    (0.08597%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.004  1.000 
+dbl            -0.212 -0.191  1.000 
+dbg            -0.179  0.169 -0.019  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan330439-lbn357976-lcn14049-ran9244-rbn10015-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 8.7338043169e-01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.4315597080e-04  -4.33e-01  4.70e-08    5.467604e-01   7.867736e-03   3.867979e-02   2.579017e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000143156
+rel. change during last iteration : -4.33158e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000777196
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.04034e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.54676          +/- 4.017e-05    (0.007347%)
+b               = 0.00786774       +/- 3.509e-05    (0.4461%)
+dal             = 0.0386798        +/- 8.181e-05    (0.2115%)
+dag             = 0.257902         +/- 6.88e-05     (0.02668%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.003  1.000 
+dal            -0.215 -0.195  1.000 
+dag            -0.181  0.170 -0.019  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan330439-lbn357976-lcn14049-ran9244-rbn10015-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 9.7152251654e-01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   8 1.5006213956e-03  -1.21e-01  4.70e-09    5.467564e-01   7.484339e-03   4.698895e-02   2.867144e-01
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.00150062
+rel. change during last iteration : -1.2081e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00251629
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.33174e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.546756         +/- 0.0001158    (0.02117%)
+d               = 0.00748434       +/- 0.0001012    (1.352%)
+dbl             = 0.0469889        +/- 0.000264     (0.5619%)
+dbg             = 0.286714         +/- 0.0002223    (0.07752%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.005  1.000 
+dbl            -0.210 -0.189  1.000 
+dbg            -0.176  0.166 -0.018  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:21 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan344208-lbn344207-lcn14049-ran9630-rbn9629-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 8.1374581116e-01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.0161120582e-04  -4.23e-02  4.70e-08    5.449801e-01   8.093193e-03   4.011332e-02   2.694685e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000101611
+rel. change during last iteration : -4.23019e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000654782
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.28739e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.54498          +/- 3.285e-05    (0.006027%)
+b               = 0.00809319       +/- 2.869e-05    (0.3545%)
+dal             = 0.0401133        +/- 6.878e-05    (0.1715%)
+dag             = 0.269469         +/- 5.82e-05     (0.0216%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.003  1.000 
+dal            -0.218 -0.197  1.000 
+dag            -0.184  0.173 -0.020  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan344208-lbn344207-lcn14049-ran9630-rbn9629-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 8.8577414844e-01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   8 1.0393558276e-03  -1.59e-01  4.70e-09    5.452074e-01   7.654544e-03   4.569451e-02   2.766193e-01
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.00103936
+rel. change during last iteration : -1.58704e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00209415
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.38547e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.545207         +/- 0.0001012    (0.01857%)
+d               = 0.00765454       +/- 8.845e-05    (1.156%)
+dbl             = 0.0456945        +/- 0.0002193    (0.4799%)
+dbg             = 0.276619         +/- 0.0001856    (0.0671%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.004  1.000 
+dbl            -0.212 -0.191  1.000 
+dbg            -0.179  0.168 -0.019  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan357976-lbn330439-lcn14049-ran10015-rbn9244-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 7.9972088271e-01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.8530938520e-04  -6.52e-02  4.70e-08    5.435097e-01   8.243373e-03   4.103041e-02   2.803088e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000185309
+rel. change during last iteration : -6.51692e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000884249
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.81896e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.54351          +/- 4.294e-05    (0.007901%)
+b               = 0.00824337       +/- 3.751e-05    (0.455%)
+dal             = 0.0410304        +/- 9.27e-05     (0.2259%)
+dag             = 0.280309         +/- 7.885e-05    (0.02813%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.003  1.000 
+dal            -0.219 -0.198  1.000 
+dag            -0.186  0.175 -0.020  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan357976-lbn330439-lcn14049-ran10015-rbn9244-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 8.1726575873e-01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 8.5345148914e-04  -3.88e-01  4.70e-08    5.436665e-01   8.123073e-03   4.410203e-02   2.665891e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000853451
+rel. change during last iteration : -3.88204e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00189765
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.60106e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.543667         +/- 9.832e-05    (0.01809%)
+d               = 0.00812307       +/- 8.588e-05    (1.057%)
+dbl             = 0.044102         +/- 0.0001988    (0.4508%)
+dbg             = 0.266589         +/- 0.0001691    (0.06342%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.003  1.000 
+dbl            -0.217 -0.197  1.000 
+dbg            -0.184  0.174 -0.020  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan371744-lbn316671-lcn14049-ran10400-rbn8859-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 8.8973027280e-01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.1513853432e-04  -1.41e-02  4.70e-08    5.454114e-01   8.650616e-03   4.171569e-02   2.929965e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000115139
+rel. change during last iteration : -1.4063e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000697005
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.85817e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.545411         +/- 3.31e-05     (0.006068%)
+b               = 0.00865062       +/- 2.89e-05     (0.3341%)
+dal             = 0.0417157        +/- 7.362e-05    (0.1765%)
+dag             = 0.292996         +/- 6.212e-05    (0.0212%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.001  1.000 
+dal            -0.225 -0.205  1.000 
+dag            -0.189  0.179 -0.022  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan371744-lbn316671-lcn14049-ran10400-rbn8859-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 8.8629971708e-01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   8 9.3025613400e-04  -7.39e-02  4.70e-09    5.459636e-01   8.399793e-03   4.242991e-02   2.551318e-01
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.000930256
+rel. change during last iteration : -7.39006e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00198119
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.92513e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.545964         +/- 0.0001094    (0.02003%)
+d               = 0.00839979       +/- 9.551e-05    (1.137%)
+dbl             = 0.0424299        +/- 0.0002091    (0.4928%)
+dbg             = 0.255132         +/- 0.0001761    (0.06904%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.001  1.000 
+dbl            -0.222 -0.202  1.000 
+dbg            -0.186  0.176 -0.021  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan385512-lbn302903-lcn14049-ran10785-rbn8474-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 9.4704807365e-01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 2.5991561901e-04  -7.80e-04  4.70e-08    5.437851e-01   8.172895e-03   4.278033e-02   3.034410e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000259916
+rel. change during last iteration : -7.79678e-09
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00104723
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.09669e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.543785         +/- 4.647e-05    (0.008545%)
+b               = 0.00817289       +/- 4.059e-05    (0.4966%)
+dal             = 0.0427803        +/- 0.0001098    (0.2566%)
+dag             = 0.303441         +/- 9.331e-05    (0.03075%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.003  1.000 
+dal            -0.218 -0.198  1.000 
+dag            -0.185  0.174 -0.020  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan385512-lbn302903-lcn14049-ran10785-rbn8474-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 8.7963609088e-01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 2.1394104339e-04  -8.05e-02  4.70e-08    5.438908e-01   8.321453e-03   4.092266e-02   2.455173e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000213941
+rel. change during last iteration : -8.05372e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000950108
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.02705e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.543891         +/- 5.424e-05    (0.009973%)
+d               = 0.00832145       +/- 4.737e-05    (0.5693%)
+dbl             = 0.0409227        +/- 9.975e-05    (0.2438%)
+dbg             = 0.245517         +/- 8.471e-05    (0.0345%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.002  1.000 
+dbl            -0.220 -0.200  1.000 
+dbg            -0.186  0.176 -0.021  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan399281-lbn289134-lcn14049-ran11170-rbn8089-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.0600741330e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 7.2186552078e-04  -1.35e-10  4.70e+04    5.430075e-01   8.266059e-03   4.371653e-02   3.163514e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000721866
+rel. change during last iteration : -1.35175e-15
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00174524
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.04585e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.543008         +/- 7.45e-05     (0.01372%)
+b               = 0.00826606       +/- 6.507e-05    (0.7871%)
+dal             = 0.0437165        +/- 0.0001828    (0.4181%)
+dag             = 0.316351         +/- 0.0001558    (0.04924%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.003  1.000 
+dal            -0.219 -0.199  1.000 
+dag            -0.186  0.176 -0.021  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan399281-lbn289134-lcn14049-ran11170-rbn8089-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 9.7350262801e-01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.5860420853e-04  -8.31e-01  4.70e-08    5.437643e-01   8.197730e-03   3.952535e-02   2.342630e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000158604
+rel. change during last iteration : -8.31133e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000818056
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.69216e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.543764         +/- 4.867e-05    (0.00895%)
+d               = 0.00819773       +/- 4.251e-05    (0.5185%)
+dbl             = 0.0395254        +/- 8.578e-05    (0.217%)
+dbg             = 0.234263         +/- 7.29e-05     (0.03112%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.003  1.000 
+dbl            -0.218 -0.198  1.000 
+dbg            -0.185  0.175 -0.020  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan413049-lbn275366-lcn14049-ran11555-rbn7704-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.2215264783e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 8.4065631644e-04  -5.57e-04  4.70e-02    5.427488e-01   7.640826e-03   4.440076e-02   3.275022e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000840656
+rel. change during last iteration : -5.57178e-09
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00188337
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.54707e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.542749         +/- 7.418e-05    (0.01367%)
+b               = 0.00764083       +/- 6.482e-05    (0.8483%)
+dal             = 0.0444008        +/- 0.0001962    (0.4418%)
+dag             = 0.327502         +/- 0.0001676    (0.05116%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.005  1.000 
+dal            -0.210 -0.190  1.000 
+dag            -0.179  0.169 -0.019  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan413049-lbn275366-lcn14049-ran11555-rbn7704-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.0896783720e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 2.7922845748e-04  -7.17e-01  4.70e-08    5.438092e-01   7.497548e-03   3.787664e-02   2.242043e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000279228
+rel. change during last iteration : -7.16512e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00108544
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.17818e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.543809         +/- 6.43e-05     (0.01182%)
+d               = 0.00749755       +/- 5.619e-05    (0.7494%)
+dbl             = 0.0378766        +/- 0.0001132    (0.2988%)
+dbg             = 0.224204         +/- 9.633e-05    (0.04296%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.005  1.000 
+dbl            -0.209 -0.188  1.000 
+dbg            -0.177  0.167 -0.018  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan41305-lbn647110-lcn14049-ran1156-rbn18103-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 9.1163460613e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  16 3.5535951054e-03  -8.64e-01  4.70e-10    6.114829e-01   3.435340e-03   6.270445e-03   2.528093e-02
+
+After 16 iterations the fit converged.
+final sum of squares of residuals : 0.0035536
+rel. change during last iteration : -8.63836e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00387222
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.49941e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.611483         +/- 0.001494     (0.2443%)
+b               = 0.00343534       +/- 0.001309     (38.1%)
+dal             = 0.00627045       +/- 0.0004599    (7.335%)
+dag             = 0.0252809        +/- 0.0003061    (1.211%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.026  1.000 
+dal            -0.166 -0.142  1.000 
+dag            -0.110  0.104 -0.009  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan41305-lbn647110-lcn14049-ran1156-rbn18103-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.2436136986e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  12 1.5220925108e+00  -5.33e-01  4.70e-11    6.079083e-01   3.602149e-03   6.465234e-02   4.165119e-01
+
+After 12 iterations the fit converged.
+final sum of squares of residuals : 1.52209
+rel. change during last iteration : -5.33394e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0801394
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00642233
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.607908         +/- 0.001712     (0.2815%)
+d               = 0.00360215       +/- 0.0015       (41.63%)
+dbl             = 0.0646523        +/- 0.00944      (14.6%)
+dbg             = 0.416512         +/- 0.006369     (1.529%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.024  1.000 
+dbl            -0.168 -0.145  1.000 
+dbg            -0.114  0.107 -0.009  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan426817-lbn261598-lcn14049-ran11941-rbn7318-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.3639879019e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 2.6580518872e-04   0.00e+00  4.70e+04    5.417634e-01   8.272804e-03   4.528557e-02   3.394669e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000265805
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00105903
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.12154e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.541763         +/- 4.191e-05    (0.007736%)
+b               = 0.0082728        +/- 3.66e-05     (0.4425%)
+dal             = 0.0452856        +/- 0.0001106    (0.2443%)
+dag             = 0.339467         +/- 9.472e-05    (0.0279%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.003  1.000 
+dal            -0.218 -0.198  1.000 
+dag            -0.186  0.176 -0.021  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan426817-lbn261598-lcn14049-ran11941-rbn7318-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.2116491191e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   8 1.8236402794e-04  -6.15e-02  4.70e-09    5.430996e-01   7.989755e-03   3.630906e-02   2.143000e-01
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.000182364
+rel. change during last iteration : -6.15005e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000877194
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.69468e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.5431           +/- 5.63e-05     (0.01037%)
+d               = 0.00798976       +/- 4.918e-05    (0.6156%)
+dbl             = 0.0363091        +/- 9.169e-05    (0.2525%)
+dbg             = 0.2143           +/- 7.816e-05    (0.03647%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.004  1.000 
+dbl            -0.215 -0.195  1.000 
+dbg            -0.183  0.173 -0.020  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan440586-lbn247829-lcn14049-ran12326-rbn6933-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.5729399469e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 4.3764844635e-04   0.00e+00  4.70e+04    5.402017e-01   7.881143e-03   4.666159e-02   3.519482e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000437648
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0013589
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.84662e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.540202         +/- 5.047e-05    (0.009342%)
+b               = 0.00788114       +/- 4.409e-05    (0.5595%)
+dal             = 0.0466616        +/- 0.000141     (0.3022%)
+dag             = 0.351948         +/- 0.0001216    (0.03454%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.005  1.000 
+dal            -0.212 -0.192  1.000 
+dag            -0.183  0.172 -0.019  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:22 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan440586-lbn247829-lcn14049-ran12326-rbn6933-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.3378419344e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.4587263584e-04  -1.98e-03  4.70e-08    5.412386e-01   8.148672e-03   3.446695e-02   2.044961e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000145873
+rel. change during last iteration : -1.97594e-08
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000784536
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.15496e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.541239         +/- 5.328e-05    (0.009843%)
+d               = 0.00814867       +/- 4.654e-05    (0.5711%)
+dbl             = 0.0344669        +/- 8.178e-05    (0.2373%)
+dbg             = 0.204496         +/- 7.018e-05    (0.03432%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.003  1.000 
+dbl            -0.217 -0.196  1.000 
+dbg            -0.185  0.175 -0.020  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan454354-lbn234061-lcn14049-ran12711-rbn6548-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.8775539345e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 3.6245740779e-04  -5.16e-01  4.70e-07    5.400890e-01   7.318828e-03   4.699253e-02   3.646699e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.000362457
+rel. change during last iteration : -5.15823e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00123667
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.52936e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.540089         +/- 4.24e-05     (0.007851%)
+b               = 0.00731883       +/- 3.706e-05    (0.5064%)
+dal             = 0.0469925        +/- 0.0001277    (0.2718%)
+dag             = 0.36467          +/- 0.0001103    (0.03024%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.007  1.000 
+dal            -0.205 -0.184  1.000 
+dag            -0.176  0.166 -0.018  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan454354-lbn234061-lcn14049-ran12711-rbn6548-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.5566387389e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 6.7942174836e-05  -1.77e-01  4.70e-08    5.412820e-01   7.427994e-03   3.244189e-02   1.937317e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 6.79422e-05
+rel. change during last iteration : -1.76823e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000535421
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.86676e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.541282         +/- 3.645e-05    (0.006734%)
+d               = 0.00742799       +/- 3.186e-05    (0.4289%)
+dbl             = 0.0324419        +/- 5.549e-05    (0.1711%)
+dbg             = 0.193732         +/- 4.769e-05    (0.02461%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.006  1.000 
+dbl            -0.207 -0.186  1.000 
+dbg            -0.177  0.167 -0.018  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan468122-lbn220293-lcn14049-ran13096-rbn6163-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 2.1046541694e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 8.5557115166e-04  -6.08e-01  4.70e-07    5.383172e-01   7.600487e-03   4.809553e-02   3.766733e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.000855571
+rel. change during last iteration : -6.07803e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0019
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.61e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.538317         +/- 6.428e-05    (0.01194%)
+b               = 0.00760049       +/- 5.617e-05    (0.7391%)
+dal             = 0.0480955        +/- 0.000196     (0.4074%)
+dag             = 0.376673         +/- 0.0001702    (0.04518%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.006  1.000 
+dal            -0.208 -0.188  1.000 
+dag            -0.180  0.169 -0.019  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan468122-lbn220293-lcn14049-ran13096-rbn6163-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.7643645647e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 2.7978988871e-04  -6.20e-03  4.70e-08    5.399464e-01   7.653424e-03   3.055706e-02   1.837065e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.00027979
+rel. change during last iteration : -6.19749e-08
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00108653
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.18055e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.539946         +/- 7.917e-05    (0.01466%)
+d               = 0.00765342       +/- 6.918e-05    (0.9039%)
+dbl             = 0.0305571        +/- 0.0001125    (0.3681%)
+dbg             = 0.183707         +/- 9.711e-05    (0.05286%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.006  1.000 
+dbl            -0.209 -0.189  1.000 
+dbg            -0.180  0.170 -0.019  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan481890-lbn206525-lcn14049-ran13481-rbn5778-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 2.4590381342e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 1.0559123429e-03  -8.42e-01  4.70e-07    5.373380e-01   7.497865e-03   4.797203e-02   3.904061e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.00105591
+rel. change during last iteration : -8.42095e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00211076
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.45533e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.537338         +/- 6.801e-05    (0.01266%)
+b               = 0.00749787       +/- 5.945e-05    (0.7928%)
+dal             = 0.047972         +/- 0.0002171    (0.4525%)
+dag             = 0.390406         +/- 0.0001893    (0.04848%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.007  1.000 
+dal            -0.206 -0.186  1.000 
+dag            -0.179  0.169 -0.018  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan481890-lbn206525-lcn14049-ran13481-rbn5778-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 2.0098205531e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 2.2966309754e-04   0.00e+00  4.70e+04    5.389492e-01   7.689921e-03   2.900220e-02   1.735753e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000229663
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0009844
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.69043e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.538949         +/- 7.617e-05    (0.01413%)
+d               = 0.00768992       +/- 6.656e-05    (0.8656%)
+dbl             = 0.0290022        +/- 0.0001017    (0.3508%)
+dbg             = 0.173575         +/- 8.814e-05    (0.05078%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.006  1.000 
+dbl            -0.209 -0.189  1.000 
+dbg            -0.181  0.170 -0.019  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan495659-lbn192756-lcn14049-ran13866-rbn5393-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 2.7659125898e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 1.3133035570e-03  -2.35e-01  4.70e-07    5.347764e-01   7.542709e-03   4.905190e-02   4.041855e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.0013133
+rel. change during last iteration : -2.35342e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00235401
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.54137e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.534776         +/- 7.337e-05    (0.01372%)
+b               = 0.00754271       +/- 6.412e-05    (0.8502%)
+dal             = 0.0490519        +/- 0.0002409    (0.491%)
+dag             = 0.404185         +/- 0.000212     (0.05245%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.007  1.000 
+dal            -0.205 -0.185  1.000 
+dag            -0.181  0.170 -0.018  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan495659-lbn192756-lcn14049-ran13866-rbn5393-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 2.2776928392e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 2.1814736740e-04  -4.16e-03  4.70e-08    5.364831e-01   7.769828e-03   2.708810e-02   1.634432e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000218147
+rel. change during last iteration : -4.1638e-08
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000959402
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.20453e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.536483         +/- 7.915e-05    (0.01475%)
+d               = 0.00776983       +/- 6.916e-05    (0.8901%)
+dbl             = 0.0270881        +/- 9.869e-05    (0.3643%)
+dbg             = 0.163443         +/- 8.628e-05    (0.05279%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.006  1.000 
+dbl            -0.209 -0.189  1.000 
+dbg            -0.183  0.172 -0.019  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan509427-lbn178988-lcn14049-ran14252-rbn5007-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 3.2574141964e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 6.2275163646e-04  -3.37e-01  4.70e-07    5.344982e-01   7.426929e-03   4.952552e-02   4.183125e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.000622752
+rel. change during last iteration : -3.37458e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.001621
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.62764e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.534498         +/- 4.825e-05    (0.009027%)
+b               = 0.00742693       +/- 4.217e-05    (0.5678%)
+dal             = 0.0495255        +/- 0.0001656    (0.3344%)
+dag             = 0.418313         +/- 0.000146     (0.03489%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.008  1.000 
+dal            -0.204 -0.184  1.000 
+dag            -0.179  0.168 -0.018  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan509427-lbn178988-lcn14049-ran14252-rbn5007-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 2.6004331615e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.2476460199e-04  -3.20e-02  4.70e-08    5.360714e-01   7.733053e-03   2.550258e-02   1.530093e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000124765
+rel. change during last iteration : -3.20275e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000725557
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.26433e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.536071         +/- 6.384e-05    (0.01191%)
+d               = 0.00773305       +/- 5.579e-05    (0.7214%)
+dbl             = 0.0255026        +/- 7.455e-05    (0.2923%)
+dbg             = 0.153009         +/- 6.528e-05    (0.04266%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.006  1.000 
+dbl            -0.209 -0.189  1.000 
+dbg            -0.182  0.172 -0.019  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan523195-lbn165220-lcn14049-ran14637-rbn4622-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 3.6945537680e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 1.1866938761e-03  -7.93e-02  4.70e-07    5.323488e-01   7.143148e-03   5.082296e-02   4.323300e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.00118669
+rel. change during last iteration : -7.93417e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00223767
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.00715e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.532349         +/- 6.304e-05    (0.01184%)
+b               = 0.00714315       +/- 5.511e-05    (0.7716%)
+dal             = 0.050823         +/- 0.0002271    (0.4469%)
+dag             = 0.43233          +/- 0.0002018    (0.04669%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.009  1.000 
+dal            -0.199 -0.179  1.000 
+dag            -0.177  0.166 -0.017  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan523195-lbn165220-lcn14049-ran14637-rbn4622-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 2.9353758749e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 4.2341092408e-04  -2.87e-01  4.70e-08    5.342552e-01   7.634124e-03   2.391264e-02   1.428696e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000423411
+rel. change during last iteration : -2.87102e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00133662
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.78654e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.534255         +/- 0.0001252    (0.02343%)
+d               = 0.00763412       +/- 0.0001094    (1.433%)
+dbl             = 0.0239126        +/- 0.0001367    (0.5717%)
+dbg             = 0.14287          +/- 0.0001205    (0.08437%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.007  1.000 
+dbl            -0.206 -0.187  1.000 
+dbg            -0.182  0.171 -0.019  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan536964-lbn151451-lcn14049-ran15022-rbn4237-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 4.2142377611e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   5 1.2749113259e-03  -2.40e-01  4.70e-06    5.317566e-01   7.166560e-03   5.029425e-02   4.458790e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.00127491
+rel. change during last iteration : -2.40294e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00231935
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.37937e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.531757         +/- 6.312e-05    (0.01187%)
+b               = 0.00716656       +/- 5.519e-05    (0.7701%)
+dal             = 0.0502942        +/- 0.0002352    (0.4676%)
+dag             = 0.445879         +/- 0.0002094    (0.04697%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.009  1.000 
+dal            -0.199 -0.179  1.000 
+dag            -0.177  0.166 -0.017  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan536964-lbn151451-lcn14049-ran15022-rbn4237-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 3.3254261594e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 3.8707846676e-04  -1.43e-03  4.70e-08    5.344787e-01   7.120676e-03   2.175752e-02   1.325211e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000387078
+rel. change during last iteration : -1.43331e-08
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00127798
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.63324e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.534479         +/- 0.0001238    (0.02316%)
+d               = 0.00712068       +/- 0.0001082    (1.52%)
+dbl             = 0.0217575        +/- 0.0001303    (0.5987%)
+dbg             = 0.132521         +/- 0.0001149    (0.08667%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.009  1.000 
+dbl            -0.199 -0.179  1.000 
+dbg            -0.176  0.165 -0.017  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan55073-lbn633342-lcn14049-ran1541-rbn17718-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 8.4483991595e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  11 9.7395480329e-03  -7.07e-02  4.70e-08    5.983144e-01   3.889628e-03   8.207167e-03   3.555096e-02
+
+After 11 iterations the fit converged.
+final sum of squares of residuals : 0.00973955
+rel. change during last iteration : -7.06905e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00641055
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.10951e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.598314         +/- 0.001833     (0.3063%)
+b               = 0.00388963       +/- 0.001606     (41.28%)
+dal             = 0.00820717       +/- 0.0007379    (8.99%)
+dag             = 0.035551         +/- 0.0005164    (1.453%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.021  1.000 
+dal            -0.170 -0.147  1.000 
+dag            -0.119  0.112 -0.010  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan55073-lbn633342-lcn14049-ran1541-rbn17718-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.2163688163e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  12 1.9075100104e+00  -3.27e-01  4.70e-09    5.953490e-01   3.915202e-03   6.332640e-02   4.321164e-01
+
+After 12 iterations the fit converged.
+final sum of squares of residuals : 1.90751
+rel. change during last iteration : -3.26733e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0897138
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00804857
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.595349         +/- 0.001908     (0.3204%)
+d               = 0.0039152        +/- 0.001671     (42.69%)
+dbl             = 0.0633264        +/- 0.01025      (16.18%)
+dbg             = 0.432116         +/- 0.007256     (1.679%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.021  1.000 
+dbl            -0.169 -0.147  1.000 
+dbg            -0.120  0.113 -0.010  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan550732-lbn137683-lcn14049-ran15407-rbn3852-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 4.6921024892e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   5 1.0328954979e-03  -1.50e-01  4.70e-06    5.278137e-01   6.915891e-03   5.199899e-02   4.619538e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.0010329
+rel. change during last iteration : -1.5025e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00208763
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.35821e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.527814         +/- 5.378e-05    (0.01019%)
+b               = 0.00691589       +/- 4.703e-05    (0.68%)
+dal             = 0.051999         +/- 0.0002096    (0.403%)
+dag             = 0.461954         +/- 0.0001894    (0.04101%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.011  1.000 
+dal            -0.194 -0.174  1.000 
+dag            -0.175  0.164 -0.017  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan550732-lbn137683-lcn14049-ran15407-rbn3852-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 3.7418770419e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.8132176380e-04  -7.20e-02  4.70e-08    5.300962e-01   7.195743e-03   2.044382e-02   1.216761e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000181322
+rel. change during last iteration : -7.19795e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000874683
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.65071e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.530096         +/- 9.322e-05    (0.01759%)
+d               = 0.00719574       +/- 8.15e-05     (1.133%)
+dbl             = 0.0204438        +/- 8.84e-05     (0.4324%)
+dbg             = 0.121676         +/- 7.921e-05    (0.0651%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.009  1.000 
+dbl            -0.199 -0.179  1.000 
+dbg            -0.178  0.167 -0.017  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan564500-lbn123915-lcn14049-ran15792-rbn3467-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 5.2710530301e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   5 1.3987652043e-03  -6.25e-02  4.70e-06    5.265429e-01   6.496555e-03   5.177453e-02   4.753910e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.00139877
+rel. change during last iteration : -6.24874e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0024294
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.90196e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.526543         +/- 5.857e-05    (0.01112%)
+b               = 0.00649655       +/- 5.124e-05    (0.7887%)
+dal             = 0.0517745        +/- 0.0002425    (0.4684%)
+dag             = 0.475391         +/- 0.0002204    (0.04635%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.012  1.000 
+dal            -0.187 -0.168  1.000 
+dag            -0.171  0.159 -0.016  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan564500-lbn123915-lcn14049-ran15792-rbn3467-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 4.1354433826e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 2.5225046131e-04  -1.18e-01  4.70e-08    5.287635e-01   6.907426e-03   1.828714e-02   1.124498e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.00025225
+rel. change during last iteration : -1.18071e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00103167
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.06435e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.528764         +/- 0.0001156    (0.02187%)
+d               = 0.00690743       +/- 0.0001011    (1.464%)
+dbl             = 0.0182871        +/- 0.0001038    (0.5674%)
+dbg             = 0.11245          +/- 9.347e-05    (0.08312%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.011  1.000 
+dbl            -0.194 -0.175  1.000 
+dbg            -0.175  0.164 -0.017  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:23 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan578269-lbn110146-lcn14049-ran16178-rbn3081-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 5.9382726969e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   5 1.1123369529e-03  -2.92e-01  4.70e-06    5.240680e-01   6.640916e-03   5.186338e-02   4.923746e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.00111234
+rel. change during last iteration : -2.92489e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00216643
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.6934e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.524068         +/- 5.082e-05    (0.009696%)
+b               = 0.00664092       +/- 4.445e-05    (0.6694%)
+dal             = 0.0518634        +/- 0.0002154    (0.4154%)
+dag             = 0.492375         +/- 0.0001975    (0.04011%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.012  1.000 
+dal            -0.189 -0.169  1.000 
+dag            -0.173  0.162 -0.016  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan578269-lbn110146-lcn14049-ran16178-rbn3081-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 4.6592475580e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 2.8675367334e-04  -4.93e-02  4.70e-08    5.265716e-01   6.909221e-03   1.638514e-02   1.009423e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000286754
+rel. change during last iteration : -4.92859e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00109997
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.20993e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.526572         +/- 0.0001373    (0.02608%)
+d               = 0.00690922       +/- 0.0001201    (1.738%)
+dbl             = 0.0163851        +/- 0.0001101    (0.6722%)
+dbg             = 0.100942         +/- 0.0001       (0.09908%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.011  1.000 
+dbl            -0.193 -0.174  1.000 
+dbg            -0.176  0.164 -0.017  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan592037-lbn96378-lcn14049-ran16563-rbn2696-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 6.6744634237e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 1.4780759449e-03  -1.31e-01  4.70e-07    5.227661e-01   6.680984e-03   5.310368e-02   5.076099e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.00147808
+rel. change during last iteration : -1.30597e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00249732
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.23661e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.522766         +/- 5.696e-05    (0.0109%)
+b               = 0.00668098       +/- 4.982e-05    (0.7457%)
+dal             = 0.0531037        +/- 0.0002478    (0.4666%)
+dag             = 0.50761          +/- 0.0002282    (0.04496%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.013  1.000 
+dal            -0.189 -0.169  1.000 
+dag            -0.174  0.162 -0.016  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan592037-lbn96378-lcn14049-ran16563-rbn2696-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 5.1594152980e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 3.7031268822e-04  -1.73e-01  4.70e-08    5.249982e-01   7.386525e-03   1.433499e-02   9.067968e-02
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.000370313
+rel. change during last iteration : -1.73256e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00125
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.5625e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.524998         +/- 0.0001791    (0.03412%)
+d               = 0.00738652       +/- 0.0001566    (2.12%)
+dbl             = 0.014335         +/- 0.0001252    (0.8735%)
+dbg             = 0.0906797        +/- 0.0001143    (0.126%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.010  1.000 
+dbl            -0.199 -0.180  1.000 
+dbg            -0.182  0.170 -0.018  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan605805-lbn82610-lcn14049-ran16948-rbn2311-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 7.4231769616e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 1.7489558543e-03  -1.10e-01  4.70e-07    5.206479e-01   6.433913e-03   5.257540e-02   5.234586e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.00174896
+rel. change during last iteration : -1.10092e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00271653
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.37956e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.520648         +/- 5.861e-05    (0.01126%)
+b               = 0.00643391       +/- 5.127e-05    (0.7969%)
+dal             = 0.0525754        +/- 0.0002679    (0.5096%)
+dag             = 0.523459         +/- 0.0002487    (0.04752%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.014  1.000 
+dal            -0.184 -0.165  1.000 
+dag            -0.172  0.160 -0.015  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan605805-lbn82610-lcn14049-ran16948-rbn2311-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 5.7061748181e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 2.9674820723e-04  -1.26e-01  4.70e-07    5.233233e-01   6.563144e-03   1.263720e-02   8.006344e-02
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.000296748
+rel. change during last iteration : -1.25893e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00111897
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.2521e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.523323         +/- 0.0001704    (0.03256%)
+d               = 0.00656314       +/- 0.0001491    (2.271%)
+dbl             = 0.0126372        +/- 0.000111     (0.8787%)
+dbg             = 0.0800634        +/- 0.0001021    (0.1275%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.013  1.000 
+dbl            -0.187 -0.168  1.000 
+dbg            -0.172  0.161 -0.016  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan619574-lbn68841-lcn14049-ran17333-rbn1926-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 8.3054034430e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 1.1547549826e-03  -1.27e-01  4.70e-07    5.188123e-01   6.663837e-03   5.295953e-02   5.407281e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.00115475
+rel. change during last iteration : -1.26655e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00220735
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.87238e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.518812         +/- 4.684e-05    (0.009029%)
+b               = 0.00666384       +/- 4.097e-05    (0.6149%)
+dal             = 0.0529595        +/- 0.0002173    (0.4103%)
+dag             = 0.540728         +/- 0.000203     (0.03755%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.013  1.000 
+dal            -0.187 -0.168  1.000 
+dag            -0.175  0.163 -0.016  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan619574-lbn68841-lcn14049-ran17333-rbn1926-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 6.3124354885e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 9.8620232559e-05  -5.89e-03  4.70e-07    5.221885e-01   6.447984e-03   1.069011e-02   6.894698e-02
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 9.86202e-05
+rel. change during last iteration : -5.8935e-08
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000645073
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.16119e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.522189         +/- 0.0001126    (0.02157%)
+d               = 0.00644798       +/- 9.853e-05    (1.528%)
+dbl             = 0.0106901        +/- 6.382e-05    (0.597%)
+dbg             = 0.068947         +/- 5.892e-05    (0.08545%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.013  1.000 
+dbl            -0.185 -0.166  1.000 
+dbg            -0.171  0.160 -0.015  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan633342-lbn55073-lcn14049-ran17718-rbn1541-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 9.1578796192e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 1.2287903079e-03  -2.77e-01  4.70e-07    5.156008e-01   6.147810e-03   5.308036e-02   5.579232e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.00122879
+rel. change during last iteration : -2.76524e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00227701
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.18477e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.515601         +/- 4.472e-05    (0.008673%)
+b               = 0.00614781       +/- 3.914e-05    (0.6366%)
+dal             = 0.0530804        +/- 0.000222     (0.4182%)
+dag             = 0.557923         +/- 0.0002099    (0.03762%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.016  1.000 
+dal            -0.178 -0.160  1.000 
+dag            -0.169  0.158 -0.015  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan633342-lbn55073-lcn14049-ran17718-rbn1541-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 6.9364846425e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 3.2774552864e-04  -5.85e-02  4.70e-07    5.180065e-01   6.573902e-03   8.650681e-03   5.813208e-02
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.000327746
+rel. change during last iteration : -5.85335e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00117596
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.38289e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.518006         +/- 0.0002442    (0.04714%)
+d               = 0.0065739        +/- 0.0002136    (3.25%)
+dbl             = 0.00865068       +/- 0.0001155    (1.335%)
+dbg             = 0.0581321        +/- 0.0001082    (0.1862%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.014  1.000 
+dbl            -0.185 -0.166  1.000 
+dbg            -0.174  0.162 -0.016  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan647110-lbn41305-lcn14049-ran18103-rbn1156-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.0154279975e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 5.8351528651e-04  -3.53e-01  4.70e-07    5.137968e-01   6.313918e-03   5.355387e-02   5.752039e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.000583515
+rel. change during last iteration : -3.53199e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0015691
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.46209e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.513797         +/- 3.025e-05    (0.005887%)
+b               = 0.00631392       +/- 2.647e-05    (0.4192%)
+dal             = 0.0535539        +/- 0.0001526    (0.285%)
+dag             = 0.575204         +/- 0.0001452    (0.02525%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.015  1.000 
+dal            -0.180 -0.162  1.000 
+dag            -0.172  0.160 -0.015  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan647110-lbn41305-lcn14049-ran18103-rbn1156-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 7.6160278777e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 1.2025847826e-04  -3.44e-02  4.70e-07    5.162905e-01   6.609379e-03   6.759054e-03   4.687920e-02
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.000120258
+rel. change during last iteration : -3.43971e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000712334
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.0742e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.51629          +/- 0.000183     (0.03544%)
+d               = 0.00660938       +/- 0.0001601    (2.422%)
+dbl             = 0.00675905       +/- 6.975e-05    (1.032%)
+dbg             = 0.0468792        +/- 6.578e-05    (0.1403%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.014  1.000 
+dbl            -0.185 -0.166  1.000 
+dbg            -0.175  0.163 -0.016  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan660878-lbn27537-lcn14049-ran18489-rbn770-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.1193011770e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 5.8452861162e-04  -4.96e-01  4.70e-07    5.109623e-01   6.047505e-03   5.334177e-02   5.933638e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.000584529
+rel. change during last iteration : -4.95789e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00157047
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.46637e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.510962         +/- 2.858e-05    (0.005593%)
+b               = 0.00604751       +/- 2.502e-05    (0.4136%)
+dal             = 0.0533418        +/- 0.0001516    (0.2843%)
+dag             = 0.593364         +/- 0.0001458    (0.02458%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.017  1.000 
+dal            -0.175 -0.157  1.000 
+dag            -0.169  0.157 -0.014  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan660878-lbn27537-lcn14049-ran18489-rbn770-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 8.3038952742e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 2.3375578138e-05  -8.23e-03  4.70e-07    5.131911e-01   5.988853e-03   4.875032e-03   3.601752e-02
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 2.33756e-05
+rel. change during last iteration : -8.23085e-08
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000314056
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.86311e-08
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.513191         +/- 9.86e-05     (0.01921%)
+d               = 0.00598885       +/- 8.63e-05     (1.441%)
+dbl             = 0.00487503       +/- 3.044e-05    (0.6244%)
+dbg             = 0.0360175        +/- 2.904e-05    (0.08063%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.017  1.000 
+dbl            -0.175 -0.157  1.000 
+dbg            -0.168  0.156 -0.014  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan674647-lbn13768-lcn14049-ran18874-rbn385-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.2398864120e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   6 2.2837149940e-04  -6.03e-02  4.70e-07    5.094458e-01   5.975504e-03   5.318423e-02   6.113691e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.000228371
+rel. change during last iteration : -6.026e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000981628
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.63593e-07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.509446         +/- 1.717e-05    (0.003371%)
+b               = 0.0059755        +/- 1.503e-05    (0.2516%)
+dal             = 0.0531842        +/- 9.448e-05    (0.1776%)
+dag             = 0.611369         +/- 9.135e-05    (0.01494%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.017  1.000 
+dal            -0.174 -0.155  1.000 
+dag            -0.169  0.157 -0.014  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan674647-lbn13768-lcn14049-ran18874-rbn385-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 9.0545984437e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+   7 1.2790247282e-05  -2.78e-02  4.70e-08    5.110127e-01   5.880393e-03   2.739004e-03   2.467210e-02
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 1.27902e-05
+rel. change during last iteration : -2.77965e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.000232309
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.39673e-08
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.511013         +/- 0.0001026    (0.02007%)
+d               = 0.00588039       +/- 8.977e-05    (1.527%)
+dbl             = 0.002739         +/- 2.241e-05    (0.8181%)
+dbg             = 0.0246721        +/- 2.155e-05    (0.08733%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.017  1.000 
+dbl            -0.173 -0.155  1.000 
+dbg            -0.167  0.155 -0.014  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan68842-lbn619573-lcn14049-ran1926-rbn17333-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 7.9640529540e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  18 1.6068679417e-02  -8.77e-02  4.70e-07    6.037166e-01   3.640414e-03   1.029265e-02   4.429551e-02
+
+After 18 iterations the fit converged.
+final sum of squares of residuals : 0.0160687
+rel. change during last iteration : -8.76762e-07
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0082341
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.78003e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.603717         +/- 0.001829     (0.303%)
+b               = 0.00364041       +/- 0.001603     (44.03%)
+dal             = 0.0102927        +/- 0.0009592    (9.319%)
+dag             = 0.0442955        +/- 0.000658     (1.485%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.023  1.000 
+dal            -0.167 -0.144  1.000 
+dag            -0.115  0.108 -0.009  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan68842-lbn619573-lcn14049-ran1926-rbn17333-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.1951924538e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  12 1.9580579074e+00  -7.57e-01  4.70e-11    6.003554e-01   3.811659e-03   6.376477e-02   4.209054e-01
+
+After 12 iterations the fit converged.
+final sum of squares of residuals : 1.95806
+rel. change during last iteration : -7.56724e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0908947
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00826185
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.600355         +/- 0.001969     (0.3279%)
+d               = 0.00381166       +/- 0.001725     (45.25%)
+dbl             = 0.0637648        +/- 0.01051      (16.48%)
+dbg             = 0.420905         +/- 0.0073       (1.734%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.022  1.000 
+dbl            -0.169 -0.146  1.000 
+dbg            -0.118  0.111 -0.009  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan82610-lbn605805-lcn14049-ran2311-rbn16948-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 7.6815113124e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  16 1.9305958373e-02  -3.54e-01  4.70e-07    6.170723e-01   3.828175e-03   1.182184e-02   5.049673e-02
+
+After 16 iterations the fit converged.
+final sum of squares of residuals : 0.019306
+rel. change during last iteration : -3.54321e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0090255
+variance of residuals (reduced chisquare) = WSSR/ndf   : 8.14597e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.617072         +/- 0.001811     (0.2935%)
+b               = 0.00382817       +/- 0.001587     (41.44%)
+dal             = 0.0118218        +/- 0.001094     (9.254%)
+dag             = 0.0504967        +/- 0.0007098    (1.406%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.019  1.000 
+dal            -0.178 -0.154  1.000 
+dag            -0.115  0.109 -0.010  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:24 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan82610-lbn605805-lcn14049-ran2311-rbn16948-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.0969283143e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  17 1.6150434541e+00  -9.00e-01  4.70e-10    6.142531e-01   3.697038e-03   6.384661e-02   3.886279e-01
+
+After 17 iterations the fit converged.
+final sum of squares of residuals : 1.61504
+rel. change during last iteration : -8.99952e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0825502
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00681453
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.614253         +/- 0.001937     (0.3153%)
+d               = 0.00369704       +/- 0.001697     (45.9%)
+dbl             = 0.0638466        +/- 0.00991      (15.52%)
+dbg             = 0.388628         +/- 0.006511     (1.675%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.021  1.000 
+dbl            -0.173 -0.149  1.000 
+dbg            -0.114  0.107 -0.009  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:25 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan96378-lbn592037-lcn14049-ran2696-rbn16563-rcn393.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 7.2548006062e+00   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  12 4.7424029142e-02  -3.53e-01  4.70e-08    6.090638e-01   3.938502e-03   1.410947e-02   5.940565e-02
+
+After 12 iterations the fit converged.
+final sum of squares of residuals : 0.047424
+rel. change during last iteration : -3.5304e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0141457
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000200101
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.609064         +/- 0.002459     (0.4037%)
+b               = 0.0039385        +/- 0.002154     (54.68%)
+dal             = 0.0141095        +/- 0.001677     (11.89%)
+dag             = 0.0594057        +/- 0.001124     (1.893%)
+
+correlation matrix of the fit parameters:
+                a      b      dal    dag    
+a               1.000 
+b              -0.019  1.000 
+dal            -0.176 -0.153  1.000 
+dag            -0.118  0.111 -0.010  1.000 
+
+
+*******************************************************************************
+Sun Jun 19 08:23:25 2022
+
+
+FIT:    data read from 'density/density/L100T1.0E1.1CD0.02/lan96378-lbn592037-lcn14049-ran2696-rbn16563-rcn393.density' u 1:3
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: db(x)
+	db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c             d             dbl           dbg          
+   0 1.0915491771e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01
+  18 2.3966595731e+00  -6.19e-01  4.70e-09    6.060172e-01   3.912546e-03   6.538751e-02   3.841695e-01
+
+After 18 iterations the fit converged.
+final sum of squares of residuals : 2.39666
+rel. change during last iteration : -6.19477e-06
+
+degrees of freedom    (FIT_NDF)                        : 237
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.100561
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0101125
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 0.606017         +/- 0.002475     (0.4083%)
+d               = 0.00391255       +/- 0.002168     (55.4%)
+dbl             = 0.0653875        +/- 0.01182      (18.08%)
+dbg             = 0.384169         +/- 0.008022     (2.088%)
+
+correlation matrix of the fit parameters:
+                c      d      dbl    dbg    
+c               1.000 
+d              -0.020  1.000 
+dbl            -0.174 -0.151  1.000 
+dbg            -0.118  0.111 -0.010  1.000 
