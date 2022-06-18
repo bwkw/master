@@ -66,3 +66,7 @@ for i in range(1, composition_number):
     make_density_fitting_plt_file("task/python/density_fitting_plt/L{}T{}CN{}S{}density_fitting_plt.sh".format(length, temperature, composition_number, variable_sigma), length, temperature, a_composition_ratio, variable_sigma)
 
 make_lammps_end_file("task/lammps/run/L{}T{}CN{}S{}.sh".format(length, temperature, composition_number, variable_sigma))
+
+if not os.path.exists('density/density_fitting_img/L{}T{}S{}'.format(length, temperature, variable_sigma)):
+    os.mkdir('density/density_fitting_img/L{}T{}S{}'.format(length, temperature, variable_sigma))
+    
