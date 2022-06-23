@@ -9,7 +9,7 @@ def make_file(filename, length, temperature, left_a_num, left_b_num, left_c_num,
         f.write("units lj\n")
         f.write("atom_style atomic\n")
         f.write("boundary p p p\n\n")
-        f.write("read_data data/atoms/L{}/lan{}-lbn{}-ran{}-rbn{}.atoms\n\n".format(length, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
+        f.write("read_data data/atoms/L{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.atoms\n\n".format(length, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
         f.write("mass 1 1.0\n")
         f.write("mass 2 1.0\n\n")
         f.write("reset_timestep  0\n")
@@ -57,5 +57,5 @@ if not os.path.exists('data/in.melt'):
     os.mkdir('data/in.melt')
 if not os.path.exists('data/in.melt/L{}T{}E{}CD{}'.format(length, temperature, variable_epsilon, c_density)):
     os.mkdir(('data/in.melt/L{}T{}E{}CD{}'.format(length, temperature, variable_epsilon, c_density)))
-make_file("data/in.melt/L{}T{}E{}CD{}/lan{}-lbn{}-ran{}-rbn{}.in".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num),
+make_file("data/in.melt/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.in".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num),
 length, temperature, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num, variable_epsilon, c_density)
