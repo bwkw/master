@@ -2,6 +2,7 @@
 # コマンドライン引数に、系の長さ、Aの組成比分割個数、温度、イプシロンを入れる
 
 import os
+import pprint
 import re
 import sys
 from uncertainties import ufloat
@@ -77,6 +78,8 @@ temperature = float(sys.argv[2])
 composition_number = int(sys.argv[3])
 variable_epsilon = float(sys.argv[4])
 loadfile("density/density_fitting/L{}T{}CN{}E{}.log".format(length, temperature, composition_number, variable_epsilon))
+
+parameters = sorted(parameters)
 
 for parameter in parameters:
     a_composition_ratio = parameter[0]
