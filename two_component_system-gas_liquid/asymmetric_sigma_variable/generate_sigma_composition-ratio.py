@@ -10,17 +10,16 @@ def loadfile(filename, composition_ratios, averages_x, uncertainties):
             averages_x.append(float(line[1]))
             uncertainties.append(float(line[2]))
 
-def makefile(filename, epsilon, average_composition_ratio, min_composition_ratio, max_composition_ratio):
+def makefile(filename, sigma, average_composition_ratio, min_composition_ratio, max_composition_ratio):
      with open(filename, "a") as f:
-        f.write('{} {} {} {}\n'.format(epsilon, average_composition_ratio, min_composition_ratio, max_composition_ratio))
-
+        f.write('{} {} {} {}\n'.format(sigma, average_composition_ratio, min_composition_ratio, max_composition_ratio))
 
 path = "./azeotrope/azeotrope/"
 files = os.listdir(path)
 
 for file in files:
     number_list = re.findall("\d+\.\d+", file)
-    epsilon = number_list[1]
+    sigma = number_list[1]
     composition_ratios = []
     averages_x = []
     uncertainties = []
@@ -40,5 +39,5 @@ for file in files:
             min_composition_ratio = composition_ratio_1 + (composition_ratio_2-composition_ratio_1)*(0-max_x_1)/(max_x_2-max_x_1)
             average_composition_ratio = composition_ratio_1 + (composition_ratio_2-composition_ratio_1)*(0-average_x_1)/(average_x_2-average_x_1)
             max_composition_ratio = composition_ratio_1 + (composition_ratio_2-composition_ratio_1)*(0-min_x_1)/(min_x_2-min_x_1)
-            makefile('epsilon_composition-ratio.dat', epsilon, average_composition_ratio, min_composition_ratio, max_composition_ratio)
+            makefile('sigma_composition-ratio.dat', sigma, average_composition_ratio, min_composition_ratio, max_composition_ratio)
             break
