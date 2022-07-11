@@ -21,7 +21,7 @@ def make_inmelt_file(filename, length, temperature, composition_number, variable
 def make_density_file(filename, length, temperature, composition_number, variable_sigma):
     with open(filename, "a") as f:
         f.write("#!/bin/bash\n");
-        f.write("#SBATCH -p F144cpu\n");
+        f.write("#SBATCH -p B144cpu\n");
         f.write("#SBATCH -N 144\n");
         f.write("#SBATCH -n 576\n");
         f.write("#SBATCH -c 32\n");
