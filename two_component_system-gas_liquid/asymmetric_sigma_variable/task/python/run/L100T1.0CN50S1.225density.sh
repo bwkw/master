@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -p F144cpu
+#SBATCH -p B144cpu
 #SBATCH -N 144
 #SBATCH -n 576
 #SBATCH -c 32
