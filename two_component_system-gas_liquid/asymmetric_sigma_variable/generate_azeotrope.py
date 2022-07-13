@@ -78,6 +78,8 @@ composition_number = int(sys.argv[3])
 variable_sigma = float(sys.argv[4])
 loadfile("density/density_fitting/L{}T{}CN{}S{}.log".format(length, temperature, composition_number, variable_sigma))
 
+parameters = sorted(parameters)
+
 for parameter in parameters:
     a_composition_ratio = parameter[0]
     a_liquid_density = parameter[1]

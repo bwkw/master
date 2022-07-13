@@ -1,0 +1,18 @@
+
+
+*******************************************************************************
+Wed Jul 13 23:25:37 2022
+
+
+FIT:    data read from 'density/density/L100T1.0S1.275/lan112394-lbn590070-ran3144-rbn16508.density' u 1:2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 241
+        residuals are weighted equally (unit weight)
+
+function used for fitting: da(x)
+	da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             dal           dag          
+   0 1.0778490000e+01   0.00e+00  4.70e-01    5.000000e-01   6.000000e-03   3.000000e-02   3.000000e-01

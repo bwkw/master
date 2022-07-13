@@ -95,5 +95,3 @@ for parameter in parameters:
 
 make_plt_file("azeotrope/azeotrope_plt/L{}T{}E{}.plt".format(length, temperature, variable_epsilon), length, temperature, variable_epsilon)
 
-if not os.path.exists('density/density_fitting_img/L{}T{}E{}'.format(length, temperature, variable_epsilon)):
-    os.mkdir('density/density_fitting_img/L{}T{}E{}'.format(length, temperature, variable_epsilon))
