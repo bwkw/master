@@ -1,0 +1,58 @@
+LAMMPS (29 Oct 2020)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (0.0000000 0.0000000 0.0000000) to (200.00000 100.00000 100.00000)
+  8 by 4 by 8 MPI processor grid
+  reading atoms ...
+  722116 atoms
+  reading velocities ...
+  722116 velocities
+  read_data CPU = 1.497 seconds
+Neighbor list info ...
+  update every 1 steps, delay 10 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 3.3
+  ghost atom cutoff = 3.3
+  binsize = 1.65, bins = 122 61 61
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d/newton
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 3.085 | 3.685 | 4.278 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0   0.33320553   -5.4424271            0   -4.9426195   -2.4788036 
+ 6000000    1.0004468   -3.4237335            0   -1.9230654  0.055403184 
+Loop time of 33788.2 on 256 procs for 6000000 steps with 722116 atoms
+
+Performance: 15342.621 tau/day, 177.577 timesteps/s
+99.5% CPU use with 256 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 461.44     | 15314      | 26052      |8621.6 | 45.32
+Neigh   | 82.614     | 1133.9     | 1956.5     |2227.7 |  3.36
+Comm    | 3658       | 10986      | 22567      |6757.6 | 32.51
+Output  | 0.008003   | 0.0091257  | 0.009725   |   0.4 |  0.00
+Modify  | 1433.7     | 5958       | 19288      |9533.9 | 17.63
+Other   |            | 396.6      |            |       |  1.17
+
+Nlocal:        2820.77 ave        4447 max         581 min
+Histogram: 64 0 6 37 20 1 0 0 0 128
+Nghost:        4128.70 ave        6407 max         855 min
+Histogram: 64 0 0 22 42 0 0 0 0 128
+Neighs:       105273.0 ave      189309 max        3275 min
+Histogram: 64 2 23 36 3 0 0 0 10 118
+
+Total # of neighbors = 26949942
+Ave neighs/atom = 37.320793
+Neighbor list builds = 219717
+Dangerous builds = 0
+ERROR: Unknown command: rum 500 (src/input.cpp:264)
+Last command: rum 500
