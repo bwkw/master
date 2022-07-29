@@ -12,7 +12,7 @@ def loadfile(filename, composition_ratios, averages_x, uncertainties):
 
 def makefile(filename, epsilon, average_composition_ratio, min_composition_ratio, max_composition_ratio):
      with open(filename, "a") as f:
-        f.write('{} {} {} {}\n'.format(epsilon, average_composition_ratio, min_composition_ratio, max_composition_ratio))
+        f.write('{} {} {} {}\n'.format(epsilon, 1-average_composition_ratio, 1-max_composition_ratio, 1-min_composition_ratio))
 
 
 path = "./azeotrope/azeotrope/"
