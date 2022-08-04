@@ -23,27 +23,27 @@ python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.44.param
 python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.46.param
 python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.48.param
 python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.5.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.52.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.54.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.56.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.58.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.6.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.62.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.64.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.66.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.68.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.7.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.72.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.74.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.76.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.78.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.8.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.82.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.84.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.86.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.88.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.9.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.92.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.94.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.96.param
-python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.98.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.52.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.54.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.56.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.58.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.6.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.62.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.64.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.66.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.68.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.7.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.72.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.74.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.76.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.78.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.8.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.82.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.84.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.86.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.88.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.9.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.92.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.94.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.96.param
+# python3 generate_density.py < data/param/L100T1.0E1.05CD0.006/AC0.98.param
