@@ -1,0 +1,15 @@
+units lj
+atom_style atomic
+
+read_data lj-atoms/lj1.920.atoms
+
+mass 1 1.0
+
+pair_style lj/cut 3.0
+pair_modify shift yes
+pair_coeff 1 1 1.0 1.2 3.0
+
+thermo 1
+thermo_style custom pe
+
+run 0
