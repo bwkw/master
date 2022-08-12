@@ -12,4 +12,4 @@ f(x) = 4 * (12/(x**13) - 6/(x**7))
 g(x) = 4 * 1.2 * (12/(x**13) - 6/(x**7))
 h(x) = 4 * (12*(1.2**12)/(x**13) - 6*(1.2**6)/(x**7))
 
-plot f(x) with lines linewidth 3 title "epsilon1.0 sigma1.0", g(x) with lines linewidth 3 title "epsilon1.2 sigma1.0", h(x) with lines linewidth 3 title "epsilon1.0 sigma1.2"
+plot f(x) with lines linewidth 3 title "ε1.0 σ1.0", g(x) with lines linewidth 3 title "ε1.2 σ1.0", h(x) with lines linewidth 3 title "ε1.0 σ1.2"
