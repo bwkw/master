@@ -18,7 +18,7 @@ def loadfile(filename):
             if re.match("FIT:    data read from ", line):
                 result = re.findall(r"\d+", line)
                 print(result[7])
-                a_composition_ratio = round((int(result[7]))/(int(result[7])+int(result[8])), 2)
+                a_composition_ratio = round((int(result[7]))/(int(result[7])+int(result[8])+int(result[9])), 5)
             if re.match("dal             =", line):
                 result = line.split()
                 print(float(result[2]))
@@ -54,7 +54,7 @@ def make_plt_file(filename, length, temperature, composition_number, variable_ep
         f.write("set ylabel '{/Arial-Italic X}'\n")
         f.write("set xlabel font 'Arial,15'\n")
         f.write("set ylabel font 'Arial,15'\n")
-        f.write("set xrange [0.0:1.0]\n")
+        f.write("set xrange [0.0:0.5]\n")
         f.write("set tics font 'Arial,10'\n")
         f.write("set nokey\n")
         f.write("plot 'azeotrope/azeotrope/L{}T{}CN{}E{}CD{}.dat' with yerrorbars pt 0, 0.0\n".format(length, temperature, composition_number, variable_epsilon, c_density))
@@ -78,6 +78,8 @@ composition_number = int(sys.argv[3])
 variable_epsilon = float(sys.argv[4])
 c_density = float(sys.argv[5])
 loadfile("density/density_fitting/L{}T{}CN{}E{}CD{}.log".format(length, temperature, composition_number, variable_epsilon, c_density))
+
+parameters = sorted(parameters)
 
 for parameter in parameters:
     a_composition_ratio = parameter[0]
