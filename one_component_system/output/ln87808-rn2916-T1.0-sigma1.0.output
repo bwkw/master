@@ -1,0 +1,61 @@
+LAMMPS (18 Jun 2019)
+Reading data file ...
+  orthogonal box = (0 0 0) to (100 50 50)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  90724 atoms
+  reading velocities ...
+  90724 velocities
+  read_data CPU = 0.249345 secs
+Neighbor list info ...
+  update every 1 steps, delay 10 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 3.3
+  ghost atom cutoff = 3.3
+  binsize = 1.65, bins = 61 31 31
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d/newton
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 38.16 | 38.16 | 38.16 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0   0.33299539          inf            0          inf         -nan 
+  200000         -nan            0            0         -nan         -nan 
+Loop time of 2156.4 on 1 procs for 200000 steps with 90724 atoms
+
+Performance: 8013.354 tau/day, 92.747 timesteps/s
+99.8% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1743       | 1743       | 1743       |   0.0 | 80.83
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 50.224     | 50.224     | 50.224     |   0.0 |  2.33
+Output  | 0.00023508 | 0.00023508 | 0.00023508 |   0.0 |  0.00
+Modify  | 271.31     | 271.31     | 271.31     |   0.0 | 12.58
+Other   |            | 91.89      |            |       |  4.26
+
+Nlocal:    90724 ave 90724 max 90724 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    32756 ave 32756 max 32756 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    3.99251e+06 ave 3.99251e+06 max 3.99251e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 3992512
+Ave neighs/atom = 44.0072
+Neighbor list builds = 0
+Dangerous builds = 0
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 200000
+  Time step     : 0.001
+ERROR on proc 0: Non-numeric atom coords - simulation unstable (../domain.cpp:520)
+Last command: run 5000
