@@ -19,6 +19,4 @@ run 200000
 thermo 100
 thermo_style custom time temp press
 
-dump id all atom 100 dump.melt/ln87808-rn2916-T1.0.dump
-
 run 5000
