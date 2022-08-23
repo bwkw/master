@@ -76,7 +76,7 @@ def add_ball(atoms, left_num, right_num, length):
     for ix in range(0,right_n):
         for iy in range(0,right_n):
             for iz in range(0,right_n):
-                x = ix*right_s
+                x = length + ix*right_s
                 y = iy*right_s
                 z = iz*right_s
                 atoms.append(Atom(x, y, z, right_xvel_list[num], right_yvel_list[num], right_zvel_list[num]))
