@@ -6,7 +6,7 @@ Reading data file ...
   90724 atoms
   reading velocities ...
   90724 velocities
-  read_data CPU = 0.249464 secs
+  read_data CPU = 0.252241 secs
 Neighbor list info ...
   update every 1 steps, delay 10 steps, check yes
   max neighbors/atom: 2000, page size: 100000
@@ -23,39 +23,117 @@ Setting up Verlet run ...
   Unit style    : lj
   Current step  : 0
   Time step     : 0.001
-Per MPI rank memory allocation (min/avg/max) = 38.16 | 38.16 | 38.16 Mbytes
+Per MPI rank memory allocation (min/avg/max) = 36.99 | 36.99 | 36.99 Mbytes
 Step Temp E_pair E_mol TotEng Press 
-       0   0.33299539          inf            0          inf         -nan 
-  200000         -nan            0            0         -nan         -nan 
-Loop time of 2170.77 on 1 procs for 200000 steps with 90724 atoms
+       0   0.33306949   -7.0955828            0   -6.5959841    4.1676493 
+  200000    1.0049147   -4.1307745            0   -2.6234191   0.12802186 
+Loop time of 6938.58 on 1 procs for 200000 steps with 90724 atoms
 
-Performance: 7960.323 tau/day, 92.133 timesteps/s
+Performance: 2490.423 tau/day, 28.824 timesteps/s
 99.8% CPU use with 1 MPI tasks x no OpenMP threads
 
 MPI task timing breakdown:
 Section |  min time  |  avg time  |  max time  |%varavg| %total
 ---------------------------------------------------------------
-Pair    | 1745       | 1745       | 1745       |   0.0 | 80.39
-Neigh   | 0          | 0          | 0          |   0.0 |  0.00
-Comm    | 52.804     | 52.804     | 52.804     |   0.0 |  2.43
-Output  | 0.00024295 | 0.00024295 | 0.00024295 |   0.0 |  0.00
-Modify  | 276.81     | 276.81     | 276.81     |   0.0 | 12.75
-Other   |            | 96.18      |            |       |  4.43
+Pair    | 5755.7     | 5755.7     | 5755.7     |   0.0 | 82.95
+Neigh   | 781.66     | 781.66     | 781.66     |   0.0 | 11.27
+Comm    | 58.66      | 58.66      | 58.66      |   0.0 |  0.85
+Output  | 0.00025105 | 0.00025105 | 0.00025105 |   0.0 |  0.00
+Modify  | 272.89     | 272.89     | 272.89     |   0.0 |  3.93
+Other   |            | 69.68      |            |       |  1.00
 
 Nlocal:    90724 ave 90724 max 90724 min
 Histogram: 1 0 0 0 0 0 0 0 0 0
-Nghost:    32756 ave 32756 max 32756 min
+Nghost:    33542 ave 33542 max 33542 min
 Histogram: 1 0 0 0 0 0 0 0 0 0
-Neighs:    3.99251e+06 ave 3.99251e+06 max 3.99251e+06 min
+Neighs:    2.46909e+06 ave 2.46909e+06 max 2.46909e+06 min
 Histogram: 1 0 0 0 0 0 0 0 0 0
 
-Total # of neighbors = 3992512
-Ave neighs/atom = 44.0072
-Neighbor list builds = 0
-Dangerous builds = 0
+Total # of neighbors = 2469086
+Ave neighs/atom = 27.2154
+Neighbor list builds = 8323
+Dangerous builds = 449
 Setting up Verlet run ...
   Unit style    : lj
   Current step  : 200000
   Time step     : 0.001
-ERROR on proc 0: Non-numeric atom coords - simulation unstable (../domain.cpp:520)
-Last command: run 5000
+Per MPI rank memory allocation (min/avg/max) = 39.36 | 39.36 | 39.36 Mbytes
+Time Temp Press 
+         200    1.0049147   0.12802186 
+       200.1    0.9967604   0.11603847 
+       200.2    1.0000181   0.12312169 
+       200.3    1.0020639    0.1329177 
+       200.4   0.99571146   0.12538158 
+       200.5    1.0027824   0.13658537 
+       200.6    1.0011501   0.13322047 
+       200.7   0.99937616    0.1357694 
+       200.8   0.99962572   0.12838772 
+       200.9    1.0001164   0.12690334 
+         201    1.0031512   0.13318555 
+       201.1   0.99878769   0.12112059 
+       201.2   0.99860427   0.13019684 
+       201.3    1.0004681   0.12961698 
+       201.4    1.0015481   0.13410994 
+       201.5   0.99697648   0.13852339 
+       201.6    1.0018667   0.12639435 
+       201.7    1.0035063    0.1317754 
+       201.8    1.0017833   0.13777609 
+       201.9    1.0024291    0.1389116 
+         202   0.99783133   0.13489521 
+       202.1   0.99948826   0.12963333 
+       202.2    1.0023985   0.13064682 
+       202.3    1.0015042   0.13235319 
+       202.4   0.99645641    0.1295104 
+       202.5   0.99876771   0.12956498 
+       202.6    1.0033645   0.13678614 
+       202.7   0.99590749    0.1299166 
+       202.8   0.99915306   0.12771042 
+       202.9    1.0074873   0.13860486 
+         203   0.99884295    0.1279754 
+       203.1   0.99600793   0.13838746 
+       203.2     1.000912   0.13655011 
+       203.3    1.0040524   0.12714445 
+       203.4   0.99809385   0.13305392 
+       203.5    1.0029147   0.13987605 
+       203.6    1.0025581   0.13209401 
+       203.7    0.9965147   0.13177506 
+       203.8   0.99833347   0.12369341 
+       203.9    1.0022028   0.13234041 
+         204   0.99830002   0.13763386 
+       204.1     0.996201    0.1304491 
+       204.2    1.0026071   0.13147125 
+       204.3   0.99915681   0.12724948 
+       204.4   0.99858049   0.13058859 
+       204.5    1.0031825   0.12786029 
+       204.6   0.99960892   0.13488122 
+       204.7   0.99559534   0.12719091 
+       204.8   0.99727884   0.13033726 
+       204.9    1.0022569   0.13406155 
+         205    1.0021765   0.13482567 
+Loop time of 160.768 on 1 procs for 5000 steps with 90724 atoms
+
+Performance: 2687.104 tau/day, 31.101 timesteps/s
+99.8% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 135.39     | 135.39     | 135.39     |   0.0 | 84.22
+Neigh   | 15.389     | 15.389     | 15.389     |   0.0 |  9.57
+Comm    | 1.3678     | 1.3678     | 1.3678     |   0.0 |  0.85
+Output  | 0.011315   | 0.011315   | 0.011315   |   0.0 |  0.01
+Modify  | 6.7945     | 6.7945     | 6.7945     |   0.0 |  4.23
+Other   |            | 1.811      |            |       |  1.13
+
+Nlocal:    90724 ave 90724 max 90724 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    33623 ave 33623 max 33623 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    2.47082e+06 ave 2.47082e+06 max 2.47082e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 2470822
+Ave neighs/atom = 27.2345
+Neighbor list builds = 172
+Dangerous builds = 0
+Total wall time: 1:58:19
