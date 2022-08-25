@@ -10,7 +10,7 @@ reset_timestep  0
 timestep        0.001
 
 pair_style lj/cut 3.0
-pair_coeff 1 1 1.0 1.2 3.0
+pair_coeff 1 1 1.2 1.0 3.0
 
 fix 1 all nvt temp 1.0 1.0 0.01
 
