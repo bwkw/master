@@ -12,16 +12,19 @@ def make_file(filename, left_num, right_num, left_density, right_density, temper
         f.write("pair_style lj/cut 3.0\n")
         f.write("pair_coeff 1 1 1.0 1.0 3.0\n\n")
         f.write("fix 1 all nvt temp {} {} 0.01\n\n".format(temperature, temperature))
-        f.write("run 1000000\n\n")
+        f.write("run 500000\n\n")
         f.write("dump id all atom 1000 dump.melt/ln{}-rn{}-ld{}-rd{}-T{}.dump\n\n".format(left_num, right_num, left_density, right_density, temperature))
         f.write("run 5000")
 
 
-half_volume = 40*40*40
-left_num = 22*22*22*4
-right_num = 0
+length = 50
+half_volume = length**3
+left_s = round(math.pow((half_volume*0.6/4), 1/3))
+right_s = round(math.pow((half_volume*0.08/4), 1/3))
+left_num = left_s**3*4
+right_num = right_s**3*4
 left_density = left_num/half_volume
-right_density = 0
-length = math.pow(half_volume, 1/3)
-temperature = 0.9
+right_density = right_num/half_volume
+temperature = 1.0
+
 make_file("in.melt/ln{}-rn{}-ld{}-rd{}-T{}.in".format(left_num, right_num, left_density, right_density, temperature), left_num, right_num, left_density, right_density, temperature)

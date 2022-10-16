@@ -106,13 +106,15 @@ def make_file(filename, atoms, length):
 atoms = []
 length = 50
 half_volume = length**3
-left_s = round(math.pow((half_volume*0.7/4), 1/3))
-right_s = round(math.pow((half_volume*0.02/4), 1/3))
+left_s = round(math.pow((half_volume*0.6/4), 1/3))
+right_s = round(math.pow((half_volume*0.08/4), 1/3))
 left_num = left_s**3*4
 right_num = right_s**3*4
+left_density = left_num/half_volume
+right_density = right_num/half_volume
 
 add_ball(atoms, left_num, right_num, length)
-make_file("atoms/ln{}-rn{}.atoms".format(left_num, right_num), atoms, length)
+make_file("atoms/ln{}-rn{}-ld{}-rd{}.atoms".format(left_num, right_num, left_density, right_density), atoms, length)
 
 #速度平均が≒0になっていることの確認
 sum_a_vx = 0

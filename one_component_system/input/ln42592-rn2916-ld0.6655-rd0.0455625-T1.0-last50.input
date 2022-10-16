@@ -14,10 +14,7 @@ pair_coeff 1 1 1.0 1.0 3.0
 
 fix 1 all nvt temp 1.0 1.0 0.01
 
-run 200000
-
-thermo 100
-thermo_style custom time temp press
+run 500000
 
 dump id all atom 100 dump.melt/ln42592-rn2916-ld0.6655-rd0.0455625-T1.0-last50.dump
 
