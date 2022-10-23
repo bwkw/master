@@ -16,7 +16,7 @@ def loadfile(filename):
                 continue
             elif re.match("ITEM: TIMESTEP", line):
                 a = 0
-            if ((a == 1) and ((b >= 2) and (b <= 51))):
+            if ((a == 1) and ((b >= 2) and (b <= 6))):
                 line = line.split()
                 x = line[2]
                 x_list.append(x)
@@ -55,7 +55,7 @@ for i in range(len(x_list)):
         density_position = math.floor(float(x)/float(0.001))
         density_list[density_position] += 1
 
-density_list = list(map(lambda x: x/(0.001*half_volume*2*50), density_list))
+density_list = list(map(lambda x: x/(0.001*half_volume*2*5), density_list))
 
 makefile("density/ln{}-rn{}-ld{}-rd{}-T{}.density".format(left_num, right_num, left_density, right_density, temperature), length)
 
