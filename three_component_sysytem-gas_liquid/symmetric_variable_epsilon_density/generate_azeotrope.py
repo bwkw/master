@@ -59,9 +59,9 @@ def make_plt_file(filename, length, temperature, composition_number, variable_ep
         f.write("set nokey\n")
         f.write("plot 'azeotrope/azeotrope/L{}T{}CN{}E{}CD{}.dat' with yerrorbars pt 0, 0.0\n".format(length, temperature, composition_number, variable_epsilon, c_density))
 
-def make_ab_gasliquid_file(filename, a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density, x):
+def make_ab_gasliquid_file(filename, a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density):
     with open(filename, "a") as f:
-        f.write("{} {} {} {} {} {}\n".format(a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density, x))
+        f.write("{} {} {} {} {}\n".format(a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density))
 
 def make_yz_file(filename, a_composition_ratio, Y, Z):
     with open(filename, "a") as f:
@@ -87,10 +87,11 @@ for parameter in parameters:
     a_gas_density = parameter[2]
     b_liquid_density = parameter[3]
     b_gas_density = parameter[4]
-    Y = a_gas_density * b_liquid_density
-    Z = a_liquid_density * b_gas_density
-    X = Y-Z
-    make_azeotrope_file("azeotrope/azeotrope/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), a_composition_ratio, X)
-    make_yz_file("azeotrope/yz/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), a_composition_ratio, Y, Z)
+    make_ab_gasliquid_file("azeotrope/gas_liquid_density/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density)
+    # Y = a_gas_density * b_liquid_density
+    # Z = a_liquid_density * b_gas_density
+    # X = Y-Z
+    # make_azeotrope_file("azeotrope/azeotrope/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), a_composition_ratio, X)
+    # make_yz_file("azeotrope/yz/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), a_composition_ratio, Y, Z)
 
-make_plt_file("azeotrope/azeotrope_plt/L{}T{}CN{}E{}CD{}.plt".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, composition_number, variable_epsilon, c_density)
+# make_plt_file("azeotrope/azeotrope_plt/L{}T{}CN{}E{}CD{}.plt".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, composition_number, variable_epsilon, c_density)
