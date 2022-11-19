@@ -3,13 +3,13 @@ import re
 from uncertainties import ufloat
 
 
-def loadfile(filename, composition_ratios, averages_x, uncertainties):
+def loadfile(filename, composition_ratios, y_averages, y_uncertainties):
     with open(filename) as f:
         for line in f:
             line = line.split()
             composition_ratios.append(float(line[0]))
-            averages_x.append(float(line[1]))
-            uncertainties.append(float(line[2]))
+            y_averages.append(float(line[1]))
+            y_uncertainties.append(float(line[2]))
 
 def makefile(filename, sigma, composition_ratio_average, composition_ratio_uncertainity):
      with open(filename, "a") as f:
