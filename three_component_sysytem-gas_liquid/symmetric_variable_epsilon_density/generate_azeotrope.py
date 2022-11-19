@@ -88,10 +88,10 @@ for parameter in parameters:
     b_liquid_density = parameter[3]
     b_gas_density = parameter[4]
     make_ab_gasliquid_file("azeotrope/gas_liquid_density/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density)
-    # Y = a_gas_density * b_liquid_density
-    # Z = a_liquid_density * b_gas_density
-    # X = Y-Z
-    # make_azeotrope_file("azeotrope/azeotrope/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), a_composition_ratio, X)
-    # make_yz_file("azeotrope/yz/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), a_composition_ratio, Y, Z)
+    Y = a_gas_density * b_liquid_density
+    Z = a_liquid_density * b_gas_density
+    X = Y-Z
+    make_azeotrope_file("azeotrope/azeotrope/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), a_composition_ratio, X)
+    make_yz_file("azeotrope/yz/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), a_composition_ratio, Y, Z)
 
-# make_plt_file("azeotrope/azeotrope_plt/L{}T{}CN{}E{}CD{}.plt".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, composition_number, variable_epsilon, c_density)
+make_plt_file("azeotrope/azeotrope_plt/L{}T{}CN{}E{}CD{}.plt".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, composition_number, variable_epsilon, c_density)
