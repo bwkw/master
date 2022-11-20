@@ -13,7 +13,7 @@ def loadfile(filename, composition_ratios,  y_averages, y_uncertainties):
 
 def makefile(filename, c_density, composition_ratio_average, composition_ratio_uncertainity):
      with open(filename, "a") as f:
-        f.write('{} {} {}\n'.format(c_density, composition_ratio_average, composition_ratio_uncertainity))
+        f.write('{} {} {}\n'.format(c_density, 1-composition_ratio_average, composition_ratio_uncertainity))
 
 
 path = "./azeotrope/azeotrope/"
