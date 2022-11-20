@@ -9,8 +9,8 @@ set tics font 'Arial,10'
 set key font 'Arial,16'
 set fit logfile 'density/density_fitting/L100T1.0C50.log'
 
-da(x) = (dal+dag)/2 + ((dal-dag)/2)*tanh((x-a)/(2*b))
-db(x) = (dbl+dbg)/2 + ((dbl-dbg)/2)*tanh((x-c)/(2*d))
+da(x) = (dal+dag)/2 - ((dal-dag)/2)*tanh((x-a)/(2*b))
+db(x) = (dbl+dbg)/2 - ((dbl-dbg)/2)*tanh((x-c)/(2*d))
 fit da(x) 'density/density/L100T1.0/lan182641-lbn519823-ran5110-rbn14542.density' u 1:2 via a, b, dal, dag
 fit db(x) 'density/density/L100T1.0/lan182641-lbn519823-ran5110-rbn14542.density' u 1:3 via c, d, dbl, dbg
 
