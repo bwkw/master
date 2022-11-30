@@ -9,15 +9,15 @@ def make_base_file(filename):
     with open(filename, "w") as f:
         f.write("#!/bin/sh\n\n")
         f.write("#SBATCH -p F144cpu\n")
-        f.write("#SBATCH -N 144\n")
-        f.write("#SBATCH -n 18432\n")
+        f.write("#SBATCH -N 80\n")
+        f.write("#SBATCH -n 10240\n")
         f.write("#SBATCH --mail-type=ALL\n")
         f.write("#SBATCH --mail-user=n.shota.1139@keio.jp\n\n")
         f.write("source /home/issp/materiapps/intel/lammps/lammpsvars.sh\n\n")
 
 def make_file(filename, length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num):
     with open(filename, "a") as f:
-        f.write("srun --exclusive --mem-per-cpu=1840 -n 128 -c 4 -N 4 lammps < data/in.melt/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.in &\n".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
+        f.write("srun --exclusive --mem-per-cpu=1840 -n 512 -c 1 -N 4 lammps < data/in.melt/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.in &\n".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
 
 def make_end_file(filename):
     with open(filename, "a") as f:
