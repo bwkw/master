@@ -10,7 +10,7 @@ def make_lammps_base_file(filename):
     with open(filename, "w") as f:
         f.write("#!/bin/sh\n\n")
         f.write("#SBATCH -p F144cpu\n")
-        f.write("#SBATCH -N 80\n")
+        f.write("#SBATCH -N 144\n")
         f.write("#SBATCH -n 10240\n")
         f.write("#SBATCH --mail-type=ALL\n")
         f.write("#SBATCH --mail-user=n.shota.1139@keio.jp\n\n")
