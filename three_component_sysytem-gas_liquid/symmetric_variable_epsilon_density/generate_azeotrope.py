@@ -42,12 +42,24 @@ def loadfile(filename):
                 dbg_average = float(result[2])
                 dbg_uncertainty = float(result[4])
                 dbg = ufloat(dbg_average, dbg_uncertainty)
-            if ((a_composition_ratio!=0) and (dal!=0) and (dag!=0) and (dbl!=0) and (dbg!=0)):
+            if re.match("dcl             =", line):
+                result = line.split()
+                dcl_average = float(result[2])
+                dcl_uncertainty = float(result[4])
+                dcl = ufloat(dcl_average, dcl_uncertainty)
+            if re.match("dcg             =", line):
+                result = line.split()
+                dcg_average = float(result[2])
+                dcg_uncertainty = float(result[4])
+                dcg = ufloat(dcg_average, dcg_uncertainty)
+            if ((a_composition_ratio!=0) and (dal!=0) and (dag!=0) and (dbl!=0) and (dbg!=0)) and (dcl!=0) and (dcg!=0):
                 parameter.append(a_composition_ratio)
                 parameter.append(dal)
                 parameter.append(dag)
                 parameter.append(dbl)
                 parameter.append(dbg)
+                parameter.append(dcl)
+                parameter.append(dcg)
                 parameters.append(parameter)
                 parameter = []
                 a_composition_ratio = 0
@@ -55,6 +67,8 @@ def loadfile(filename):
                 dag = 0
                 dbl = 0
                 dbg = 0
+                dcl = 0
+                dcg = 0
 
 ## ABの気液密度ファイル作成
 def make_gas_liquid_density_file(filename, a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density):
@@ -125,6 +139,8 @@ for parameter in parameters:
     a_gas_density = parameter[2]
     b_liquid_density = parameter[3]
     b_gas_density = parameter[4]
+    c_liquid_density = parameter[5]
+    c_gas_density = parameter[6]
     make_gas_liquid_density_file("azeotrope/gas_liquid_density/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density)
 
     Y = a_gas_density * b_liquid_density
@@ -135,8 +151,8 @@ for parameter in parameters:
 
     make_azeotrope_file("azeotrope/azeotrope/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), a_composition_ratio, X)
 
-    b_gas_concentration = b_gas_density / (a_gas_density + b_gas_density)
-    b_liquid_concentration = b_liquid_density / (a_liquid_density + b_liquid_density)
+    b_gas_concentration = b_gas_density / (a_gas_density + b_gas_density + c_gas_density)
+    b_liquid_concentration = b_liquid_density / (a_liquid_density + b_liquid_density + c_liquid_density)
     make_b_gas_liquid_concentration_file("azeotrope/b_gas_liquid_concentration/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), b_gas_concentration, b_liquid_concentration)
 
 make_azeotrope_plt_file("azeotrope/azeotrope_plt/L{}T{}CN{}E{}CD{}.plt".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, composition_number, variable_epsilon, c_density)
