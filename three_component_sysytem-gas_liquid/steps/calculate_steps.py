@@ -4,7 +4,6 @@
 import os
 import re
 import sys
-from uncertainties import ufloat
 
 
 def three_component_curve(x) :
