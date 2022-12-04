@@ -107,6 +107,19 @@ def make_azeotrope_plt_file(filename, length, temperature, composition_number, v
         f.write("set nokey\n")
         f.write("plot 'azeotrope/azeotrope/L{}T{}CN{}E{}CD{}.dat' with yerrorbars pt 0, 0.0\n".format(length, temperature, composition_number, variable_epsilon, c_density))
 
+## Bの気液濃度pltファイル作成
+def make_b_gas_liquid_concentration_plt_file(filename, length, temperature, composition_number, variable_epsilon, c_density):
+    with open(filename, "w") as f:
+        f.write("set term pdf\n")
+        f.write("set out 'azeotrope/b_gas_liquid_concentration_img/L{}T{}CN{}E{}CD{}.pdf'\n".format(length, temperature, composition_number, variable_epsilon, c_density))
+        f.write("set xlabel '{/Arial-Italic 液相密度}'\n")
+        f.write("set ylabel '{/Arial-Italic 気相密度}'\n")
+        f.write("set xlabel font 'Arial,15'\n")
+        f.write("set ylabel font 'Arial,15'\n")
+        f.write("set tics font 'Arial,10'\n")
+        f.write("set nokey\n")
+        f.write("plot 'azeotrope/b_gas_liquid_concentration/L{}T{}CN{}E{}CD{}.dat' u 2:1 with yerrorbars pt 0, x\n".format(length, temperature, composition_number, variable_epsilon, c_density))
+
 
 ## fitting結果が出力されたファイルのロード
 parameters = []
@@ -130,6 +143,8 @@ if not os.path.exists('azeotrope/b_gas_liquid_concentration'):
     os.mkdir('azeotrope/b_gas_liquid_concentration')
 if not os.path.exists('azeotrope/azeotrope_plt'):
     os.mkdir('azeotrope/azeotrope_plt')
+if not os.path.exists('azeotrope/b_gas_liquid_concentration_plt'):
+    os.mkdir('azeotrope/b_gas_liquid_concentration_plt')
 
 ## 取得したパラメタを基に、各ファイルを作成
 parameters = sorted(parameters)
@@ -156,3 +171,4 @@ for parameter in parameters:
     make_b_gas_liquid_concentration_file("azeotrope/b_gas_liquid_concentration/L{}T{}CN{}E{}CD{}.dat".format(length, temperature, composition_number, variable_epsilon, c_density), b_gas_concentration, b_liquid_concentration)
 
 make_azeotrope_plt_file("azeotrope/azeotrope_plt/L{}T{}CN{}E{}CD{}.plt".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, composition_number, variable_epsilon, c_density)
+make_b_gas_liquid_concentration_plt_file("azeotrope/b_gas_liquid_concentration/L{}T{}CN{}E{}CD{}.plt".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, composition_number, variable_epsilon, c_density)

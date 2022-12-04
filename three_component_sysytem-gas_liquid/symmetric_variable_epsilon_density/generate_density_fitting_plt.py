@@ -65,6 +65,11 @@ if not os.path.exists('density'):
     os.mkdir('density')
 if not os.path.exists('density/density_fitting_plt'):
     os.mkdir('density/density_fitting_plt')
+if not os.path.exists('density/density_fitting_img'):
+    os.mkdir('density/density_fitting_img')
 if not os.path.exists('density/density_fitting_plt/L{}T{}E{}CD{}'.format(length, temperature, variable_epsilon, c_density)):
     os.mkdir('density/density_fitting_plt/L{}T{}E{}CD{}'.format(length, temperature, variable_epsilon, c_density))
+if not os.path.exists('density/density_fitting_img/L{}T{}E{}CD{}'.format(length, temperature, variable_epsilon, c_density)):
+    os.mkdir('density/density_fitting_img/L{}T{}E{}CD{}'.format(length, temperature, variable_epsilon, c_density))
+
 make_file("density/density_fitting_plt/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.plt".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num), length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num)
