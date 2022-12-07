@@ -76,11 +76,11 @@ for parameter in parameters:
     b_gas_concentration = b_gas_density / (a_gas_density + b_gas_density)
     b_liquid_concentration = b_liquid_density / (a_liquid_density + b_liquid_density)
     make_b_gas_liquid_concentration_file("azeotrope/b_gas_liquid_concentration/L{}T{}.dat".format(length, temperature), b_gas_concentration, b_liquid_concentration)
-    # Y = a_gas_density * b_liquid_density
-    # Z = a_liquid_density * b_gas_density
-    # X = Y-Z
-    # make_azeotrope_file("azeotrope/azeotrope/L{}T{}.dat".format(length, temperature), a_composition_ratio, X)
-    # make_yz_file("azeotrope/yz/L{}T{}.dat".format(length, temperature), a_composition_ratio, Y, Z)
+    Y = a_gas_density * b_liquid_density
+    Z = a_liquid_density * b_gas_density
+    X = Y-Z
+    make_azeotrope_file("azeotrope/azeotrope/L{}T{}.dat".format(length, temperature), a_composition_ratio, X)
+    make_yz_file("azeotrope/yz/L{}T{}.dat".format(length, temperature), a_composition_ratio, Y, Z)
 
 
 # ratio_parameters = []
