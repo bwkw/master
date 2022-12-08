@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#SBATCH -p B144cpu
+#SBATCH -p F144cpu
 #SBATCH -N 144
 #SBATCH -n 18432
 #SBATCH --mail-type=ALL
