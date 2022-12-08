@@ -30,10 +30,10 @@ def loadfile(filename):
                     type3_x_list.append(x)
 
 ## 二種類の粒子の密度リストからdensityファイルを作成する
-def makefile(filename, density_list1, density_list2):
+def makefile(filename, density_list1, density_list2, density_list3):
     with open(filename, "w") as f:
         for i in range(len(density_list1)):
-            f.write("{} {} {}\n".format(round(float(0.0025)*i, 4), density_list1[i], density_list2[i]))
+            f.write("{} {} {} {}\n".format(round(float(0.0025)*i, 4), density_list1[i], density_list2[i], density_list3[i]))
 
 ## 標準入力（paramファイル）からパラメータ取得
 param_dic = {}
