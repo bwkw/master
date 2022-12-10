@@ -58,8 +58,6 @@ def loadfile(filename):
                 parameter.append(dag)
                 parameter.append(dbl)
                 parameter.append(dbg)
-                parameter.append(dcl)
-                parameter.append(dcg)
                 parameters.append(parameter)
                 parameter = []
                 a_composition_ratio = 0
@@ -67,8 +65,6 @@ def loadfile(filename):
                 dag = 0
                 dbl = 0
                 dbg = 0
-                dcl = 0
-                dcg = 0
 
 ## ABの気液密度ファイル作成
 def make_gas_liquid_density_file(filename, a_composition_ratio, a_gas_density, a_liquid_density, b_gas_density, b_liquid_density):
