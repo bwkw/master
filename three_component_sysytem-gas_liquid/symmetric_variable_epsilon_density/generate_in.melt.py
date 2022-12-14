@@ -20,11 +20,12 @@ def make_file(filename, length, temperature, left_a_num, left_b_num, left_c_num,
         f.write("pair_coeff 1 2 0.9 1.05 3.0\n")
         f.write("pair_coeff 2 2 1.0 1.0 3.0\n")
         f.write("pair_coeff 1 3 {} 1.0 3.0\n".format(variable_epsilon))
-        f.write("pair_coeff 2 3 0.9 1.0 1.12246\n")
+        f.write("pair_coeff 2 3 1.0 1.0 3.0\n")
         f.write("pair_coeff 3 3 1.0 1.0 3.0\n")
         f.write("fix 1 all nvt temp {} {} 0.01\n\n".format(temperature, temperature))
         f.write("run 6000000\n\n")
         f.write("dump id all atom 1000 ../../../../../../work/k0117/k011706/symmetric_variable_epsilon_density/data/dump.melt/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.dump\n\n".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
+        f.write("dump id 3 atom 1000 ../../../../../../work/k0117/k011706/symmetric_variable_epsilon_density/data/dump.melt/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}-for-c.dump\n\n".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
         f.write("run 1000000")
 
 
