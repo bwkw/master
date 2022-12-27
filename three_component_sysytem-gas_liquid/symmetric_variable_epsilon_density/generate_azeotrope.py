@@ -114,8 +114,8 @@ def make_b_gas_liquid_concentration_plt_file(filename, length, temperature, comp
     with open(filename, "w") as f:
         f.write("set term pdf\n")
         f.write("set out 'azeotrope/b_gas_liquid_concentration_img/L{}T{}CN{}E{}CD{}.pdf'\n".format(length, temperature, composition_number, variable_epsilon, c_density))
-        f.write("set xlabel '{/Arial-Italic 液相密度}'\n")
-        f.write("set ylabel '{/Arial-Italic 気相密度}'\n")
+        f.write("set xlabel '{/Arial-Italic 液相濃度}'\n")
+        f.write("set ylabel '{/Arial-Italic 気相濃度}'\n")
         f.write("set xlabel font 'Arial,15'\n")
         f.write("set ylabel font 'Arial,15'\n")
         f.write("set tics font 'Arial,10'\n")
