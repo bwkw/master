@@ -18,6 +18,7 @@ def make_file(filename, length, temperature, variable_epsilon, c_density, left_a
         f.write("set fit logfile 'density/density_fitting/L{}T{}CN{}E{}CD{}.log'\n\n".format(length, temperature, composition_number, variable_epsilon, c_density))
         f.write("da(x) = (dal+dag)/2 - ((dal-dag)/2)*tanh((x-a)/(2*b))\n")
         f.write("db(x) = (dbl+dbg)/2 - ((dbl-dbg)/2)*tanh((x-c)/(2*d))\n")
+        f.write("dc(x) = (dcl+dcg)/2 - ((dcl-dcg)/2)*tanh((x-e)/(2*f))\n")
         f.write("a=0.5\n")
         f.write("b=0.006\n")
         f.write("c=0.5\n")
@@ -26,9 +27,12 @@ def make_file(filename, length, temperature, variable_epsilon, c_density, left_a
         f.write("dag=0.03\n")
         f.write("dbl=0.3\n")
         f.write("dbg=0.03\n")
+        f.write("dcl=0.005\n")
+        f.write("dcg=0.001\n")
         f.write("fit da(x) 'density/density/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.density' u 1:2 via a, b, dal, dag\n".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
         f.write("fit db(x) 'density/density/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.density' u 1:3 via c, d, dbl, dbg\n".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
-        f.write("plot 'density/density/L{0}T{1}E{2}CD{3}/lan{4}-lbn{5}-lcn{6}-ran{7}-rbn{8}-rcn{9}.density' u 1:2 title 'density_a' with points pt 1, 'density/density/L{0}T{1}E{2}CD{3}/lan{4}-lbn{5}-lcn{6}-ran{7}-rbn{8}-rcn{9}.density' u 1:3 title 'density_b' with points pt 1, 'density/density/L{0}T{1}E{2}CD{3}/lan{4}-lbn{5}-lcn{6}-ran{7}-rbn{8}-rcn{9}.density' u 1:4 title 'density_c' with points pt 1, da(x) title 'density_a-fit' with line lt 1 lc rgb hsv2rgb(0, 1, 1), db(x) title 'density_b-fit' with line lt 1 lc rgb hsv2rgb(1, 1, 0)".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
+        f.write("fit dc(x) 'density/density/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.density' u 1:4 via e, f, dcl, dcg\n".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
+        f.write("plot 'density/density/L{0}T{1}E{2}CD{3}/lan{4}-lbn{5}-lcn{6}-ran{7}-rbn{8}-rcn{9}.density' u 1:2 title 'A-density' with points pt 1, 'density/density/L{0}T{1}E{2}CD{3}/lan{4}-lbn{5}-lcn{6}-ran{7}-rbn{8}-rcn{9}.density' u 1:3 title 'B-density' with points pt 1, 'density/density/L{0}T{1}E{2}CD{3}/lan{4}-lbn{5}-lcn{6}-ran{7}-rbn{8}-rcn{9}.density' u 1:4 title 'C-density' with points pt 1, da(x) title 'A-density-fit' with line lt 1 lc rgb hsv2rgb(0, 1, 1), db(x) title 'B-density-fit' with line lt 1 lc rgb hsv2rgb(1, 1, 0), dc(x) title 'C-density-fit' with line lt 1 lc rgb hsv2rgb(1, 0, 1)".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
 
 ## 標準入力（paramファイル）からパラメータ取得
 param_dic = {}
