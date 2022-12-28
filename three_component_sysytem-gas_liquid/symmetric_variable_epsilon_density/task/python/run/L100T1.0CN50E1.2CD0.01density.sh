@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH -p B32cpu
-#SBATCH -N 32
+#SBATCH -p F36cpu
+#SBATCH -N 36
 #SBATCH -n 144
 #SBATCH -c 32
 #SBATCH --mail-type=ALL
