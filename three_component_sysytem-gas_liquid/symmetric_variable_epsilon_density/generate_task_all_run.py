@@ -21,8 +21,8 @@ def make_inmelt_file(filename, length, temperature, composition_number, variable
 def make_density_file(filename, length, temperature, composition_number, variable_epsilon, c_density):
     with open(filename, "a") as f:
         f.write("#!/bin/bash\n");
-        f.write("#SBATCH -p F32cpu\n");
-        f.write("#SBATCH -N 32\n");
+        f.write("#SBATCH -p F36cpu\n");
+        f.write("#SBATCH -N 36\n");
         f.write("#SBATCH -n 144\n");
         f.write("#SBATCH -c 32\n");
         f.write("#SBATCH --mail-type=ALL\n");
