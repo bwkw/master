@@ -65,7 +65,7 @@ for i in range(1, composition_number):
     right_a_num = round(right_ab_num * a_composition_ratio)
     right_b_num = right_ab_num - right_a_num
     make_lammps_file("task/lammps/run/L{}T{}CN{}E{}CD{}.sh".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num)
-    make_atoms_file("task/python/atoms/L{}CN{}CD{}atoms.sh".format(length, composition_number, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
+    # make_atoms_file("task/python/atoms/L{}CN{}CD{}atoms.sh".format(length, composition_number, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
     make_inmelt_file("task/python/in.melt/L{}T{}CN{}E{}CD{}inmelt.sh".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
     make_density_file("task/python/density/L{}T{}CN{}E{}CD{}density.sh".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
     make_density_fitting_plt_file("task/python/density_fitting_plt/L{}T{}CN{}E{}CD{}density_fitting_plt.sh".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
