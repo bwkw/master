@@ -29,3 +29,6 @@ for i in range(distillation_number):
 
 print("三体:{}".format(three_b_liquid_concentration))
 print("二体:{}".format(two_b_liquid_concentration))
+
+# 三体:0.3170073858009207
+# 二体:0.2508900579511511

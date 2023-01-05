@@ -4,6 +4,7 @@ set xlabel '{/Arial-Italic 液相密度}'
 set ylabel '{/Arial-Italic 気相密度}'
 set xlabel font 'Arial,15'
 set ylabel font 'Arial,15'
+set xrange [0.00:0.65]
 set tics font 'Arial,10'
 set key font 'Arial,16'
 set key right bottom
