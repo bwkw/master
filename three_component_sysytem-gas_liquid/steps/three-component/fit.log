@@ -1,10 +1,8 @@
-
-
 *******************************************************************************
-Thu Jan  5 18:37:25 2023
+Thu Jan  5 21:35:44 2023
 
 
-FIT:    data read from 'L100T1.0CN50E2.0CD0.01-part.dat' u 2:1
+FIT:    data read from 'L100T1.0CN50E2.0CD0.01-part.dat' u 3:1
         format = x:z
         #datapoints = 32
         residuals are weighted equally (unit weight)
@@ -14,24 +12,24 @@ function used for fitting: f(x)
 fitted parameters initialized with current variable values
 
 iter      chisq       delta/lim  lambda   a             b             c             d             e            
-   0 4.0946998208e+00   0.00e+00  1.93e-01    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
-   6 1.7027023910e-04  -7.04e-03  1.93e-07    2.161782e+00  -6.285015e+00   1.550614e+01  -1.977858e+01   1.008377e+01
+   0 4.0945972835e+00   0.00e+00  1.93e-01    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+   6 1.6923531220e-04  -7.08e-03  1.93e-07    2.161738e+00  -6.284974e+00   1.550792e+01  -1.978587e+01   1.009139e+01
 
 After 6 iterations the fit converged.
-final sum of squares of residuals : 0.00017027
-rel. change during last iteration : -7.036e-08
+final sum of squares of residuals : 0.000169235
+rel. change during last iteration : -7.08314e-08
 
 degrees of freedom    (FIT_NDF)                        : 27
-rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00251124
-variance of residuals (reduced chisquare) = WSSR/ndf   : 6.30631e-06
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00250359
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.26797e-06
 
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
-a               = 2.16178          +/- 0.04101      (1.897%)
-b               = -6.28502         +/- 0.5306       (8.442%)
-c               = 15.5061          +/- 2.366        (15.26%)
-d               = -19.7786         +/- 4.345        (21.97%)
-e               = 10.0838          +/- 2.81         (27.87%)
+a               = 2.16174          +/- 0.04088      (1.891%)
+b               = -6.28497         +/- 0.529        (8.416%)
+c               = 15.5079          +/- 2.359        (15.21%)
+d               = -19.7859         +/- 4.332        (21.89%)
+e               = 10.0914          +/- 2.802        (27.76%)
 
 correlation matrix of the fit parameters:
                 a      b      c      d      e      

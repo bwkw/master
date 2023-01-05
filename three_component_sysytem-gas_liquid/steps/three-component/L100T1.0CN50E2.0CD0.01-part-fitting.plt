@@ -9,6 +9,6 @@ set key font 'Arial,16'
 set key right bottom
 
 f(x) = a*x + b*x**2 + c*x**3 + d*x**4 + e*x**5
-fit f(x) 'L100T1.0CN50E2.0CD0.01-part.dat' u 2:1 via a, b, c,d, e
+fit f(x) 'L100T1.0CN50E2.0CD0.01-part.dat' u 3:1 via a, b, c, d, e
 
-plot f(x) with line lt 1 lc rgb hsv2rgb(0, 1, 1) title 'fitting', 'L100T1.0CN50E2.0CD0.01-part.dat' u 2:1 with points pt 1 title 'original', x
+plot f(x) with line lt 1 lc rgb hsv2rgb(0, 1, 1) title 'fitting', 'L100T1.0CN50E2.0CD0.01-part.dat' u 3:1:($3-$4):($3+$4):($1-$2):($1+$2) with xyerrorbars pt 0 ps 0 title 'original', x notitle
