@@ -8,4 +8,4 @@ set tics font 'Arial,10'
 set key font 'Arial,16'
 set key right bottom
 
-plot 'two-component/L100T1.0.dat' u 2:1 with yerrorbars pt 0 title '二成分', 'three-component/L100T1.0CN50E2.0CD0.01.dat' u 2:1 with yerrorbars pt 0 title '三成分', x notitle
+plot 'two-component/L100T1.0.dat' u 3:1:($3-$4):($3+$4):($1-$2):($1+$2) with xyerrorbars pt 0 ps 0 title '二成分', 'three-component/L100T1.0CN50E2.0CD0.01.dat' u 3:1:($3-$4):($3+$4):($1-$2):($1+$2) with xyerrorbars pt 0 ps 0 title '三成分', x notitle
