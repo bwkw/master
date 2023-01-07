@@ -9,16 +9,16 @@ import os
 def make_lammps_base_file(filename):
     with open(filename, "w") as f:
         f.write("#!/bin/sh\n\n")
-        f.write("#SBATCH -p B144cpu\n")
-        f.write("#SBATCH -N 144\n")
-        f.write("#SBATCH -n 18432\n")
+        f.write("#SBATCH -p F72cpu\n")
+        f.write("#SBATCH -N 72\n")
+        f.write("#SBATCH -n 9216\n")
         f.write("#SBATCH --mail-type=ALL\n")
         f.write("#SBATCH --mail-user=n.shota.1139@keio.jp\n\n")
         f.write("source /home/issp/materiapps/intel/lammps/lammpsvars.sh\n\n")
 
 def make_lammps_file(filename, length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num):
     with open(filename, "a") as f:
-        f.write("srun --exclusive --mem-per-cpu=1840 -n 512 -c 1 -N 2 lammps < data/in.melt/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.in &\n".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
+        f.write("srun --exclusive --mem-per-cpu=1840 -n 256 -c 1 -N 2 lammps < data/in.melt/L{}T{}E{}CD{}/lan{}-lbn{}-lcn{}-ran{}-rbn{}-rcn{}.in &\n".format(length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num))
 
 
 def make_lammps_end_file(filename):
@@ -66,9 +66,9 @@ for i in range(1, composition_number):
     right_b_num = right_ab_num - right_a_num
     make_lammps_file("task/lammps/run/L{}T{}CN{}E{}CD{}.sh".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, variable_epsilon, c_density, left_a_num, left_b_num, left_c_num, right_a_num, right_b_num, right_c_num)
     # make_atoms_file("task/python/atoms/L{}CN{}CD{}atoms.sh".format(length, composition_number, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
-    make_inmelt_file("task/python/in.melt/L{}T{}CN{}E{}CD{}inmelt.sh".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
-    make_density_file("task/python/density/L{}T{}CN{}E{}CD{}density.sh".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
-    make_density_fitting_plt_file("task/python/density_fitting_plt/L{}T{}CN{}E{}CD{}density_fitting_plt.sh".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
+    # make_inmelt_file("task/python/in.melt/L{}T{}CN{}E{}CD{}inmelt.sh".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
+    # make_density_file("task/python/density/L{}T{}CN{}E{}CD{}density.sh".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
+    # make_density_fitting_plt_file("task/python/density_fitting_plt/L{}T{}CN{}E{}CD{}density_fitting_plt.sh".format(length, temperature, composition_number, variable_epsilon, c_density), length, temperature, a_composition_ratio, variable_epsilon, c_density)
 
 make_lammps_end_file("task/lammps/run/L{}T{}CN{}E{}CD{}.sh".format(length, temperature, composition_number, variable_epsilon, c_density))
 
