@@ -7,7 +7,7 @@ import sys
 
 def three_component_curve1(x):
     # C0.005
-    y = 2.16174*x - 6.28497*x**2 + 15.5079*x**3 - 19.7859*x**4 + 10.0914*x**5
+    y = 2.07149*x - 6.30785*x**2 + 17.4749*x**3 - 25.4164*x**4 + 14.641*x**5
     return y
 
 def three_component_curve2(x):
@@ -17,16 +17,15 @@ def three_component_curve2(x):
 
 def three_component_curve3(x):
     # C0.015
-    y = 2.16174*x - 6.28497*x**2 + 15.5079*x**3 - 19.7859*x**4 + 10.0914*x**5
+    y = 2.18368*x - 5.62138*x**2 + 11.799*x**3 - 12.6284*x**4 + 5.39815*x**5
     return y
 
 def three_component_curve4(x):
     # C0.02
-    y = 2.21562*x - 5.00596*x**2 + 8.63721*x**3 - -7.53551*x**4 + 2.72652*x**5
+    y = 2.21562*x - 5.00596*x**2 + 8.63721*x**3 - 7.53551*x**4 + 2.72652*x**5
     return y
 
 def two_component_curve(x):
-    # C0.01
     y = 1.82211*x - 4.55978*x**2 + 11.699*x**3 - 16.9661*x**4 + 10.5281*x**5
     return y
 
@@ -59,10 +58,13 @@ for i in range(distillation_number):
     two_b_liquid_concentration = two_b_gas_concentration
 
 print("二体:{}".format(two_b_liquid_concentration))
-print("三体:{}".format(three_b_liquid_concentration1))
-print("三体:{}".format(three_b_liquid_concentration2))
-print("三体:{}".format(three_b_liquid_concentration3))
-print("三体:{}".format(three_b_liquid_concentration4))
+print("三体C0.005:{}".format(three_b_liquid_concentration1))
+print("三体C0.01:{}".format(three_b_liquid_concentration2))
+print("三体C0.015:{}".format(three_b_liquid_concentration3))
+print("三体C0.02:{}".format(three_b_liquid_concentration4))
 
-# 三体:0.3170073858009207
 # 二体:0.2508900579511511
+# 三体C0.005:0.2895980924066095
+# 三体C0.01:0.3170073858009207
+# 三体C0.015:0.3437287393675235
+# 三体C0.02:0.3749792963728017
