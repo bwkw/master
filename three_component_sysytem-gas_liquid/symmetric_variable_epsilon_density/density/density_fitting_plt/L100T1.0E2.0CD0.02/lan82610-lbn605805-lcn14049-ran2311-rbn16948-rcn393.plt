@@ -7,7 +7,7 @@ set ylabel font 'Arial,15'
 set xrange [0.2:0.8]
 set tics font 'Arial,10'
 set key font 'Arial,16'
-set fit logfile 'density/density_fitting/L100T1.0CN50E2.0CD0.02.log'
+set fit logfile 'density/density_fitting/L100T1.0CN25E2.0CD0.02.log'
 
 da(x) = (dal+dag)/2 - ((dal-dag)/2)*tanh((x-a)/(2*b))
 db(x) = (dbl+dbg)/2 - ((dbl-dbg)/2)*tanh((x-c)/(2*d))
