@@ -38,3 +38,46 @@ b              -0.968  1.000
 c               0.915 -0.986  1.000 
 d              -0.865  0.958 -0.992  1.000 
 e               0.819 -0.927  0.975 -0.995  1.000 
+
+
+*******************************************************************************
+Sat Jan 14 14:56:24 2023
+
+
+FIT:    data read from 'L100T1.0CN25E2.0CD0.02-part.dat' u 3:1
+        format = x:z
+        x range restricted to [0.00000 : 1.00000]
+        #datapoints = 24
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x + b*x**2 + c*x**3 + d*x**4 + e*x**5
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d             e            
+   0 3.7611532754e+01   0.00e+00  3.82e-01    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+   6 2.6050348604e-04  -5.35e-05  3.82e-07    2.215621e+00  -5.005957e+00   8.637206e+00  -7.535507e+00   2.726525e+00
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.000260503
+rel. change during last iteration : -5.34775e-10
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0037028
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.37107e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 2.21562          +/- 0.04708      (2.125%)
+b               = -5.00596         +/- 0.4095       (8.18%)
+c               = 8.63721          +/- 1.228        (14.22%)
+d               = -7.53551         +/- 1.518        (20.14%)
+e               = 2.72652          +/- 0.6607       (24.23%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      e      
+a               1.000 
+b              -0.968  1.000 
+c               0.915 -0.986  1.000 
+d              -0.864  0.958 -0.992  1.000 
+e               0.819 -0.927  0.975 -0.995  1.000 
