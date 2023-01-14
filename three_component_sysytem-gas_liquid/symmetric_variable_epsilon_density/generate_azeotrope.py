@@ -120,7 +120,7 @@ def make_b_gas_liquid_concentration_plt_file(filename, length, temperature, comp
         f.write("set ylabel font 'Arial,15'\n")
         f.write("set tics font 'Arial,10'\n")
         f.write("set nokey\n")
-        f.write("plot 'azeotrope/b_gas_liquid_concentration/L{}T{}CN{}E{}CD{}.dat' u 2:1 with yerrorbars pt 0, x\n".format(length, temperature, composition_number, variable_epsilon, c_density))
+        f.write("plot 'azeotrope/b_gas_liquid_concentration/L{}T{}CN{}E{}CD{}.dat' u 3:1:($3-$4):($3+$4):($1-$2):($1+$2) with xyerrorbars pt 0 ps 0, x\n".format(length, temperature, composition_number, variable_epsilon, c_density))
 
 
 ## fitting結果が出力されたファイルのロード
