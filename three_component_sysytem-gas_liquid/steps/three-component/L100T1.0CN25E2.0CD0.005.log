@@ -1,0 +1,43 @@
+
+
+*******************************************************************************
+Wed Jan 18 18:15:16 2023
+
+
+FIT:    data read from 'L100T1.0CN25E2.0CD0.005.dat' u 3:1
+        format = x:z
+        x range restricted to [0.00000 : 1.00000]
+        #datapoints = 24
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x + b*x**2 + c*x**3 + d*x**4 + e*x**5
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d             e            
+   0 4.5299850303e+01   0.00e+00  4.02e-01    1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00   1.000000e+00
+   6 6.5100879145e-05  -2.18e-04  4.02e-07    1.947313e+00  -4.434136e+00   8.461598e+00  -8.149312e+00   3.178870e+00
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 6.51009e-05
+rel. change during last iteration : -2.18464e-09
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00185104
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.42636e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.94731          +/- 0.02315      (1.189%)
+b               = -4.43414         +/- 0.1972       (4.447%)
+c               = 8.4616           +/- 0.5791       (6.844%)
+d               = -8.14931         +/- 0.7003       (8.593%)
+e               = 3.17887          +/- 0.2984       (9.386%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      e      
+a               1.000 
+b              -0.968  1.000 
+c               0.916 -0.986  1.000 
+d              -0.865  0.958 -0.992  1.000 
+e               0.820 -0.927  0.975 -0.995  1.000 
