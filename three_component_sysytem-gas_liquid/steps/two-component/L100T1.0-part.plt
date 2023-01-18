@@ -1,7 +1,7 @@
 set term pdf
 set out 'L100T1.0-part.pdf
-set xlabel '{/Arial-Italic 液相密度}'
-set ylabel '{/Arial-Italic 気相密度}'
+set xlabel '{/Arial-Italic 液相濃度}'
+set ylabel '{/Arial-Italic 気相濃度}'
 set xlabel font 'Arial,15'
 set ylabel font 'Arial,15'
 set tics font 'Arial,10'

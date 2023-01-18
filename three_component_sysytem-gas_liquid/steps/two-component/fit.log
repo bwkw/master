@@ -1,9 +1,10 @@
 *******************************************************************************
-Thu Jan  5 21:37:43 2023
+Wed Jan 18 17:54:35 2023
 
 
 FIT:    data read from 'L100T1.0-part.dat' u 3:1
         format = x:z
+        x range restricted to [0.00000 : 0.550000]
         #datapoints = 26
         residuals are weighted equally (unit weight)
 
